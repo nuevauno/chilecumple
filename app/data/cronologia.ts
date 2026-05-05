@@ -7,6 +7,82 @@ import type { EventoCronologia } from "./types";
  */
 export const CRONOLOGIA: EventoCronologia[] = [
   {
+    slug: "2026-05-05-irarrazaval-contrato-95-millones",
+    fecha: "2026-05-05",
+    titulo: "BioBio revela contrato de Irarrázaval por hasta $9,5 millones mensuales",
+    resumen:
+      "El jefe de asesores del Segundo Piso y amigo personal de Kast firmó un contrato por $85,1 millones hasta diciembre. BioBio consignó que su remuneración aún no aparecía publicada en Transparencia.",
+    tipo: "escandalo",
+    etiqueta: "feo",
+    decisionSlug: "segundo-piso-irarrazaval-contrato-95-millones",
+    fuenteUrl:
+      "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/05/05/el-contrato-del-gerente-general-de-kast-jefe-de-asesores-ganara-95-millones-mensuales.shtml",
+    fuenteMedio: "BioBioChile Investiga",
+  },
+  {
+    slug: "2026-05-05-oficialismo-pide-insumos-megarreforma",
+    fecha: "2026-05-05",
+    titulo: "Partidos oficialistas piden insumos y evitar nuevos errores por la megarreforma",
+    resumen:
+      "La Tercera reportó que timoneles y parlamentarios pidieron a La Moneda material para defender el plan de Reconstrucción y más coordinación tras choques entre ministerios y Segundo Piso.",
+    tipo: "escandalo",
+    etiqueta: "malo",
+    decisionSlug: "megarreforma-tramitacion-acelerada-78-votos",
+    fuenteUrl:
+      "https://www.latercera.com/politica/noticia/partidos-piden-a-la-moneda-evitar-nuevos-errores-y-que-les-entreguen-insumos-para-defender-la-megarreforma-de-kast/",
+    fuenteMedio: "La Tercera",
+  },
+  {
+    slug: "2026-05-04-cadem-39-seguridad-empleo",
+    fecha: "2026-05-04",
+    titulo: "Cadem: aprobación cae a 39%, 67% ve al Estado sobrepasado por delincuencia",
+    resumen:
+      "La aprobación presidencial llega a su mínimo desde la asunción y la desaprobación queda en 57%. En seguridad, 78% ve al crimen organizado como principal problema y 54% responsabiliza primero al Gobierno; 85% evalúa mal el empleo.",
+    tipo: "encuesta",
+    etiqueta: "feo",
+    fuenteUrl:
+      "https://www.latercera.com/nacional/noticia/cadem-aprobacion-de-kast-cae-a-su-nivel-mas-bajo-desde-que-asumio-y-67-cree-que-el-estado-esta-siendo-sobrepasado-por-la-delincuencia/?outputType=base-amp-type",
+    fuenteMedio: "La Tercera / Cadem",
+  },
+  {
+    slug: "2026-05-04-pulso-ciudadano-291-gabinete",
+    fecha: "2026-05-04",
+    titulo: "Pulso Ciudadano: aprobación presidencial 29,1% y gabinete 24,1%",
+    resumen:
+      "La medición abril Q2 registra 55,6% de desaprobación presidencial y 62,7% de desaprobación del gabinete. Es el termómetro nacional más duro del ciclo reciente.",
+    tipo: "encuesta",
+    etiqueta: "feo",
+    fuenteUrl:
+      "https://www.biobiochile.cl/static/documentos/2026/05/260981_pulso_ciudadano_abril_q2_2026_0430_v1.pdf?title=PULSO_CIUDADANO_ABRIL_Q2_2026_0430_V1",
+    fuenteMedio: "Pulso Ciudadano",
+  },
+  {
+    slug: "2026-05-04-salario-minimo-7546",
+    fecha: "2026-05-04",
+    titulo: "Gobierno ingresa salario mínimo con alza de $7.546",
+    resumen:
+      "El proyecto sube el ingreso mínimo de $539.000 a $546.546 desde mayo, equivalente al IPC enero-marzo. La CUT había pedido $647.000 y no hubo acuerdo en la negociación.",
+    tipo: "decision",
+    etiqueta: "feo",
+    decisionSlug: "salario-minimo-7546-ipc-suma-urgencia",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/04/mantener-poder-adquisitivo-de-familias-las-razones-del-ejecutivo-para-sumar-7-546-a-sueldo-minimo.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
+    slug: "2026-05-04-chomali-recorte-salud-25",
+    fecha: "2026-05-04",
+    titulo: "Chomali confirma que Salud tendrá ajuste de 2,5%",
+    resumen:
+      "La ministra dijo en el Senado que el Minsal consiguió moderar el 3% original, pero absorberá el ajuste con gestión de ausentismo, recursos humanos y bienes y servicios.",
+    tipo: "decision",
+    etiqueta: "malo",
+    decisionSlug: "salud-chomali-recorte-25-ausentismo",
+    fuenteUrl:
+      "https://www.latercera.com/nacional/noticia/ministra-chomali-anuncia-que-no-habra-recorte-presupuestario-del-3-para-el-minsal-reajuste-sera-del-25/?outputType=base-amp-type",
+    fuenteMedio: "La Tercera",
+  },
+  {
     slug: "2026-05-05-hacienda-recorta-fet-vina-17581",
     fecha: "2026-05-05",
     titulo: "Hacienda envía recorte de $17.581 millones al FET de reconstrucción de Viña",

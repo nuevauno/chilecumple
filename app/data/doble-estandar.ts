@@ -41,6 +41,48 @@ export interface MentiraContraBoric {
 
 export const CASOS_DOBLE_ESTANDAR: CasoDobleEstandar[] = [
   {
+    slug: "austeridad-estado-vs-segundo-piso-sueldos-altos",
+    categoria: "probidad",
+    fecha: "2026-05-05",
+    actor: "José Antonio Kast, Alejandro Irarrázaval y Segundo Piso",
+    ataque:
+      "El Gobierno llegó con discurso de austeridad, eficiencia estatal y combate a privilegios, mientras Hacienda exige recortes a ministerios y programas.",
+    hechoBoric:
+      "Durante el gobierno anterior, el Segundo Piso, asesores y contratos públicos fueron usados por la derecha como símbolo de operadores, privilegios y captura del Estado.",
+    contraste:
+      "BioBioChile reveló que Irarrázaval, amigo personal de Kast y jefe de asesores, firmó un contrato por $85,1 millones hasta diciembre, con cuotas de hasta $9,5 millones mensuales. Sumado a Valenzuela, el círculo presidencial tiene asesores entre los mejor pagados de los últimos años mientras se pide ajustar beneficios y programas.",
+    fuenteAtaque: {
+      medio: "BioBioChile Investiga",
+      url: "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/04/18/hasta-89-millones-al-mes-el-contrato-de-cristian-valenzuela-uno-de-los-asesores-estrella-de-kast.shtml",
+    },
+    fuenteContraste: {
+      medio: "BioBioChile Investiga",
+      url: "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/05/05/el-contrato-del-gerente-general-de-kast-jefe-de-asesores-ganara-95-millones-mensuales.shtml",
+    },
+    severidad: 4,
+  },
+  {
+    slug: "empleo-tarea-numero-uno-vs-salario-minimo-ipc",
+    categoria: "social",
+    fecha: "2026-05-04",
+    actor: "José Antonio Kast, Jorge Quiroz y Tomás Rau",
+    ataque:
+      "Kast presentó la creación de empleo como la tarea número uno y defendió su megarreforma como camino para mejores sueldos.",
+    hechoBoric:
+      "Durante el ciclo anterior, la derecha exigía que el empleo y el costo de la vida se evaluaran por bolsillo familiar, no solo por indicadores macro.",
+    contraste:
+      "El primer proyecto de salario mínimo del Gobierno sube el ingreso de $539.000 a $546.546: $7.546 más, amarrado al IPC enero-marzo. La CUT pedía $647.000. La señal para grandes inversiones es invariabilidad y rebajas; para el piso laboral, inflación pasada.",
+    fuenteAtaque: {
+      medio: "El País Chile",
+      url: "https://elpais.com/chile/2026-04-22/kast-presenta-su-megarreforma-y-la-envia-al-congreso-la-tarea-numero-uno-es-generar-empleo-el-resto-es-musica.html",
+    },
+    fuenteContraste: {
+      medio: "BioBioChile",
+      url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/04/mantener-poder-adquisitivo-de-familias-las-razones-del-ejecutivo-para-sumar-7-546-a-sueldo-minimo.shtml",
+    },
+    severidad: 4,
+  },
+  {
     slug: "reconstruccion-promesa-vs-fet-vina-recortado",
     categoria: "institucional",
     fecha: "2026-05-05",

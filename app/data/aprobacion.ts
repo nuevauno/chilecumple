@@ -100,6 +100,28 @@ export const ENCUESTAS: EncuestaPunto[] = [
     fuenteUrl:
       "https://www.biobiochile.cl/noticias/nacional/chile/2026/04/30/cadem-desaprobacion-de-kast-sube-a-57-y-caen-expectativas-en-economia-seguridad-e-inmigracion.shtml",
   },
+  {
+    slug: "cadem-2026-05-03",
+    encuestadora: "Cadem",
+    fecha: "2026-05-03",
+    aprobacion: 39,
+    desaprobacion: 57,
+    notas:
+      "Aprobacion cae a 39%, minimo desde la asuncion. 67% cree que el Estado esta sobrepasado por la delincuencia, 78% ve al crimen organizado como principal problema, 54% atribuye al Gobierno la principal responsabilidad y 85% califica mala o muy mala la situacion del empleo.",
+    fuenteUrl:
+      "https://www.latercera.com/nacional/noticia/cadem-aprobacion-de-kast-cae-a-su-nivel-mas-bajo-desde-que-asumio-y-67-cree-que-el-estado-esta-siendo-sobrepasado-por-la-delincuencia/?outputType=base-amp-type",
+  },
+  {
+    slug: "pulso-ciudadano-2026-04-q2",
+    encuestadora: "Pulso Ciudadano",
+    fecha: "2026-04-30",
+    aprobacion: 29.1,
+    desaprobacion: 55.6,
+    notas:
+      "Pulso Ciudadano abril Q2 registra 29,1% de aprobacion presidencial y 55,6% de desaprobacion. El gabinete marca 24,1% de aprobacion y 62,7% de desaprobacion.",
+    fuenteUrl:
+      "https://www.biobiochile.cl/static/documentos/2026/05/260981_pulso_ciudadano_abril_q2_2026_0430_v1.pdf?title=PULSO_CIUDADANO_ABRIL_Q2_2026_0430_V1",
+  },
 ];
 
 export const SERIE_CADEM = ENCUESTAS.filter((e) => e.encuestadora === "Cadem")
@@ -141,6 +163,31 @@ export const PERCEPCION_CLAVES = [
     valor: "57%",
     afirma: "desaprueba la gestion presidencial, maximo del mandato",
     fuente: "Cadem 28-abr-2026",
+  },
+  {
+    valor: "39%",
+    afirma: "aprueba la gestion presidencial, minimo desde la asuncion",
+    fuente: "Cadem 3-may-2026",
+  },
+  {
+    valor: "29,1%",
+    afirma: "aprueba la gestion presidencial en Pulso Ciudadano abril Q2",
+    fuente: "Pulso Ciudadano 30-abr-2026",
+  },
+  {
+    valor: "24,1%",
+    afirma: "aprueba al gabinete; 62,7% lo desaprueba",
+    fuente: "Pulso Ciudadano 30-abr-2026",
+  },
+  {
+    valor: "67%",
+    afirma: "cree que el Estado esta sobrepasado por la delincuencia",
+    fuente: "Cadem 3-may-2026",
+  },
+  {
+    valor: "85%",
+    afirma: "califica mala o muy mala la situacion del empleo",
+    fuente: "Cadem 3-may-2026",
   },
   {
     valor: "59%",

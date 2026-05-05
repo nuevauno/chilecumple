@@ -149,17 +149,25 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
   },
   {
     ministerioSlug: "salud",
-    titulo: "Salud: 46 programas bajo lupa, con 25 cierres o reformulaciones",
+    titulo: "Salud: Chomali baja el ajuste a 2,5%, pero mantiene tijera en gestión y compras",
     resumen:
-      "La Tercera cifró en 46 los programas de Salud bajo revisión: 21 con ajuste y 25 con cierre o reformulación. El listado se cruza con alertas previas por salud mental, prevención del suicidio, listas de espera, especialistas, VIH, inmunizaciones, APS y tratamientos críticos.",
-    fecha: "2026-04-30",
+      "La Tercera reportó que Chomali confirmó ante el Senado un ajuste final de 2,5% para Salud, menor al 3% original. La ministra dice que no tocará dotación asistencial ni programas 2026; el ahorro vendría de ausentismo, RR.HH., bienes y servicios. El anexo 2027 mantiene 46 programas bajo lupa.",
+    fecha: "2026-05-04",
     fuenteUrl:
-      "https://www.latercera.com/nacional/noticia/educacion-desarrollo-social-y-salud-tienen-el-37-de-los-402-programas-que-quiroz-sugiere-ajustar-o-descontinuar/",
+      "https://www.latercera.com/nacional/noticia/ministra-chomali-anuncia-que-no-habra-recorte-presupuestario-del-3-para-el-minsal-reajuste-sera-del-25/?outputType=base-amp-type",
     fuenteMedio: "La Tercera",
     programasDescontinuar: 25,
     programasAjuste: 21,
-    montoTexto: "más de $300 mil millones",
+    montoTexto: "2,5% de ajuste 2026 / $99.800 millones en bienes y servicios / 46 programas bajo lupa 2027",
     destacados: [
+      "Ajuste Minsal baja de 3% a 2,5%",
+      "Servicios de Salud afectados en menos de 1% del gasto estimado",
+      "Gestión de ausentismo y licencias médicas",
+      "Eficiencia en recursos humanos",
+      "$99.800 millones en bienes y servicios",
+      "Compras coordinadas vía Cenabast",
+      "No reducción directa de dotación asistencial, según Minsal",
+      "52 programas vigentes serán revisados",
       "Programa Nacional de Prevención del Suicidio",
       "Programa Salud Mental en APS",
       "Hospitalización Domiciliaria",
@@ -171,7 +179,7 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
       "Programa de Salud Trans",
     ],
     cautela:
-      "The Clinic reporta el monto agregado; La Tercera recogió la alerta gremial del 25 de abril sobre continuidad de tratamientos críticos. Ese mismo día, Jaime Mañalich advirtió que cortar Camas Sociosanitarias u Hospitalización Domiciliaria podría incluso aumentar el gasto.",
+      "La rebaja de 2,5% corresponde al ajuste 2026 informado por Chomali. Las recomendaciones sobre 46 programas pertenecen al anexo 2027. La promesa oficial de no tocar atención debe verificarse con listas de espera, stock de medicamentos, reemplazos, licencias y ejecución hospitalaria.",
   },
   {
     ministerioSlug: "transportes",

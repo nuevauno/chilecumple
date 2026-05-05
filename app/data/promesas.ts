@@ -214,7 +214,11 @@ export const PROMESAS: Promesa[] = [
       "Subsidio para contrataciones formales con foco en jovenes, mujeres y reincorporacion de personas desempleadas de larga duracion.",
     estado: "en_proceso",
     eje: "trabajo",
-    decisionesRelacionadas: ["trabajo-ajuste-fiscal-reducciones-personal", "salario-minimo-562000-sin-acuerdo-cut"],
+    decisionesRelacionadas: [
+      "trabajo-ajuste-fiscal-reducciones-personal",
+      "salario-minimo-562000-sin-acuerdo-cut",
+      "salario-minimo-7546-ipc-suma-urgencia",
+    ],
     fuenteUrls: [
       {
         url: "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/04/29/la-tasa-de-desocupaci%C3%B3n-nacional-fue-8-9-en-el-trimestre-enero-marzo-de-2026",
@@ -236,9 +240,14 @@ export const PROMESAS: Promesa[] = [
         medio: "T13",
         titulo: "Kast llama a aislar a violentistas en marcha CUT",
       },
+      {
+        url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/04/mantener-poder-adquisitivo-de-familias-las-razones-del-ejecutivo-para-sumar-7-546-a-sueldo-minimo.shtml",
+        medio: "BioBioChile",
+        titulo: "Gobierno ingresa reajuste de salario mínimo de $7.546",
+      },
     ],
     cuerpo:
-      "Incluido en la megareforma. Meta del Gobierno: bajar la tasa de desempleo al 6,5% al fin del periodo. La primera base pública exigente quedó el 29 de abril: el INE informó desocupación nacional de 8,9% en el trimestre enero-marzo de 2026, con tasa ajustada estacionalmente de 8,7%. La ocupación subió apenas 0,5% en doce meses y el aumento se explicó por asalariados informales y cuenta propia; la informalidad llegó a 26,5%. La promesa queda en proceso, pero la vara ya no es solo crear empleos: debe crear empleo formal, no trasladar el ajuste al trabajo informal.\n\nEl 1 de mayo endureció la vara. Kast habló de emergencia laboral, 900 mil personas sin trabajo formal digno y 2,5 millones en informalidad; ese mismo día Rau defendió el ajuste fiscal y no descartó reducciones de personal en ministerios. Si la tarea numero uno es empleo, el seguimiento debe medir tanto nuevos puestos privados como eventuales pérdidas de empleo público generadas por el ajuste.",
+      "Incluido en la megareforma. Meta del Gobierno: bajar la tasa de desempleo al 6,5% al fin del periodo. La primera base pública exigente quedó el 29 de abril: el INE informó desocupación nacional de 8,9% en el trimestre enero-marzo de 2026, con tasa ajustada estacionalmente de 8,7%. La ocupación subió apenas 0,5% en doce meses y el aumento se explicó por asalariados informales y cuenta propia; la informalidad llegó a 26,5%. La promesa queda en proceso, pero la vara ya no es solo crear empleos: debe crear empleo formal, no trasladar el ajuste al trabajo informal.\n\nEl 1 de mayo endureció la vara. Kast habló de emergencia laboral, 900 mil personas sin trabajo formal digno y 2,5 millones en informalidad; ese mismo día Rau defendió el ajuste fiscal y no descartó reducciones de personal en ministerios. El 4 de mayo, además, el Gobierno ingresó un salario mínimo que sube solo $7.546, de $539.000 a $546.546, atado al IPC enero-marzo, pese a que la CUT había pedido $647.000. Si la tarea numero uno es empleo, el seguimiento debe medir nuevos puestos privados, eventuales pérdidas de empleo público y poder adquisitivo real de los sueldos más bajos.",
   },
   {
     slug: "crecimiento-4-pct",
@@ -311,6 +320,7 @@ export const PROMESAS: Promesa[] = [
       "pgu-te-amo-pgu-rebaja-444425-millones",
       "ciper-rebaja-260-beneficios-sociales",
       "salario-minimo-562000-sin-acuerdo-cut",
+      "salario-minimo-7546-ipc-suma-urgencia",
     ],
     fuenteUrls: [
       {
@@ -358,9 +368,14 @@ export const PROMESAS: Promesa[] = [
         medio: "El Desconcierto",
         titulo: "Gobierno y CUT no alcanzan acuerdo por sueldo mínimo",
       },
+      {
+        url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/04/mantener-poder-adquisitivo-de-familias-las-razones-del-ejecutivo-para-sumar-7-546-a-sueldo-minimo.shtml",
+        medio: "BioBioChile",
+        titulo: "Gobierno propone alza de $7.546 al sueldo mínimo",
+      },
     ],
     cuerpo:
-      "Esta es la promesa social más nítida porque fue repetida con marca de campaña. En julio de 2025 se instaló “Te amo PGU”; en septiembre Kast dijo que la PGU no se toca; y en diciembre, en el debate Anatel, sostuvo que no iban a terminar con la PGU. La promesa no era ambigua: el beneficio quedaba fuera del ajuste.\n\nEl oficio de Hacienda contradice esa línea al poner la PGU entre 260 programas con rebaja recomendada de al menos 15%. CIPER reportó que, dentro de esa lista, la PGU es el programa con mayor ejecución 2025: $2.962.836 millones. Una rebaja de 15% sobre esa base equivale a $444.425 millones, pero BioBioChile publicó una proyección mayor: $906 mil millones. El Consejo Consultivo Previsional proyectó 2.830.860 beneficiarios PGU para 2026; por eso no es un recorte técnico menor, es tocar el piso previsional de adultos mayores.\n\nLa defensa posterior de Quiroz no resuelve el problema. El ministro dijo que no afectarán beneficios obtenidos conforme a la ley y habló de eficiencia, fraude social o mal gasto. Si el recorte no baja pagos actuales, el foco se desplaza a dos zonas igual de sensibles: depurar beneficiarios por supuestos incumplimientos o intervenir la expansión. ChileAtiende fija el aumento a $250.275 para personas de 75 años o más desde septiembre de 2026 y para 65 años o más desde septiembre de 2027. Tocar calendario, cobertura, requisitos o acceso futuro también sería tocar la PGU.\n\nEl flanco social se amplía con salario mínimo. En la previa del 1 de mayo, el Gobierno ofreció subirlo de $539.000 a $562.000, $23.000 más, mientras la CUT pidió $647.000 para avanzar hacia salario vital. No es el mismo instrumento que la PGU, pero sí golpea la coherencia del relato: la agenda ofrece rebajas tributarias e invariabilidad a grandes inversiones, mientras el piso laboral recibe una propuesta acotada al IPC.",
+      "Esta es la promesa social más nítida porque fue repetida con marca de campaña. En julio de 2025 se instaló “Te amo PGU”; en septiembre Kast dijo que la PGU no se toca; y en diciembre, en el debate Anatel, sostuvo que no iban a terminar con la PGU. La promesa no era ambigua: el beneficio quedaba fuera del ajuste.\n\nEl oficio de Hacienda contradice esa línea al poner la PGU entre 260 programas con rebaja recomendada de al menos 15%. CIPER reportó que, dentro de esa lista, la PGU es el programa con mayor ejecución 2025: $2.962.836 millones. Una rebaja de 15% sobre esa base equivale a $444.425 millones, pero BioBioChile publicó una proyección mayor: $906 mil millones. El Consejo Consultivo Previsional proyectó 2.830.860 beneficiarios PGU para 2026; por eso no es un recorte técnico menor, es tocar el piso previsional de adultos mayores.\n\nLa defensa posterior de Quiroz no resuelve el problema. El ministro dijo que no afectarán beneficios obtenidos conforme a la ley y habló de eficiencia, fraude social o mal gasto. Si el recorte no baja pagos actuales, el foco se desplaza a dos zonas igual de sensibles: depurar beneficiarios por supuestos incumplimientos o intervenir la expansión. ChileAtiende fija el aumento a $250.275 para personas de 75 años o más desde septiembre de 2026 y para 65 años o más desde septiembre de 2027. Tocar calendario, cobertura, requisitos o acceso futuro también sería tocar la PGU.\n\nEl flanco social se amplía con salario mínimo. En la previa del 1 de mayo, el Gobierno ofreció subirlo de $539.000 a $562.000, $23.000 más, mientras la CUT pidió $647.000 para avanzar hacia salario vital. El proyecto final fue todavía más acotado en el primer tramo: $546.546 desde mayo, solo $7.546 más, por IPC enero-marzo. No es el mismo instrumento que la PGU, pero sí golpea la coherencia del relato: la agenda ofrece rebajas tributarias e invariabilidad a grandes inversiones, mientras el piso laboral recibe una actualización mínima por inflación pasada.",
   },
   {
     slug: "no-recorte-vulnerables",
@@ -488,19 +503,24 @@ export const PROMESAS: Promesa[] = [
     slug: "proteger-atencion-salud-publica",
     titulo: "No afectar la atención de pacientes en la red pública",
     resumen:
-      "El Gobierno sostuvo que el recorte de 3% a Salud no debía afectar la atención. Los gremios de la red pública respondieron que el ajuste equivale a $517.532 millones y que no existe margen significativo sin impactar a usuarios, listas de espera y capacidad de respuesta.",
+      "El Gobierno sostuvo que el recorte a Salud no debía afectar la atención. Chomali consiguió bajar la meta de 3% a 2,5%, pero el ajuste sigue y se cargará a ausentismo, recursos humanos y bienes y servicios.",
     estado: "contradictoria",
     eje: "salud",
-    decisionesRelacionadas: ["salud-recorte-3-pct-gremios"],
+    decisionesRelacionadas: ["salud-recorte-3-pct-gremios", "salud-chomali-recorte-25-ausentismo"],
     fuenteUrls: [
       {
         url: "https://www.latercera.com/nacional/noticia/gremios-solicitan-a-kast-que-reconsidere-recorte-del-3-a-salud-es-un-impacto-directo-a-usuarios-que-dependen-del-sistema-publico/",
         medio: "La Tercera",
         titulo: "Gremios solicitan a Kast que reconsidere recorte de 3% a Salud",
       },
+      {
+        url: "https://www.latercera.com/nacional/noticia/ministra-chomali-anuncia-que-no-habra-recorte-presupuestario-del-3-para-el-minsal-reajuste-sera-del-25/?outputType=base-amp-type",
+        medio: "La Tercera",
+        titulo: "Chomali confirma recorte de 2,5% en el Minsal",
+      },
     ],
     cuerpo:
-      "La contradicción es directa: la ministra May Chomali aseguró que el recorte no debería afectar la atención de pacientes, pero cuatro gremios de salud llegaron a La Moneda a pedir que Kast retirara la medida. Su advertencia fue específica: el presupuesto ya venía estrecho, el recorte adelantaría el agotamiento de recursos y podría aumentar listas de espera, deteriorar la calidad de la atención y sobrecargar al personal. Si la promesa era eficiencia sin tocar usuarios, Salud se convirtió en el primer test fallido.",
+      "La contradicción es directa: la ministra May Chomali aseguró que el recorte no debería afectar la atención de pacientes, pero cuatro gremios de salud llegaron a La Moneda a pedir que Kast retirara la medida. Su advertencia fue específica: el presupuesto ya venía estrecho, el recorte adelantaría el agotamiento de recursos y podría aumentar listas de espera, deteriorar la calidad de la atención y sobrecargar al personal.\n\nEl 4 de mayo Chomali informó al Senado que el ajuste final será de 2,5%, no de 3%. La moderación no elimina el test: la ministra dijo que el ahorro vendrá de gestión de ausentismo, RR.HH., turnos, reemplazos, compras coordinadas y $99.800 millones en bienes y servicios. Si la promesa era eficiencia sin tocar usuarios, ahora debe probarse con indicadores de atención, listas de espera, stock de medicamentos y dotación clínica real.",
   },
   {
     slug: "no-reformar-isapres",
@@ -554,10 +574,13 @@ export const PROMESAS: Promesa[] = [
     slug: "probidad-sin-dobles-sueldos",
     titulo: "Tolerancia cero a dobles sueldos y privilegios estatales",
     resumen:
-      "La línea de probidad quedó tensionada por asesores de La Moneda con cargos de elección popular vigentes durante la transición. La Tercera registró pagos simultáneos y diputados del PDG recurrieron a Contraloría.",
+      "La línea de probidad quedó tensionada por asesores de La Moneda con cargos de elección popular vigentes durante la transición y por contratos altos en el Segundo Piso. BioBioChile reveló que Irarrázaval ganará hasta $9,5 millones mensuales y Valenzuela hasta $8,9 millones.",
     estado: "contradictoria",
     eje: "transparencia",
-    decisionesRelacionadas: ["doble-funcion-asesores-presidenciales"],
+    decisionesRelacionadas: [
+      "doble-funcion-asesores-presidenciales",
+      "segundo-piso-irarrazaval-contrato-95-millones",
+    ],
     fuenteUrls: [
       {
         url: "https://www.latercera.com/politica/noticia/transparencia-revela-cuanto-han-percibido-asesores-de-kast-por-doble-funcion-en-cargos-de-eleccion-popular/",
@@ -569,9 +592,14 @@ export const PROMESAS: Promesa[] = [
         medio: "La Tercera",
         titulo: "Diputados del PDG recurren a Contraloría por asesores presidenciales con doble sueldo",
       },
+      {
+        url: "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/05/05/el-contrato-del-gerente-general-de-kast-jefe-de-asesores-ganara-95-millones-mensuales.shtml",
+        medio: "BioBioChile Investiga",
+        titulo: "El contrato del jefe de asesores de Kast por hasta $9,5 millones mensuales",
+      },
     ],
     cuerpo:
-      "El Gobierno sostiene que se trató de pagos acotados de transición y no de una doble remuneración permanente. Aun así, el estándar político era más alto que la legalidad mínima: no instalar dobles funciones ni privilegios estatales. La jefa de gabinete y asesores del Segundo Piso abrieron el primer flanco de probidad del círculo presidencial.",
+      "El Gobierno sostiene que se trató de pagos acotados de transición y no de una doble remuneración permanente. Aun así, el estándar político era más alto que la legalidad mínima: no instalar dobles funciones ni privilegios estatales. La jefa de gabinete y asesores del Segundo Piso abrieron el primer flanco de probidad del círculo presidencial.\n\nEl segundo flanco ya no es doble sueldo, sino austeridad y transparencia. BioBioChile Investiga reportó que Alejandro Irarrázaval, jefe de asesores y amigo personal de Kast, firmó un contrato por $85,1 millones hasta diciembre, con cuotas mensuales de hasta $9,5 millones, aún no publicado en Transparencia al momento de la nota. Sumado al contrato de Cristián Valenzuela por hasta $8,9 millones, el Segundo Piso concentra asesores de alto costo mientras el Gobierno pide recortes y eficiencia al resto del Estado.",
   },
   {
     slug: "politica-exterior-marca-chile",

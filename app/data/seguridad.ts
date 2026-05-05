@@ -7,6 +7,32 @@ import type { IndicadorSeguridad } from "./types";
  */
 export const INDICADORES_SEGURIDAD: IndicadorSeguridad[] = [
   {
+    slug: "cadem-estado-sobrepasado-delincuencia",
+    titulo: "Cadem: Estado sobrepasado por delincuencia",
+    valor: "67%",
+    contra: "30% cree que el Estado tiene capacidad para controlarla",
+    lectura:
+      "Aunque cae la percepción de aumento de la delincuencia, la mayoría sigue viendo al Estado sobrepasado. Para el 54%, el primer responsable de resolver el problema es el Gobierno.",
+    fuente: "La Tercera / Cadem",
+    fuenteUrl:
+      "https://www.latercera.com/nacional/noticia/cadem-aprobacion-de-kast-cae-a-su-nivel-mas-bajo-desde-que-asumio-y-67-cree-que-el-estado-esta-siendo-sobrepasado-por-la-delincuencia/?outputType=base-amp-type",
+    fecha: "2026-05-04",
+    signo: "en_contra",
+  },
+  {
+    slug: "cadem-crimen-organizado-principal-problema",
+    titulo: "Cadem: crimen organizado domina la agenda de seguridad",
+    valor: "78%",
+    contra: "20% apunta a delincuencia comun",
+    lectura:
+      "El Gobierno prometió control rápido de seguridad, pero la ciudadanía identifica narcotráfico, sicariatos, secuestros y bandas como el problema principal. La prioridad declarada por la encuesta es enfrentar crimen organizado y narcotráfico.",
+    fuente: "Cadem",
+    fuenteUrl:
+      "https://www.biobiochile.cl/static/documentos/2026/05/track-pp-651-mayo-s1-m1-vf.pdf",
+    fecha: "2026-05-03",
+    signo: "en_contra",
+  },
+  {
     slug: "homicidios-2025-baja-antes-kast",
     titulo: "Homicidios 2025 antes del cambio de mando",
     valor: "−11,5%",

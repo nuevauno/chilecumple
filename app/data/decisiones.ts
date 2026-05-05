@@ -9,6 +9,86 @@ const montoDescontinuado = PROGRAMAS_MDSYF
 
 export const DECISIONES: Decision[] = [
   {
+    slug: "segundo-piso-irarrazaval-contrato-95-millones",
+    titulo: "BioBio revela contrato de Irarrázaval: hasta $9,5 millones al mes en el Segundo Piso",
+    resumen:
+      "BioBioChile Investiga reportó que Alejandro Irarrázaval, amigo personal de Kast y jefe de asesores del Segundo Piso, firmó un contrato por $85,1 millones hasta diciembre de 2026, con cuotas mensuales de hasta $9,5 millones. La remuneración no aparecía aún publicada en Transparencia.",
+    fecha: "2026-05-05",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "secretaria-general-gobierno",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/05/05/el-contrato-del-gerente-general-de-kast-jefe-de-asesores-ganara-95-millones-mensuales.shtml",
+        medio: "BioBioChile Investiga",
+        titulo: "El contrato del “gerente general” de Kast: jefe de asesores ganará $9,5 millones mensuales",
+      },
+      {
+        url: "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/04/18/hasta-89-millones-al-mes-el-contrato-de-cristian-valenzuela-uno-de-los-asesores-estrella-de-kast.shtml",
+        medio: "BioBioChile Investiga",
+        titulo: "Sueldo de hasta $8,9 millones al mes: el contrato de Cristián Valenzuela",
+      },
+    ],
+    cuerpo:
+      "El flanco del Segundo Piso ya no es solo de coordinación política. BioBioChile Investiga reportó el 5 de mayo que Alejandro Irarrázaval Alfonso, amigo personal del Presidente y jefe de asesores de La Moneda, percibirá hasta $9,5 millones mensuales mediante un contrato firmado a comienzos de abril. El documento suma $85,1 millones brutos por servicios entre el 11 de marzo y el 31 de diciembre de 2026.\n\nEl dato importa por el contexto. Irarrázaval ha sido descrito como el “gerente general” de Kast y aparece en el centro de las críticas internas por instalación de equipos, coordinación del gabinete y caída de seremis. Según BioBio, su rol formal es coordinador de asesores del gabinete presidencial e incluye seguimiento de compromisos ministeriales, reportes de avance y reuniones con contrapartes técnicas.\n\nLa remuneración está bajo el tope legal, pero el estándar político no era solo legalidad mínima. El Gobierno viene defendiendo recortes, eficiencia y reducción de gasto público mientras dos figuras del Segundo Piso quedan entre los asesores mejor pagados de los últimos ocho años: Cristián Valenzuela con hasta $8,9 millones mensuales e Irarrázaval con hasta $9,5 millones. BioBio agregó que el contrato de Irarrázaval aún no estaba publicado en el Portal de Transparencia.\n\nLa comparación con gobiernos anteriores tensiona el relato de austeridad. La misma nota consigna que los contratos más onerosos del Segundo Piso de Boric rondaban los $6 millones mensuales y que Cristián Larroulet llegó a percibir cerca de $7,8 millones, unos $9,7 millones reajustados. La pregunta fiscalizadora queda clara: si el Ejecutivo exige justificar cada programa social, también debe transparentar con rapidez qué entregables, informes y responsabilidades justifican los contratos más altos de su círculo presidencial.",
+  },
+  {
+    slug: "salario-minimo-7546-ipc-suma-urgencia",
+    titulo: "Gobierno ingresa salario mínimo con alza de solo $7.546 y suma urgencia",
+    resumen:
+      "Tras no llegar a acuerdo con la CUT, Hacienda y Trabajo ingresaron el proyecto que sube el salario mínimo de $539.000 a $546.546 desde mayo: $7.546 más, equivalente al IPC acumulado enero-marzo. La CUT había pedido $647.000.",
+    fecha: "2026-05-04",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "trabajo",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/04/mantener-poder-adquisitivo-de-familias-las-razones-del-ejecutivo-para-sumar-7-546-a-sueldo-minimo.shtml",
+        medio: "BioBioChile",
+        titulo: "“Mantener poder adquisitivo de familias”: las razones del Ejecutivo para sumar $7.546 a sueldo mínimo",
+      },
+      {
+        url: "https://www.latercera.com/pulso/noticia/hacienda-ingresa-proyecto-que-sube-salario-minimo-en-7546/",
+        medio: "La Tercera",
+        titulo: "Hacienda ingresa proyecto que sube salario mínimo en $7.546",
+      },
+      {
+        url: "https://www.t13.cl/noticia/politica/gobierno-ingresa-proyecto-reajuste-sueldo-minimo-ofrece-aumento-7546-4-5-2026",
+        medio: "T13",
+        titulo: "Gobierno ingresa proyecto de reajuste al sueldo mínimo: ofrece aumento de $7.546",
+      },
+    ],
+    cuerpo:
+      "La negociación salarial aterrizó con un número más duro que la oferta previa. BioBioChile, La Tercera y T13 reportaron que el Gobierno ingresó a la Cámara el proyecto de reajuste del ingreso mínimo mensual con suma urgencia: desde el 1 de mayo subiría de $539.000 a $546.546 para trabajadores entre 18 y 65 años. El aumento inmediato es de $7.546, equivalente al 1,4% de IPC acumulado entre enero y marzo de 2026.\n\nEl contraste con la CUT es grande. La multisindical había pedido $647.000 para avanzar hacia salario vital; el Ejecutivo primero había hablado de una fórmula cercana a 4% nominal, pero terminó dividiendo el ajuste y aplicando solo inflación reciente. El segundo reajuste vendría el 1 de enero de 2027, según el IPC acumulado entre abril y diciembre de 2026; La Tercera citó una proyección cercana a 2,6%, mientras BioBio consignó que el informe financiero trabaja con 2,02%.\n\nLa defensa oficial es proteger poder adquisitivo sin dañar empleo formal ni pymes. Pero la propia argumentación del proyecto reconoce un mercado laboral débil: 8,9% de desocupación en enero-marzo, 39 meses seguidos sobre 8% y concentración de nuevos puestos en informalidad. Esa evidencia puede justificar prudencia, pero también deja la pregunta social de fondo: cómo se financia la recuperación si el primer reajuste para los sueldos más bajos solo cubre inflación pasada.\n\nEl informe financiero agrega otro dato sensible: el mayor gasto fiscal de 2026 sería de $12.411 millones y en régimen llegaría a $29.273 millones, por subsidio familiar, asignación familiar y programas de alimentación Junaeb. Es un costo fiscal muy inferior al tamaño de las rebajas tributarias que el Gobierno empuja en la megarreforma. La asimetría vuelve al centro: garantías largas para inversión y reajuste mínimo para el piso laboral.",
+  },
+  {
+    slug: "salud-chomali-recorte-25-ausentismo",
+    titulo: "Chomali confirma recorte de 2,5% en Salud y lo carga a ausentismo, RR.HH. y compras",
+    resumen:
+      "La ministra de Salud informó en el Senado que Hacienda moderó el ajuste de 3% a 2,5%. Dijo que no habrá reducción de dotación asistencial ni cierre de programas 2026, pero que los servicios absorberán el ajuste con gestión de ausentismo, recursos humanos y $99.800 millones en bienes y servicios.",
+    fecha: "2026-05-04",
+    etiqueta: "malo",
+    severidad: 4,
+    ministerioSlug: "salud",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.latercera.com/nacional/noticia/ministra-chomali-anuncia-que-no-habra-recorte-presupuestario-del-3-para-el-minsal-reajuste-sera-del-25/?outputType=base-amp-type",
+        medio: "La Tercera",
+        titulo: "Ministra Chomali confirma que recorte presupuestario en el Minsal será de 2,5%",
+      },
+      {
+        url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/04/07/ministra-chomali-ratifica-recorte-del-3-en-el-minsal-en-medio-de-advertencias-de-los-gremios-de-salud.shtml",
+        medio: "BioBioChile",
+        titulo: "Ministra Chomali ratifica recorte del 3% en el Minsal en medio de advertencias de los gremios",
+      },
+    ],
+    cuerpo:
+      "Salud consiguió una rebaja parcial de la tijera, no una exclusión. La Tercera reportó que May Chomali informó ante la Comisión de Salud del Senado que el ajuste de su cartera será finalmente de 2,5%, no de 3%. La ministra lo presentó como resultado de una negociación difícil con Hacienda y Dipres, marcada por el déficit estructural entre presupuesto y gasto del Minsal.\n\nLa explicación oficial intenta cerrar el flanco asistencial. Chomali dijo que el ajuste preserva recursos críticos, no afecta dotación asistencial, no elimina programas ministeriales en 2026 y no reducirá coberturas ni cargos clínicos directamente vinculados a atención. Según la ministra, la reducción en servicios de salud sería menor a 1% del gasto estimado.\n\nPero la bajada operativa sigue siendo sensible: la ministra habló de eficiencia en recursos humanos y bienes y servicios. En RR.HH. apuntó a gestión de ausentismo, licencias médicas no verdaderas, horas extraordinarias administrativas y mejor control de turnos y reemplazos. En bienes y servicios, mencionó $99.800 millones de eficiencia, compras coordinadas vía Cenabast, interoperabilidad de bodegas y reducción de mermas, vencimientos y compras urgentes.\n\nEl seguimiento no puede quedar en la promesa de no tocar atención. El ajuste ya existe y los gremios habían advertido que un 3% podía equivaler a más de $517 mil millones con impacto sobre una red pública presionada. Con 2,5%, el test ahora es verificable: tiempos de espera, continuidad de programas, stock de medicamentos, reemplazos, licencias, dotación clínica y ejecución hospitalaria deben mostrar que la eficiencia no se transformó en menor acceso para pacientes.",
+  },
+  {
     slug: "vina-fet-recorte-17581-millones-hacienda",
     titulo: "Hacienda recorta $17.581 millones del fondo de emergencia para reconstrucción de Viña",
     resumen:
