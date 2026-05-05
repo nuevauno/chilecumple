@@ -9,6 +9,146 @@ const montoDescontinuado = PROGRAMAS_MDSYF
 
 export const DECISIONES: Decision[] = [
   {
+    slug: "cfa-plan-reconstruccion-deficitario-2031",
+    titulo: "CFA advierte que el Plan de Reconstrucción sería deficitario al menos hasta 2031",
+    resumen:
+      "El Consejo Fiscal Autónomo expuso ante Hacienda que el propio informe financiero del proyecto muestra déficits fiscales hasta 2031, incluso incluyendo efecto crecimiento. Sin crecimiento, el deterioro permanente sería 0,43% del PIB al 2050.",
+    fecha: "2026-05-05",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "hacienda",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/05/cfa-advierte-que-el-plan-de-reconstruccion-seria-deficitario-al-menos-hasta-2031-y-enumera-riesgos.shtml",
+        medio: "BioBioChile",
+        titulo: "CFA advierte que el Plan de Reconstrucción sería deficitario al menos hasta 2031",
+      },
+      {
+        url: "https://www.latercera.com/politica/noticia/presidente-de-la-comision-de-hacienda-asegura-que-megarreforma-se-vota-si-o-si-esta-semana/",
+        medio: "La Tercera",
+        titulo: "Presidente de la comisión de Hacienda asegura que megarreforma se vota sí o sí esta semana",
+      },
+    ],
+    cuerpo:
+      "La alerta fiscal dejó de ser una disputa opositora. BioBioChile reportó que el Consejo Fiscal Autónomo expuso ante la Comisión de Hacienda y advirtió que el Plan de Reconstrucción Nacional sería deficitario al menos hasta 2031. El punto más sensible es que esa trayectoria negativa aparece en el propio informe financiero del proyecto, incluso considerando el efecto crecimiento que el Gobierno usa para defender la neutralidad de la reforma.\n\nEl CFA sostuvo que el balance final depende críticamente de que el crecimiento proyectado ocurra. Sin ese efecto, la iniciativa generaría un deterioro fiscal permanente de 0,43% del PIB en régimen al 2050. Con crecimiento, el balance mejora en el largo plazo, pero el impacto neto seguiría siendo negativo entre 2026 y 2031 y en 2030 todavía habría déficit de 0,3% del PIB.\n\nLa advertencia golpea el corazón del relato oficial: costos ciertos desde el primer año y beneficios graduales, inciertos y dependientes de mayor crecimiento. El Consejo señaló que la neutralidad fiscal exige fuentes adicionales y relevantes de financiamiento que no están contenidas en el proyecto ingresado, porque las fuentes actuales no compensan los menores ingresos fiscales.\n\nLos riesgos listados por el CFA aterrizan en medidas concretas: rebaja de impuesto a empresas, crédito tributario al empleo, exención transitoria de IVA a viviendas nuevas, compensación al Fondo Común Municipal por contribuciones, ahorros menores a los previstos en licencias médicas, incentivos al retiro, menor recaudación por tabaco, gasto sin techo por anulación de RCA y debilitamiento del cumplimiento tributario por nuevas regularizaciones o repatriaciones.\n\nEl seguimiento queda claro: si Hacienda pide tramitar rápido una ley de alto costo, debe responder con financiamiento verificable, no solo con una promesa de crecimiento futuro. La Tercera ya había consignado que el presidente de Hacienda de la Cámara insiste en votar sí o sí esta semana; la advertencia del CFA hace más difícil justificar esa velocidad sin corregir números.",
+  },
+  {
+    slug: "oposicion-23-dudas-megarreforma-cifras",
+    titulo: "Oposiciones levantan 23 dudas sobre la Ley de Reconstrucción por inconsistencias de cifras",
+    resumen:
+      "BioBioChile accedió a documentos opositores con 23 observaciones al proyecto. Entre ellas: una diferencia de $488 mil millones en costos fiscales, cerca de US$400 millones de brecha en impuesto corporativo y dudas por Sence, DFL2, donaciones, gratuidad y compensaciones ambientales.",
+    fecha: "2026-05-05",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "hacienda",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/05/las-23-dudas-de-las-oposiciones-ante-la-ley-de-reconstruccion-senalan-inconsistencias-en-las-cifras.shtml",
+        medio: "BioBioChile",
+        titulo: "Las 23 dudas de las oposiciones ante la Ley de Reconstrucción",
+      },
+      {
+        url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/05/cfa-advierte-que-el-plan-de-reconstruccion-seria-deficitario-al-menos-hasta-2031-y-enumera-riesgos.shtml",
+        medio: "BioBioChile",
+        titulo: "CFA advierte que el Plan de Reconstrucción sería deficitario al menos hasta 2031",
+      },
+    ],
+    cuerpo:
+      "La discusión legislativa acumuló una segunda alerta técnica el mismo día. BioBioChile reportó que las oposiciones levantaron 23 observaciones a la Ley de Reconstrucción Nacional, ordenadas en cinco ejes: inconsistencias del informe financiero, acuerdos que reducen ingresos fiscales, estimaciones de gasto, medidas tributarias y efectos indirectos sobre recaudación y crecimiento.\n\nEl primer nudo es de consistencia interna. La nota consigna que una tabla del informe financiero estima recaudación por adelantamiento de inversiones equivalente a 0,10% del PIB, pero la tabla siguiente registra 0 pesos para la misma iniciativa. La diferencia impacta el costo total: una estimación apunta a 0,09% del PIB, cerca de $350 mil millones, y otra a $838 mil millones. La brecha es de $488 mil millones.\n\nTambién aparecen dudas tributarias duras. En la rebaja del impuesto corporativo de 27% a 23%, la oposición contrasta el informe financiero con el Informe de Estadísticas Tributarias 2026: el efecto de bajar cuatro puntos en el régimen semi integrado sería 0,52% del PIB, unos US$400 millones más que lo afirmado por el Gobierno. En donaciones, advierten posible subestimación de al menos $200 mil millones.\n\nLa lista cruza promesas sociales y permisos. Pide explicar supuestos de gratuidad, beneficiarios del crédito tributario por planilla salarial, ahorro efectivo por terminar la franquicia Sence, falta de cálculo por beneficios DFL2 para propietarios jurídicos y costo fiscal omitido si el Estado debe reembolsar gastos cuando se anule una RCA tras primera calificación.\n\nLa señal política es obvia: una megarreforma no puede pedir tramitación express si sus cifras base tienen diferencias de cientos de miles de millones. La oposición pidió invitar a FMI, Banco Central y OCDE, y el CFA en paralelo advirtió que la neutralidad fiscal requiere financiamiento adicional no incluido en el proyecto.",
+  },
+  {
+    slug: "gam-cancelacion-6274-millones-pago-igual",
+    titulo: "MOP reconoce que cancelar el GAM costará $6.274 millones: habrá que pagar igual",
+    resumen:
+      "BioBioChile Investiga informó que el subsecretario de Obras Públicas calculó $6.274 millones para cerrar anticipadamente el contrato de la segunda etapa del GAM: $720 millones por paralización, $709 millones en estados de pago pendientes y $4.800 millones por término anticipado.",
+    fecha: "2026-05-05",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "obras-publicas",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/05/05/habra-que-pagar-igual-gobierno-reconoce-que-debera-gastar-6-200-millones-por-cancelar-obras-del-gam.shtml",
+        medio: "BioBioChile Investiga",
+        titulo: "Habrá que pagar igual: Gobierno reconoce que deberá gastar $6.200 millones por cancelar obras del GAM",
+      },
+      {
+        url: "https://elpais.com/chile/2026-04-28/el-freno-a-la-ampliacion-del-centro-cultural-gam-le-abre-al-gobierno-de-kast-un-frente-politico-y-cultural.html",
+        medio: "El País Chile",
+        titulo: "El freno a la ampliación del GAM abre un frente político al Gobierno de Kast",
+      },
+    ],
+    cuerpo:
+      "La decisión de frenar la segunda etapa del GAM ya tiene costo reconocido por el propio Gobierno. BioBioChile Investiga reportó que el subsecretario de Obras Públicas, Nicolás Balmaceda, informó en la Comisión de Hacienda del Senado que el Fisco deberá desembolsar $6.274 millones para cumplir el reglamento de contratos de obras públicas tras cancelar el contrato del Consorcio GAM Moller DVC.\n\nEl desglose es concreto: $720 millones por indemnización de paralización de obras, $709 millones por dos estados de pago pendientes y $4.800 millones por indemnización de término anticipado. La frase política de la nota resume el problema: aunque el Gobierno decidió parar por falta de financiamiento futuro, igual debe pagar miles de millones por no continuar.\n\nEsto actualiza el caso abierto por El País. La obra tenía 45% de avance, buscaba ampliar el centro cultural con una gran sala para 2.000 a 2.500 personas y fue detenida 45 días después de reactivarse. El Gobierno sostiene que la adjudicación por $114.000 millones superaba el presupuesto disponible, pero el nuevo dato obliga a comparar dos costos: seguir financiando una obra inconclusa o pagar indemnizaciones, estados pendientes y deterioro potencial por dejarla parada.\n\nLa rendición de cuentas no puede limitarse a decir que no había caja. Si la austeridad termina generando pagos por término anticipado, pérdida de avance físico y menor infraestructura cultural, el Gobierno debe publicar el cálculo comparado, las responsabilidades por la adjudicación y el plan para proteger lo ya construido.",
+  },
+  {
+    slug: "poduje-acata-recortes-minvu-quiroz",
+    titulo: "Poduje retrocede y dice que el Minvu acatará los recortes de Quiroz",
+    resumen:
+      "El Mostrador reportó que, tras días de tensión, Iván Poduje confirmó desde Biobío que implementará los recortes acordados con Hacienda. El giro contrasta con su frase previa de que Quiroz era solo un ministro más y con la defensa de Pavimentos Participativos.",
+    fecha: "2026-05-05",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "vivienda",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.elmostrador.cl/noticias/pais/2026/05/05/funciono-el-llamado-al-orden-poduje-retrocede-y-acatara-recortes-de-quiroz-en-el-minvu/",
+        medio: "El Mostrador",
+        titulo: "Funcionó el llamado al orden: Poduje retrocede y acatará recortes de Quiroz en el Minvu",
+      },
+      {
+        url: "https://www.elmostrador.cl/noticias/pais/2026/04/30/poduje-se-distancia-de-quiroz-se-opone-a-recortes-y-advierte-que-tiene-un-solo-jefe-y-es-kast/",
+        medio: "El Mostrador",
+        titulo: "Poduje se distancia de Quiroz y advierte que tiene un solo jefe",
+      },
+    ],
+    cuerpo:
+      "El choque Poduje-Quiroz cambió de fase. El Mostrador reportó el 5 de mayo que el ministro de Vivienda retrocedió en su enfrentamiento público con Hacienda y afirmó desde la Región del Biobío que el Minvu implementará los recortes acordados con Jorge Quiroz. Su frase marca alineamiento: los ajustes son una necesidad del país y todos los ministros deben trabajar en ese objetivo común.\n\nEl giro importa porque viene apenas días después de una desautorización pública. Poduje había dicho que tenía un solo jefe, José Antonio Kast, y que Quiroz era un ministro más; además defendió Pavimentos Participativos y Mejoramiento de Condominios Sociales frente a las recomendaciones de Hacienda. La Moneda salió luego a ordenar la discusión interna y la vocería de Segpres pidió bajar las diferencias públicas.\n\nLa pregunta fiscalizadora pasa de quién manda a qué se recorta. Si el Minvu acatará el marco de Hacienda, debe transparentar qué partidas quedan protegidas, cuáles se ajustan, qué ocurre con subsidios, pavimentos, condominios, reconstrucción de Viña, Ñuble y Biobío, y cómo evitar que la tijera retrase obras en terreno.\n\nLa señal también reinterpreta el conflicto anterior: si los oficios de Hacienda eran solo recomendaciones sin efecto, no habrían requerido un llamado al orden ni un retroceso público del ministro sectorial. Ahora el seguimiento debe mirar decretos, licitaciones, ejecución regional y cambios presupuestarios efectivos.",
+  },
+  {
+    slug: "sii-registro-social-fiscalizacion-megarreforma",
+    titulo: "Megarreforma daría al SII cruces con Registro Social y datos de beneficiarios",
+    resumen:
+      "La Tercera informó que el SII explicó nuevas facultades ante Hacienda: podría requerir y cruzar datos nominados de órganos públicos, incluyendo información del Registro Social de Hogares y beneficiarios de programas, para fiscalización tributaria y control del llamado fraude social.",
+    fecha: "2026-05-05",
+    etiqueta: "malo",
+    severidad: 3,
+    ministerioSlug: "hacienda",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.latercera.com/pulso/noticia/sii-explica-las-nuevas-facultades-que-le-da-la-megarreforma-ante-comision-de-hacienda/?outputType=base-amp-type",
+        medio: "La Tercera",
+        titulo: "SII explica las nuevas facultades que le da la megarreforma ante Comisión de Hacienda",
+      },
+    ],
+    cuerpo:
+      "La megarreforma no solo baja impuestos o acelera permisos; también amplía facultades de datos del Servicio de Impuestos Internos. La Tercera reportó que el SII expuso ante la Comisión de Hacienda un nuevo artículo 85 quáter que obligaría al Ministerio de Desarrollo Social y a entidades administradoras del instrumento de caracterización socioeconómica a entregar información de personas naturales al Servicio.\n\nSegún la exposición, el SII podría requerir, recibir y cruzar datos nominados de órganos de la administración del Estado, incluyendo registros públicos, para ejercer fiscalización y correcta aplicación de tributos. La justificación oficial es combatir el llamado fraude social, incluyendo falsificación de antecedentes de ingresos y otros datos usados en beneficios.\n\nEl punto sensible es la escala del cruce. La información de beneficiarios de programas sociales y no sociales también debería ser proporcionada al SII y compartida con Dipres, siempre bajo normas de secreto y reserva. La cláusula de confidencialidad es necesaria, pero no reemplaza reglas claras de finalidad, proporcionalidad, auditoría, trazabilidad y sanciones por uso indebido.\n\nEl seguimiento público debe separar dos objetivos legítimos: fiscalizar fraude y proteger datos sociales sensibles. Si el proyecto avanza, el Congreso debiera exigir qué bases se cruzarán, por cuánto tiempo, con qué controles, quién accede, cómo se notifica a las personas afectadas y cómo se evita que un instrumento social se transforme en vigilancia tributaria generalizada.",
+  },
+  {
+    slug: "tapusa-obras-serviu-botadas-biobio",
+    titulo: "Tapusa deja obras Serviu botadas en Biobío y Poduje alista liquidación de contrato",
+    resumen:
+      "BioBioChile reportó que el Minvu prepara la liquidación de contrato con Tapusa por tres obras abandonadas en Concepción y Talcahuano. Hay 400 trabajadores afectados, dineros del GORE involucrados y antecedentes de incumplimientos en O'Higgins, además de obras de la firma en Ñuble.",
+    fecha: "2026-05-05",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "vivienda",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/05/05/alistan-liquidacion-de-contrato-con-empresa-tapusa-que-abandono-tres-obras-en-gran-concepcion.shtml",
+        medio: "BioBioChile",
+        titulo: "Alistan liquidación de contrato con empresa Tapusa que abandonó tres obras en Gran Concepción",
+      },
+    ],
+    cuerpo:
+      "El problema de reconstrucción y obras públicas también bajó a contratos regionales. BioBioChile reportó que el Minvu alista la liquidación de contrato con Tapusa, empresa española que abandonó tres obras Serviu en Concepción y Talcahuano. Poduje anticipó que, si la empresa no responde, buscarán iniciar una nueva licitación y adjudicar continuidad por trato directo.\n\nEl caso tiene impacto territorial inmediato: tres obras paralizadas, 400 trabajadores afectados, vecinos esperando por el eje Colón y el puente Perales, además de recursos del Gobierno Regional del Biobío involucrados. El alcalde de Talcahuano pidió mejorar los procesos para no concentrar demasiados contratos en una sola empresa, porque cuando falla se afecta la calidad de vida de barrios completos.\n\nLa alerta es nacional porque Tapusa no solo opera en Biobío. La nota consigna obras de la empresa en Ñuble y O'Higgins; en esta última región, el Serviu ya tuvo que liquidar un contrato por incumplimientos y retrasos. Ese patrón exige revisar adjudicaciones, garantías, fiscalización de avance físico y capacidad real de contratistas.\n\nPara el Gobierno, el caso tensiona dos relatos a la vez: eficiencia del gasto y aceleración de obras. Si la respuesta será trato directo, debe venir con controles fuertes para no reemplazar lentitud por opacidad. El seguimiento debe mirar plazos de relicitación, pago a trabajadores, recuperación de avance y responsabilidades de inspección técnica.",
+  },
+  {
     slug: "segundo-piso-irarrazaval-contrato-95-millones",
     titulo: "BioBio revela contrato de Irarrázaval: hasta $9,5 millones al mes en el Segundo Piso",
     resumen:

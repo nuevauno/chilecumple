@@ -7,6 +7,84 @@ import type { EventoCronologia } from "./types";
  */
 export const CRONOLOGIA: EventoCronologia[] = [
   {
+    slug: "2026-05-05-cfa-deficit-plan-reconstruccion-2031",
+    fecha: "2026-05-05",
+    titulo: "CFA advierte déficit del Plan de Reconstrucción al menos hasta 2031",
+    resumen:
+      "El Consejo Fiscal Autónomo dijo que el informe financiero del proyecto mantiene impacto neto negativo entre 2026 y 2031 y que la neutralidad fiscal exige financiamiento adicional no incluido.",
+    tipo: "decision",
+    etiqueta: "feo",
+    decisionSlug: "cfa-plan-reconstruccion-deficitario-2031",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/05/cfa-advierte-que-el-plan-de-reconstruccion-seria-deficitario-al-menos-hasta-2031-y-enumera-riesgos.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
+    slug: "2026-05-05-oposicion-23-dudas-reconstruccion",
+    fecha: "2026-05-05",
+    titulo: "Oposiciones levantan 23 dudas por cifras de la Ley de Reconstrucción",
+    resumen:
+      "BioBioChile reportó observaciones por diferencias de $488 mil millones en costos fiscales, brecha cercana a US$400 millones en impuesto corporativo y omisiones en donaciones, Sence, DFL2, gratuidad y RCA.",
+    tipo: "escandalo",
+    etiqueta: "feo",
+    decisionSlug: "oposicion-23-dudas-megarreforma-cifras",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/05/las-23-dudas-de-las-oposiciones-ante-la-ley-de-reconstruccion-senalan-inconsistencias-en-las-cifras.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
+    slug: "2026-05-05-gam-cancelacion-6274-millones",
+    fecha: "2026-05-05",
+    titulo: "MOP reconoce $6.274 millones por cancelar obras del GAM",
+    resumen:
+      "BioBioChile Investiga consignó que el Fisco deberá pagar $720 millones por paralización, $709 millones en estados de pago y $4.800 millones por término anticipado del contrato.",
+    tipo: "decision",
+    etiqueta: "feo",
+    decisionSlug: "gam-cancelacion-6274-millones-pago-igual",
+    fuenteUrl:
+      "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/05/05/habra-que-pagar-igual-gobierno-reconoce-que-debera-gastar-6-200-millones-por-cancelar-obras-del-gam.shtml",
+    fuenteMedio: "BioBioChile Investiga",
+  },
+  {
+    slug: "2026-05-05-poduje-acata-recortes-minvu",
+    fecha: "2026-05-05",
+    titulo: "Poduje retrocede y confirma que el Minvu acatará recortes de Hacienda",
+    resumen:
+      "El Mostrador reportó que, tras el llamado al orden, Poduje dijo que implementará los recortes acordados con Quiroz y que todos los ministros deben cumplir el objetivo fiscal común.",
+    tipo: "decision",
+    etiqueta: "feo",
+    decisionSlug: "poduje-acata-recortes-minvu-quiroz",
+    fuenteUrl:
+      "https://www.elmostrador.cl/noticias/pais/2026/05/05/funciono-el-llamado-al-orden-poduje-retrocede-y-acatara-recortes-de-quiroz-en-el-minvu/",
+    fuenteMedio: "El Mostrador",
+  },
+  {
+    slug: "2026-05-05-sii-registro-social-cruces",
+    fecha: "2026-05-05",
+    titulo: "SII explica nuevas facultades para cruzar datos sociales y tributarios",
+    resumen:
+      "La Tercera informó que la megarreforma permitiría al SII recibir datos nominados de órganos públicos, Registro Social y beneficiarios de programas para fiscalización y control del llamado fraude social.",
+    tipo: "decision",
+    etiqueta: "malo",
+    decisionSlug: "sii-registro-social-fiscalizacion-megarreforma",
+    fuenteUrl:
+      "https://www.latercera.com/pulso/noticia/sii-explica-las-nuevas-facultades-que-le-da-la-megarreforma-ante-comision-de-hacienda/?outputType=base-amp-type",
+    fuenteMedio: "La Tercera",
+  },
+  {
+    slug: "2026-05-05-tapusa-obras-serviu-biobio",
+    fecha: "2026-05-05",
+    titulo: "Minvu alista liquidar contrato de Tapusa por tres obras Serviu abandonadas",
+    resumen:
+      "BioBioChile reportó tres obras paralizadas en Concepción y Talcahuano, 400 trabajadores afectados y antecedentes de incumplimientos de Tapusa en O'Higgins, además de presencia en Ñuble.",
+    tipo: "escandalo",
+    etiqueta: "feo",
+    decisionSlug: "tapusa-obras-serviu-botadas-biobio",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/nacional/region-del-bio-bio/2026/05/05/alistan-liquidacion-de-contrato-con-empresa-tapusa-que-abandono-tres-obras-en-gran-concepcion.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
     slug: "2026-05-05-irarrazaval-contrato-95-millones",
     fecha: "2026-05-05",
     titulo: "BioBio revela contrato de Irarrázaval por hasta $9,5 millones mensuales",

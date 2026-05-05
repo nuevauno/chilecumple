@@ -199,33 +199,36 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
     ministerioSlug: "obras-publicas",
     titulo: "Obras Públicas: freno al GAM abre costo cultural y fiscal",
     resumen:
-      "El País reportó que el MOP paralizó la segunda etapa del Centro Cultural Gabriela Mistral por falta de presupuesto. La decisión deja una obra cultural con 45% de avance, una adjudicación por $114.000 millones en disputa y posibles compensaciones cercanas a $6.000 millones.",
-    fecha: "2026-04-28",
+      "El País reportó que el MOP paralizó la segunda etapa del Centro Cultural Gabriela Mistral por falta de presupuesto. El 5 de mayo, BioBioChile Investiga agregó que el propio MOP calculó $6.274 millones para cancelar el contrato: paralización, estados de pago pendientes y término anticipado.",
+    fecha: "2026-05-05",
     fuenteUrl:
-      "https://elpais.com/chile/2026-04-28/el-freno-a-la-ampliacion-del-centro-cultural-gam-le-abre-al-gobierno-de-kast-un-frente-politico-y-cultural.html",
-    fuenteMedio: "El País Chile",
-    montoTexto: "$114.000 millones adjudicados / $6.000 millones en compensaciones estimadas",
+      "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/05/05/habra-que-pagar-igual-gobierno-reconoce-que-debera-gastar-6-200-millones-por-cancelar-obras-del-gam.shtml",
+    fuenteMedio: "BioBioChile Investiga",
+    montoTexto: "$114.000 millones adjudicados / $6.274 millones por cancelar",
     destacados: [
       "Segunda etapa del GAM",
       "45% de avance heredado",
       "Sala de 2.500 espectadores",
       "Riesgo de deterioro de obra construida",
-      "Compensaciones estimadas por Claudio Orrego",
+      "$720 millones por paralización",
+      "$709 millones por estados de pago pendientes",
+      "$4.800 millones por término anticipado",
     ],
     cautela:
-      "No corresponde al anexo de programas del Oficio N°16; es una decisión MOP por presupuesto y costo de adjudicación. Se incluye porque opera bajo la misma narrativa de austeridad y deja costo fiscal asociado.",
+      "No corresponde al anexo de programas del Oficio N°16; es una decisión MOP por presupuesto y costo de adjudicación. Se incluye porque opera bajo la misma narrativa de austeridad y deja un costo fiscal reconocido por el propio Gobierno.",
   },
   {
     ministerioSlug: "vivienda",
-    titulo: "Vivienda: Poduje rechaza tijera, pero Hacienda ajusta el FET de Viña",
+    titulo: "Vivienda: Poduje acata tijera y Hacienda ajusta el FET de Viña",
     resumen:
-      "El Mostrador reportó que Poduje descartó recortar Pavimentos Participativos y Mejoramiento de Condominios Sociales. El 5 de mayo, The Clinic agregó que Hacienda envió a Contraloría un decreto con $17.581 millones menos para el Fondo de Emergencia de reconstrucción de Viña, sin aviso previo al Minvu según la nota.",
+      "El Mostrador reportó que Poduje retrocedió y confirmó que el Minvu implementará los recortes acordados con Quiroz. El mismo día, The Clinic agregó que Hacienda envió a Contraloría un decreto con $17.581 millones menos para el Fondo de Emergencia de reconstrucción de Viña, sin aviso previo al Minvu según la nota.",
     fecha: "2026-05-05",
     fuenteUrl:
-      "https://www.theclinic.cl/2026/05/05/millonario-recorte-en-fondos-de-reconstruccion-de-vina-activan-nuevas-molestias-de-poduje-con-quiroz-minvu-no-estaba-enterado-y-hacienda-explica-los-motivos/",
-    fuenteMedio: "The Clinic",
+      "https://www.elmostrador.cl/noticias/pais/2026/05/05/funciono-el-llamado-al-orden-poduje-retrocede-y-acatara-recortes-de-quiroz-en-el-minvu/",
+    fuenteMedio: "El Mostrador / The Clinic",
     montoTexto: "$17.581 millones FET Viña / $289 mil millones entre dos programas sugeridos para cierre",
     destacados: [
+      "Poduje: Minvu implementará recortes acordados con Quiroz",
       "Fondo de Emergencia reconstrucción Viña: -$17.581 millones",
       "Decreto total: $150.379 millones en rebajas",
       "Minvu no habría sido informado previamente",
@@ -236,11 +239,11 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
       "Pavimentación Participativa",
       "Proyectos firmados para las 16 regiones",
       "Reconstrucción de Ñuble y Biobío sin fondos al 30 de abril",
-      "Poduje: algunas recomendaciones se harán y otras no",
-      "Kast intenta bajar el conflicto como discusión de equipo",
+      "Cambio de tono tras decir que Quiroz era un ministro más",
+      "Tapusa deja tres obras Serviu paralizadas en Gran Concepción",
     ],
     cautela:
-      "Hacienda sostiene que no se retiran recursos sino que se sinceran según ejecución y que se podrán incorporar mayores gastos si la reconstrucción acelera. La alerta queda abierta hasta ver decreto, toma de razón, calendario de obras y reposición presupuestaria efectiva.",
+      "Hacienda sostiene que no se retiran recursos sino que se sinceran según ejecución y que se podrán incorporar mayores gastos si la reconstrucción acelera. La alerta queda abierta hasta ver decreto, toma de razón, calendario de obras, liquidación de contratos y reposición presupuestaria efectiva.",
   },
   {
     ministerioSlug: "energia",

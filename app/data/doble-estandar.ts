@@ -41,6 +41,69 @@ export interface MentiraContraBoric {
 
 export const CASOS_DOBLE_ESTANDAR: CasoDobleEstandar[] = [
   {
+    slug: "responsabilidad-fiscal-vs-deficit-reconstruccion-2031",
+    categoria: "institucional",
+    fecha: "2026-05-05",
+    actor: "José Antonio Kast, Jorge Quiroz y Ministerio de Hacienda",
+    ataque:
+      "El Gobierno defiende la megarreforma como responsabilidad fiscal, crecimiento y reconstrucción, y pide tramitarla con rapidez por su urgencia económica.",
+    hechoBoric:
+      "La derecha acusaba al gobierno anterior de irresponsabilidad fiscal y exigía que toda reforma con costo estuviera financiada con números verificables.",
+    contraste:
+      "El CFA advirtió que el propio informe financiero muestra déficits al menos hasta 2031, que la neutralidad depende críticamente del crecimiento proyectado y que faltan fuentes relevantes de financiamiento. La oposición, además, detectó diferencias de $488 mil millones en costos fiscales del proyecto.",
+    fuenteAtaque: {
+      medio: "El País Chile",
+      url: "https://elpais.com/chile/2026-05-05/la-megarreforma-de-kast-inicia-su-periplo-legislativo-con-las-expectativas-de-la-ciudadania-divididas.html",
+    },
+    fuenteContraste: {
+      medio: "BioBioChile",
+      url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/05/cfa-advierte-que-el-plan-de-reconstruccion-seria-deficitario-al-menos-hasta-2031-y-enumera-riesgos.shtml",
+    },
+    severidad: 4,
+  },
+  {
+    slug: "austeridad-vs-pagar-igual-gam",
+    categoria: "institucional",
+    fecha: "2026-05-05",
+    actor: "MOP, Hacienda y Gobierno de Kast",
+    ataque:
+      "El Gobierno presenta el freno del GAM como orden fiscal y corrección de una obra sin financiamiento suficiente.",
+    hechoBoric:
+      "La derecha solía exigir continuidad, planificación y responsabilidad por obras públicas inconclusas, acusando despilfarro cuando el Estado pagaba sin entregar resultados.",
+    contraste:
+      "BioBioChile Investiga reportó que el MOP reconoció $6.274 millones para cancelar el contrato del GAM: $720 millones por paralización, $709 millones en estados pendientes y $4.800 millones por término anticipado. Se ahorra por un lado, pero el Estado paga igual por parar una obra con 45% de avance.",
+    fuenteAtaque: {
+      medio: "El País Chile",
+      url: "https://elpais.com/chile/2026-04-28/el-freno-a-la-ampliacion-del-centro-cultural-gam-le-abre-al-gobierno-de-kast-un-frente-politico-y-cultural.html",
+    },
+    fuenteContraste: {
+      medio: "BioBioChile Investiga",
+      url: "https://www.biobiochile.cl/especial/bbcl-investiga/noticias/de-pasillo/2026/05/05/habra-que-pagar-igual-gobierno-reconoce-que-debera-gastar-6-200-millones-por-cancelar-obras-del-gam.shtml",
+    },
+    severidad: 4,
+  },
+  {
+    slug: "ministros-autonomos-vs-poduje-acata-tijera",
+    categoria: "institucional",
+    fecha: "2026-05-05",
+    actor: "Iván Poduje, Jorge Quiroz y La Moneda",
+    ataque:
+      "Poduje había defendido que los recortes en Vivienda los definiría su ministerio y que su único jefe era el Presidente, no Hacienda.",
+    hechoBoric:
+      "La derecha criticaba la descoordinación ministerial y exigía autoridad presidencial clara ante conflictos internos del gabinete.",
+    contraste:
+      "El Mostrador reportó que Poduje retrocedió y confirmó que implementará los recortes acordados con Quiroz. Si los oficios eran solo recomendaciones inocuas, no se entiende el llamado al orden ni el giro público del ministro sectorial.",
+    fuenteAtaque: {
+      medio: "El Mostrador",
+      url: "https://www.elmostrador.cl/noticias/pais/2026/04/30/poduje-se-distancia-de-quiroz-se-opone-a-recortes-y-advierte-que-tiene-un-solo-jefe-y-es-kast/",
+    },
+    fuenteContraste: {
+      medio: "El Mostrador",
+      url: "https://www.elmostrador.cl/noticias/pais/2026/05/05/funciono-el-llamado-al-orden-poduje-retrocede-y-acatara-recortes-de-quiroz-en-el-minvu/",
+    },
+    severidad: 4,
+  },
+  {
     slug: "austeridad-estado-vs-segundo-piso-sueldos-altos",
     categoria: "probidad",
     fecha: "2026-05-05",

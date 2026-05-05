@@ -154,9 +154,14 @@ export const PROMESAS: Promesa[] = [
       "Reduccion gradual del impuesto corporativo del 27% al 23%.",
     estado: "en_proceso",
     eje: "economia",
-    decisionesRelacionadas: ["megareforma-reconstruccion", "megarreforma-tramitacion-acelerada-78-votos"],
+    decisionesRelacionadas: [
+      "megareforma-reconstruccion",
+      "megarreforma-tramitacion-acelerada-78-votos",
+      "cfa-plan-reconstruccion-deficitario-2031",
+      "oposicion-23-dudas-megarreforma-cifras",
+    ],
     cuerpo:
-      "Incluido en la megareforma para la Reconstruccion Nacional ingresada al Congreso el 22-abr-2026. Estudio de Fundacion Nodo XXI: el ministro Daniel Mas ahorraria CLP$498,5 millones anuales por esta sola medida. La oposicion presento requerimiento ante Contraloria.",
+      "Incluido en la megareforma para la Reconstruccion Nacional ingresada al Congreso el 22-abr-2026. Estudio de Fundacion Nodo XXI: el ministro Daniel Mas ahorraria CLP$498,5 millones anuales por esta sola medida. La oposicion presento requerimiento ante Contraloria. El 5 de mayo, el CFA advirtio que el costo de la rebaja de impuesto a empresas no se compensaria con el crecimiento previsto; las oposiciones agregaron que el Informe de Estadisticas Tributarias 2026 proyecta un efecto de bajar cuatro puntos en el regimen semi integrado cercano a 0,52% del PIB, unos US$400 millones por sobre lo afirmado por el Gobierno.",
   },
   {
     slug: "reintegracion-tributaria",
@@ -165,8 +170,9 @@ export const PROMESAS: Promesa[] = [
       "Volver a un sistema integrado entre el impuesto corporativo y el impuesto personal a los socios/accionistas.",
     estado: "en_proceso",
     eje: "economia",
+    decisionesRelacionadas: ["megareforma-reconstruccion", "oposicion-23-dudas-megarreforma-cifras"],
     cuerpo:
-      "Incluida en la megareforma. Por la composicion de los patrimonios declarados, beneficia principalmente a controladores y accionistas mayoritarios. Daniel Mas: ~CLP$1.005 millones segun Nodo XXI.",
+      "Incluida en la megareforma. Por la composicion de los patrimonios declarados, beneficia principalmente a controladores y accionistas mayoritarios. Daniel Mas: ~CLP$1.005 millones segun Nodo XXI. En el nuevo barrido del 5 de mayo, BioBioChile reporto que las oposiciones pidieron detalle de las estimaciones de reintegracion, comparabilidad entre efectos directos e indirectos y efecto real sobre crecimiento y recaudacion.",
   },
   {
     slug: "repatriacion-capitales",
@@ -185,9 +191,13 @@ export const PROMESAS: Promesa[] = [
       "Suspender el IVA en la venta de viviendas primera entrega para reactivar el sector construccion.",
     estado: "en_proceso",
     eje: "vivienda",
-    decisionesRelacionadas: ["megareforma-reconstruccion", "megarreforma-tramitacion-acelerada-78-votos"],
+    decisionesRelacionadas: [
+      "megareforma-reconstruccion",
+      "megarreforma-tramitacion-acelerada-78-votos",
+      "cfa-plan-reconstruccion-deficitario-2031",
+    ],
     cuerpo:
-      "Incluido en la megareforma. Costo fiscal proyectado por Hacienda no publicado al detalle. Pendiente discusion de glosas y vigencia. El 5 de mayo el proyecto entró a tramitación acelerada: el Gobierno busca votar pronto la idea de legislar y necesita 78 votos en la Cámara, mientras el debate exige separar reconstrucción de viviendas de beneficios tributarios generales.",
+      "Incluido en la megareforma. Costo fiscal proyectado por Hacienda no publicado al detalle. Pendiente discusion de glosas y vigencia. El 5 de mayo el proyecto entro a tramitacion acelerada: el Gobierno busca votar pronto la idea de legislar y necesita 78 votos en la Camara, mientras el debate exige separar reconstruccion de viviendas de beneficios tributarios generales. Ese mismo dia, el CFA marco la exencion transitoria de IVA a viviendas nuevas como uno de los riesgos fiscales directos del plan.",
   },
   {
     slug: "agilizar-permisos-medioambientales",
@@ -256,17 +266,27 @@ export const PROMESAS: Promesa[] = [
       "Llevar la economia chilena a una tasa de crecimiento del 4% anual al cierre del periodo.",
     citaCampaña:
       "Vamos a sacar a Chile del estancamiento y llevarlo a crecer al 4%.",
-    estado: "sin_info",
+    estado: "en_proceso",
     eje: "economia",
+    decisionesRelacionadas: [
+      "megarreforma-tramitacion-acelerada-78-votos",
+      "cfa-plan-reconstruccion-deficitario-2031",
+      "oposicion-23-dudas-megarreforma-cifras",
+    ],
     fuenteUrls: [
       {
         url: "https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/04/29/la-tasa-de-desocupaci%C3%B3n-nacional-fue-8-9-en-el-trimestre-enero-marzo-de-2026",
         medio: "INE",
         titulo: "La tasa de desocupación nacional fue 8,9% en enero-marzo de 2026",
       },
+      {
+        url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/05/cfa-advierte-que-el-plan-de-reconstruccion-seria-deficitario-al-menos-hasta-2031-y-enumera-riesgos.shtml",
+        medio: "BioBioChile / CFA",
+        titulo: "CFA advierte que el Plan de Reconstrucción sería deficitario al menos hasta 2031",
+      },
     ],
     cuerpo:
-      "Meta a 4 años. La medicion intermedia mas relevante es el dato del Banco Central trimestral. 78% de los encuestados (Cadem 5-abr-2026) considera que la economia esta estancada o retrocede. El dato laboral de enero-marzo agrega contexto: desocupacion de 8,9%, ocupacion creciendo solo 0,5% en doce meses e informalidad de 26,5%. Si la megareforma promete reactivar via empleo, el seguimiento debe mirar crecimiento, formalidad e ingresos fiscales al mismo tiempo.",
+      "Meta a 4 años. La medicion intermedia mas relevante es el dato del Banco Central trimestral. 78% de los encuestados (Cadem 5-abr-2026) considera que la economia esta estancada o retrocede. El dato laboral de enero-marzo agrega contexto: desocupacion de 8,9%, ocupacion creciendo solo 0,5% en doce meses e informalidad de 26,5%. Si la megareforma promete reactivar via empleo, el seguimiento debe mirar crecimiento, formalidad e ingresos fiscales al mismo tiempo.\n\nEl 5 de mayo, el CFA hizo la advertencia clave para esta promesa: el impacto fiscal del Plan de Reconstruccion depende criticamente de que el crecimiento proyectado se materialice. Sin crecimiento, el deterioro fiscal permanente seria 0,43% del PIB al 2050; aun con efecto crecimiento, el impacto neto seria negativo entre 2026 y 2031. Por eso la promesa queda en proceso, pero con riesgo fiscal alto.",
   },
   {
     slug: "reforma-no-para-ricos",
@@ -278,7 +298,12 @@ export const PROMESAS: Promesa[] = [
     citaFuente: "Jorge Quiroz, BioBioChile, 13-abr-2026",
     estado: "contradictoria",
     eje: "economia",
-    decisionesRelacionadas: ["megareforma-reconstruccion", "megarreforma-tramitacion-acelerada-78-votos"],
+    decisionesRelacionadas: [
+      "megareforma-reconstruccion",
+      "megarreforma-tramitacion-acelerada-78-votos",
+      "oposicion-23-dudas-megarreforma-cifras",
+      "sii-registro-social-fiscalizacion-megarreforma",
+    ],
     fuenteUrls: [
       {
         url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/04/13/no-es-una-rebaja-a-los-ricos-quiroz-defiende-reforma-tributaria-y-pide-dejar-la-tipica-caricatura.shtml",
