@@ -41,6 +41,48 @@ export interface MentiraContraBoric {
 
 export const CASOS_DOBLE_ESTANDAR: CasoDobleEstandar[] = [
   {
+    slug: "reconstruccion-promesa-vs-fet-vina-recortado",
+    categoria: "institucional",
+    fecha: "2026-05-05",
+    actor: "Jorge Quiroz, Iván Poduje y Gobierno de Kast",
+    ataque:
+      "El Gobierno presenta la reconstrucción como urgencia nacional y pide tramitar rápido una megarreforma bajo ese nombre.",
+    hechoBoric:
+      "Cuando criticaba la reconstrucción anterior, la derecha exigía prioridad presupuestaria, coordinación y cumplimiento territorial verificable.",
+    contraste:
+      "Hacienda envió a Contraloría un decreto con $17.581 millones menos para el Fondo de Emergencia de reconstrucción de Viña del Mar. Según The Clinic, el Minvu no estaba enterado. Hacienda dice que es programación por baja ejecución, pero el episodio muestra que la reconstrucción también quedó dentro de la tijera fiscal.",
+    fuenteAtaque: {
+      medio: "El País Chile",
+      url: "https://elpais.com/chile/2026-05-05/la-megarreforma-de-kast-inicia-su-periplo-legislativo-con-las-expectativas-de-la-ciudadania-divididas.html",
+    },
+    fuenteContraste: {
+      medio: "The Clinic",
+      url: "https://www.theclinic.cl/2026/05/05/millonario-recorte-en-fondos-de-reconstruccion-de-vina-activan-nuevas-molestias-de-poduje-con-quiroz-minvu-no-estaba-enterado-y-hacienda-explica-los-motivos/",
+    },
+    severidad: 4,
+  },
+  {
+    slug: "no-tocar-beneficios-vs-despidos-injuv",
+    categoria: "social",
+    fecha: "2026-05-04",
+    actor: "María Jesús Wulf y Gobierno de Kast",
+    ataque:
+      "El Gobierno insiste en que el ajuste no tocará beneficios sociales y que se trata de eficiencia administrativa.",
+    hechoBoric:
+      "La derecha acusaba que los problemas de ejecución y diseño en programas sociales eran abandono estatal y exigía responsables políticos.",
+    contraste:
+      "Wulf confirmó futuros despidos en el Injuv, mientras la cartera recorta 2,24% y el instituto pierde $3.859 millones, cerca de 47,7% de su presupuesto. Aunque el beneficio final no cambie de nombre, el servicio público que diseña y ejecuta política juvenil sí queda reducido.",
+    fuenteAtaque: {
+      medio: "BioBioChile",
+      url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/04/ministra-wulf-confirma-futuros-despidos-en-el-injuv-el-90-del-presupuesto-se-gasta-en-sueldos.shtml",
+    },
+    fuenteContraste: {
+      medio: "La Tercera",
+      url: "https://www.latercera.com/nacional/noticia/wulf-recorta-finalmente-un-224-de-su-presupuesto-y-descarta-que-ajuste-implique-retroceso-en-derechos-sociales/",
+    },
+    severidad: 4,
+  },
+  {
     slug: "salidas-voluntarias-vs-dato-comparable",
     categoria: "inmigracion",
     fecha: "2026-04-30",

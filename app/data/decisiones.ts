@@ -9,6 +9,91 @@ const montoDescontinuado = PROGRAMAS_MDSYF
 
 export const DECISIONES: Decision[] = [
   {
+    slug: "vina-fet-recorte-17581-millones-hacienda",
+    titulo: "Hacienda recorta $17.581 millones del fondo de emergencia para reconstrucción de Viña",
+    resumen:
+      "The Clinic reportó que Hacienda envió a Contraloría un decreto con $150.379 millones de rebajas, incluyendo $17.581 millones del Fondo de Emergencia para la reconstrucción en Viña del Mar. Según la nota, el Minvu no estaba enterado; Hacienda respondió que no retira recursos, sino que ajusta programación por baja ejecución.",
+    fecha: "2026-05-05",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "vivienda",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.theclinic.cl/2026/05/05/millonario-recorte-en-fondos-de-reconstruccion-de-vina-activan-nuevas-molestias-de-poduje-con-quiroz-minvu-no-estaba-enterado-y-hacienda-explica-los-motivos/",
+        medio: "The Clinic",
+        titulo: "Millonario recorte en fondos de reconstrucción de Viña activa nuevas molestias de Poduje con Quiroz",
+      },
+      {
+        url: "https://www.latercera.com/nacional/noticia/minvu-rechaza-querella-de-social-arquitectura-y-descarta-coaccion-en-proceso-de-reconstruccion-de-el-olivar/",
+        medio: "La Tercera",
+        titulo: "Minvu rechaza querella de Social Arquitectura y descarta coacción en El Olivar",
+      },
+      {
+        url: "https://www.emol.com/noticias/Nacional/2026/04/12/1196981/poduje-ministerio-vivienda-balance-reconstruccion.html",
+        medio: "Emol",
+        titulo: "Poduje hace balance de su primer mes en Vivienda",
+      },
+    ],
+    cuerpo:
+      "El flanco de Vivienda dejó de ser solo el oficio 2027 por Pavimentos Participativos. The Clinic reportó el 5 de mayo que Hacienda envió a Contraloría un decreto con $150.379 millones de recortes a distintos ministerios y que $17.581 millones corresponden al Fondo de Emergencia para la reconstrucción en Viña del Mar. Según el medio, el Minvu no estaba enterado de esa decisión, lo que reabrió la molestia de Iván Poduje con Jorge Quiroz.\n\nLa señal es políticamente sensible por el calendario y por la promesa pública. Poduje venía de desautorizar recortes sugeridos por Hacienda y de marcar que su único jefe era el Presidente. Además, desde abril había puesto la reconstrucción de Viña y de las zonas afectadas por incendios como una prioridad de gestión. Que aparezca un ajuste directo al FET vuelve material la pregunta que el Gobierno intentaba contener: qué partidas de reconstrucción pagan el ajuste fiscal y quién decide la priorización.\n\nHacienda respondió por medio del subsecretario Juan Pablo Rodríguez que la polémica sería artificial. Su explicación fue que el FET tenía un presupuesto inicial de $502 mil millones para 2026; que el gobierno anterior ya había hecho ajustes por $300 mil millones y $100 mil millones por baja ejecución; y que en el primer trimestre se ejecutaron cerca de $11 mil millones, alrededor de 2%. Bajo esa lectura, los $17.500 millones no serían retiro de recursos, sino sinceramiento de programación presupuestaria, con posibilidad de reponer gasto si la ejecución aumenta.\n\nEse argumento no elimina el problema de gobernanza. Si la reconstrucción de Valparaíso depende de ejecución real, el Gobierno debe mostrar un calendario de obras, hitos y reposición presupuestaria verificable, no solo prometer que no habrá restricción. Y si el Minvu realmente no fue informado antes del envío a Contraloría, la megarreforma de Reconstrucción queda cruzada por una contradicción interna: se pide urgencia legislativa en nombre de reconstruir, mientras Hacienda ajusta por decreto un fondo asociado a la reconstrucción de Viña.\n\nLa controversia llega además con un segundo frente en El Olivar. La Tercera reportó que el Minvu rechazó la querella de Social Arquitectura por la paralización anticipada de obras y defendió que sus decisiones apuntan a seguridad de las familias y resguardo de recursos públicos. La defensa técnica puede ser atendible, pero exige más transparencia: familias damnificadas, empresas, Serviu, Minvu y Hacienda están discutiendo al mismo tiempo seguridad estructural, contratos, garantías, ejecución y caja fiscal.",
+  },
+  {
+    slug: "megarreforma-tramitacion-acelerada-78-votos",
+    titulo: "Megarreforma entra a tramitación acelerada: Gobierno necesita 78 votos y el FMI advierte riesgos de recaudación",
+    resumen:
+      "El País reportó que el oficialismo busca votar la idea de legislar en Hacienda esta semana y tener la Cámara despachada hacia el 18 de mayo. La derecha suma 76 diputados y necesita 78 votos; el PDG condiciona apoyo. El FMI valoró impulso a crecimiento, pero advirtió riesgos en recaudación.",
+    fecha: "2026-05-05",
+    etiqueta: "malo",
+    severidad: 3,
+    ministerioSlug: "hacienda",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://elpais.com/chile/2026-05-05/la-megarreforma-de-kast-inicia-su-periplo-legislativo-con-las-expectativas-de-la-ciudadania-divididas.html",
+        medio: "El País Chile",
+        titulo: "La megarreforma de Kast inicia su periplo legislativo con las expectativas de la ciudadanía divididas",
+      },
+      {
+        url: "https://www.emol.com/noticias/Economia/2026/05/04/1199024/quiroz-defiende-proyecto-reconstruccion.html",
+        medio: "Emol",
+        titulo: "Quiroz defiende medidas tributarias clave del proyecto de Reconstrucción",
+      },
+      {
+        url: "https://www.camara.cl/legislacion/comisiones/citacion_detalle.aspx?prmId=3307&prmIdSesion=81544",
+        medio: "Cámara de Diputadas y Diputados",
+        titulo: "Citación Comisión de Hacienda por Boletín 18216-05",
+      },
+    ],
+    cuerpo:
+      "La megareforma pasó a fase legislativa con calendario exigente. El País reportó que el oficialismo busca votar la idea de legislar en la Comisión de Hacienda esta semana, revisar el particular a inicios de la próxima y llevar la votación de la Cámara a más tardar el 18 de mayo. Después, el Senado debería comenzar antes del feriado del 21 si el Gobierno logra mantener el ritmo.\n\nEl número político es estrecho. La Cámara exige 78 votos para aprobar la idea de legislar. Las derechas suman 76 diputados, mientras las oposiciones y el PDG alcanzan 79. El PDG entregó apoyo condicionado a un mecanismo compensatorio por pañales y medicamentos para clase media, por lo que el Gobierno intenta no depender solo de ese bloque y de descolgados opositores.\n\nEl contenido sigue tensionando el relato fiscal. El País consignó que el paquete incluye invariabilidad por 25 años para nuevos tributos de proyectos sobre US$50.000 millones, simplificación de permisos, rebajas tributarias, donaciones y repatriación de capitales. El FMI valoró el impulso a crecimiento y el ajuste de gasto público, pero advirtió riesgos en recaudación y ajustó su proyección de crecimiento 2026 de 2,4% a 2,2%.\n\nEmol agregó la defensa de Quiroz ante la Comisión de Hacienda: el ministro abordó DFL2, donaciones, eliminación de franquicia Sence y otras medidas, presentándolas como eficiencia, recaudación y protección del empleo. Pero la tramitación acelerada abre un flanco democrático: si la ley mezcla reconstrucción de viviendas, rebajas tributarias, empleo, ambiente, contribuciones, Sence y nuevas facultades de datos, el Congreso necesita saber cuánto recauda, cuánto deja de recaudar, quién gana y qué programas sociales absorberán el ajuste.\n\nLa discusión ya no es si el proyecto es grande; es si el apuro impide mirar sus costos cruzados. Con 59% de rechazo ciudadano a revisar o eliminar 142 programas y con Criteria mostrando caída en la creencia de que se puede recortar sin tocar beneficios, el Gobierno entra al Congreso con menos capital político que al anunciar el plan.",
+  },
+  {
+    slug: "desarrollo-social-wulf-despidos-injuv-224",
+    titulo: "Wulf confirma despidos en el Injuv mientras Desarrollo Social recorta 2,24%",
+    resumen:
+      "BioBioChile reportó que María Jesús Wulf confirmó futuros despidos en el Injuv. La cartera bajó el ajuste desde la meta de 3% a 2,24%, pero el instituto pierde cerca de 47,7% de su presupuesto; La Tercera informó que solo 10% de sus recursos va a gasto programático.",
+    fecha: "2026-05-04",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "desarrollo-social",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/04/ministra-wulf-confirma-futuros-despidos-en-el-injuv-el-90-del-presupuesto-se-gasta-en-sueldos.shtml",
+        medio: "BioBioChile",
+        titulo: "Ministra Wulf confirma futuros despidos en el Injuv",
+      },
+      {
+        url: "https://www.latercera.com/nacional/noticia/wulf-recorta-finalmente-un-224-de-su-presupuesto-y-descarta-que-ajuste-implique-retroceso-en-derechos-sociales/",
+        medio: "La Tercera",
+        titulo: "Wulf recorta finalmente un 2,24% de su presupuesto",
+      },
+    ],
+    cuerpo:
+      "La defensa de Desarrollo Social dejó de ser abstracta. BioBioChile reportó que la ministra María Jesús Wulf confirmó futuros despidos en el Instituto Nacional de la Juventud. La cartera sostiene que el ajuste final será de 2,24%, menor que la meta de 3% pedida por Hacienda, y que no se rebajarán beneficios sociales. Pero el caso Injuv muestra que el ajuste sí tiene costo laboral e institucional concreto.\n\nLa explicación oficial apunta a reordenamiento. Wulf dijo que el presupuesto del Injuv bordea los $8 mil millones y que gran parte se consume en sueldos y gastos administrativos, con muy baja llegada programática a la población juvenil. BioBioChile recogió que la ministra habló de conversar con asociaciones de funcionarios y confirmó que los despidos ocurrirán, siempre bajo el objetivo de una institucionalidad más útil para jóvenes.\n\nLa Tercera entregó el desglose técnico previo: el Injuv enfrenta una rebaja de $3.859 millones, equivalente al 47,69% de su presupuesto. Para 2026, cerca de 75% del gasto del instituto iría a personal, 15% a operación y 10% a programas; en 2025 sus programas habrían llegado a 30.084 jóvenes, 0,7% de la población joven del país. La rebaja se distribuiría principalmente en gasto en personal.\n\nEl punto fiscalizador no es negar que el Injuv pueda requerir rediseño. Es exigir que el Gobierno no venda como simple eficiencia una decisión que implica despidos, pérdida de capacidades públicas y traslado de programas. Si la promesa es no tocar beneficios sociales, también debe responder qué ocurre con los servicios que hacen que esos beneficios lleguen, se diseñen y se evalúen.\n\nLa señal se conecta con Trabajo: Rau ya había avalado recortes ministeriales y no descartó reducciones de personal en el Estado. Wulf ahora transforma esa posibilidad en confirmación sectorial. La pregunta para el seguimiento es cuántos funcionarios saldrán, qué funciones se absorben, qué programas juveniles se mantienen y qué indicadores probarán que la nueva institucionalidad llega mejor que la anterior.",
+  },
+  {
     slug: "migraciones-zanja-salidas-voluntarias-330000",
     titulo: "Migraciones defiende zanja 3x3 y prepara salidas voluntarias para irregulares",
     resumen:

@@ -13,10 +13,10 @@ export interface AlertaRecorteMinisterio {
 }
 
 export const PANORAMA_RECORTES = {
-  fecha: "2026-04-30",
+  fecha: "2026-05-05",
   titulo: "Panorama nacional de recomendaciones de Hacienda",
   resumen:
-    "La Tercera publicó el mapa nacional: 402 programas bajo lupa, con 260 recomendaciones de rebaja y 142 cierres o reformulaciones. Educación, Desarrollo Social y Salud concentran 150 programas, el 37,3% del total. BioBioChile precisó montos proyectados: PGU lidera con $906 mil millones, seguida por pensiones de reparto, Transporte Público Metropolitano, CAE y SUF. La recomendación escrita sigue existiendo aunque el Gobierno hable de eficiencia y malgasto; Cadem luego registró 59% de rechazo a revisar o eliminar 142 programas.",
+    "La Tercera publicó el mapa nacional: 402 programas bajo lupa, con 260 recomendaciones de rebaja y 142 cierres o reformulaciones. Educación, Desarrollo Social y Salud concentran 150 programas, el 37,3% del total. BioBioChile precisó montos proyectados: PGU lidera con $906 mil millones, seguida por pensiones de reparto, Transporte Público Metropolitano, CAE y SUF. El 5 de mayo apareció además un decreto con $150.379 millones de rebajas y $17.581 millones menos para el Fondo de Emergencia de reconstrucción de Viña del Mar. La recomendación escrita sigue existiendo aunque el Gobierno hable de eficiencia y malgasto; Cadem luego registró 59% de rechazo a revisar o eliminar 142 programas.",
   programasDescontinuar: 142,
   programasAjuste: 260,
   montoDescontinuarTexto: "$5,47 billones",
@@ -122,18 +122,21 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
   },
   {
     ministerioSlug: "desarrollo-social",
-    titulo: "Desarrollo Social: Quiroz firma recorte vigente de $32.721 millones",
+    titulo: "Desarrollo Social: recorte vigente, Injuv -47,7% y despidos confirmados",
     resumen:
-      "BioBioChile reportó que Quiroz firmó una circular que rebaja $32.721 millones del presupuesto vigente de Desarrollo Social. La Tercera agregó que el INJUV pierde $3.859 millones, 47% de su presupuesto disponible, mientras el Gobierno estudia reemplazarlo y funcionarios recurrieron a Contraloría.",
-    fecha: "2026-04-29",
+      "BioBioChile reportó que Quiroz firmó una circular que rebaja $32.721 millones del presupuesto vigente de Desarrollo Social. La Tercera agregó que el Injuv pierde $3.859 millones, 47,69% de su presupuesto; el 4 de mayo, Wulf confirmó que habrá despidos en el instituto.",
+    fecha: "2026-05-04",
     fuenteUrl:
-      "https://www.latercera.com/nacional/noticia/gobierno-estudia-crear-nuevo-organismo-en-reemplazo-del-injuv-mientras-funcionarios-recurren-a-contraloria-por-recortes/",
-    fuenteMedio: "La Tercera",
-    montoTexto: "$32.721 millones de recorte vigente",
+      "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/04/ministra-wulf-confirma-futuros-despidos-en-el-injuv-el-90-del-presupuesto-se-gasta-en-sueldos.shtml",
+    fuenteMedio: "BioBioChile",
+    montoTexto: "$32.721 millones de recorte vigente / Injuv -$3.859 millones",
     destacados: [
       "Mejor Niñez / ex Sename: $12.748 millones",
       "CONADI: $7.634 millones",
       "INJUV: $3.859 millones",
+      "INJUV: 47,69% menos",
+      "Despidos confirmados por Wulf",
+      "2,24% de ajuste final en la cartera",
       "Subsecretaría de la Niñez: $3.359 millones",
       "Senadis y Senama",
       "Ajuar para recién nacidos",
@@ -142,7 +145,7 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
       "Contraloría revisa solicitud de funcionarios",
     ],
     cautela:
-      "Este recorte es distinto del anexo 2027 del Oficio N°16: corresponde a modificación del presupuesto vigente y entra en vigor tras toma de razón de Contraloría. El anexo MDS 2027 sigue mostrando además Bono de Graduación, ayudas técnicas, Chile Te Cuida y otros programas bajo recomendación de cierre o rebaja.",
+      "Este recorte es distinto del anexo 2027 del Oficio N°16: corresponde a modificación del presupuesto vigente y entra en vigor tras toma de razón de Contraloría. La defensa de no tocar beneficios sociales debe verificarse contra efectos laborales, continuidad de programas y capacidades públicas que permiten ejecutar esos beneficios.",
   },
   {
     ministerioSlug: "salud",
@@ -206,15 +209,21 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
   },
   {
     ministerioSlug: "vivienda",
-    titulo: "Vivienda: Poduje rechaza la tijera de Quiroz y firma pavimentos para 16 regiones",
+    titulo: "Vivienda: Poduje rechaza tijera, pero Hacienda ajusta el FET de Viña",
     resumen:
-      "El Mostrador reportó que Poduje descartó recortar Pavimentos Participativos y Mejoramiento de Condominios Sociales, ambos sugeridos por Hacienda. La Tercera informó que el ministro firmó proyectos de Pavimentos Participativos para las 16 regiones, pese al oficio de Dipres.",
-    fecha: "2026-04-30",
+      "El Mostrador reportó que Poduje descartó recortar Pavimentos Participativos y Mejoramiento de Condominios Sociales. El 5 de mayo, The Clinic agregó que Hacienda envió a Contraloría un decreto con $17.581 millones menos para el Fondo de Emergencia de reconstrucción de Viña, sin aviso previo al Minvu según la nota.",
+    fecha: "2026-05-05",
     fuenteUrl:
-      "https://www.elmostrador.cl/noticias/pais/2026/04/30/poduje-se-distancia-de-quiroz-se-opone-a-recortes-y-advierte-que-tiene-un-solo-jefe-y-es-kast/",
-    fuenteMedio: "El Mostrador",
-    montoTexto: "$289 mil millones entre dos programas sugeridos para cierre",
+      "https://www.theclinic.cl/2026/05/05/millonario-recorte-en-fondos-de-reconstruccion-de-vina-activan-nuevas-molestias-de-poduje-con-quiroz-minvu-no-estaba-enterado-y-hacienda-explica-los-motivos/",
+    fuenteMedio: "The Clinic",
+    montoTexto: "$17.581 millones FET Viña / $289 mil millones entre dos programas sugeridos para cierre",
     destacados: [
+      "Fondo de Emergencia reconstrucción Viña: -$17.581 millones",
+      "Decreto total: $150.379 millones en rebajas",
+      "Minvu no habría sido informado previamente",
+      "Hacienda: ajuste por baja ejecución",
+      "FET 2026 inicial: $502 mil millones",
+      "Primer trimestre: cerca de $11 mil millones ejecutados",
       "Mejoramiento de Condominios de Vivienda DS27 Capítulo III",
       "Pavimentación Participativa",
       "Proyectos firmados para las 16 regiones",
@@ -223,7 +232,7 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
       "Kast intenta bajar el conflicto como discusión de equipo",
     ],
     cautela:
-      "La continuidad firmada por Poduje no elimina el anexo de Hacienda: muestra que la recomendación sí llegó a programas concretos y que la decisión final quedó en disputa política dentro del gabinete.",
+      "Hacienda sostiene que no se retiran recursos sino que se sinceran según ejecución y que se podrán incorporar mayores gastos si la reconstrucción acelera. La alerta queda abierta hasta ver decreto, toma de razón, calendario de obras y reposición presupuestaria efectiva.",
   },
   {
     ministerioSlug: "energia",

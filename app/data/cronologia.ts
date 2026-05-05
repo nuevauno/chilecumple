@@ -7,6 +7,57 @@ import type { EventoCronologia } from "./types";
  */
 export const CRONOLOGIA: EventoCronologia[] = [
   {
+    slug: "2026-05-05-hacienda-recorta-fet-vina-17581",
+    fecha: "2026-05-05",
+    titulo: "Hacienda envía recorte de $17.581 millones al FET de reconstrucción de Viña",
+    resumen:
+      "The Clinic reportó que el decreto enviado a Contraloría incluye $17.581 millones menos para el Fondo de Emergencia de reconstrucción de Viña del Mar. Hacienda dice que es programación por baja ejecución; Minvu no habría sido informado.",
+    tipo: "decision",
+    etiqueta: "feo",
+    decisionSlug: "vina-fet-recorte-17581-millones-hacienda",
+    fuenteUrl:
+      "https://www.theclinic.cl/2026/05/05/millonario-recorte-en-fondos-de-reconstruccion-de-vina-activan-nuevas-molestias-de-poduje-con-quiroz-minvu-no-estaba-enterado-y-hacienda-explica-los-motivos/",
+    fuenteMedio: "The Clinic",
+  },
+  {
+    slug: "2026-05-05-megarreforma-votos-hacienda",
+    fecha: "2026-05-05",
+    titulo: "Megarreforma entra a trámite acelerado con 78 votos como umbral",
+    resumen:
+      "El Gobierno busca votar la idea de legislar en Hacienda esta semana y llegar a la Cámara antes del 18 de mayo. Las derechas suman 76 votos y necesitan 78; el PDG condiciona apoyo por pañales y medicamentos.",
+    tipo: "decision",
+    etiqueta: "malo",
+    decisionSlug: "megarreforma-tramitacion-acelerada-78-votos",
+    fuenteUrl:
+      "https://elpais.com/chile/2026-05-05/la-megarreforma-de-kast-inicia-su-periplo-legislativo-con-las-expectativas-de-la-ciudadania-divididas.html",
+    fuenteMedio: "El País Chile",
+  },
+  {
+    slug: "2026-05-05-squella-irarrazaval-segundo-piso",
+    fecha: "2026-05-05",
+    titulo: "Squella vuelve a emplazar al Segundo Piso y pide evaluar si es parte del problema",
+    resumen:
+      "Ex-Ante/T13 reportó una reunión áspera del comité político: Squella habló de problema de coordinación y apuntó a Irarrázaval, mientras Kast aún no zanja públicamente el diseño de gobierno.",
+    tipo: "escandalo",
+    etiqueta: "malo",
+    fuenteUrl:
+      "https://www.t13.cl/noticia/ex-ante/politica/la-ausencia-kast-medio-dura-pugna-entre-sus-hombres-confianza-5-5-2026",
+    fuenteMedio: "T13 / Ex-Ante",
+  },
+  {
+    slug: "2026-05-04-wulf-confirma-despidos-injuv",
+    fecha: "2026-05-04",
+    titulo: "Wulf confirma futuros despidos en el Injuv",
+    resumen:
+      "Desarrollo Social bajó el ajuste a 2,24%, pero el Injuv enfrenta una rebaja cercana al 47,7%. Wulf confirmó que habrá despidos y sostuvo que no se tocarán beneficios sociales.",
+    tipo: "decision",
+    etiqueta: "feo",
+    decisionSlug: "desarrollo-social-wulf-despidos-injuv-224",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/04/ministra-wulf-confirma-futuros-despidos-en-el-injuv-el-90-del-presupuesto-se-gasta-en-sueldos.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
     slug: "2026-05-01-seremi-bienes-nacionales-tarapaca-baja-19",
     fecha: "2026-05-01",
     titulo: "Renuncia seremi de Bienes Nacionales en Tarapacá: salidas regionales llegan a 19",

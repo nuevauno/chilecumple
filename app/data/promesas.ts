@@ -154,7 +154,7 @@ export const PROMESAS: Promesa[] = [
       "Reduccion gradual del impuesto corporativo del 27% al 23%.",
     estado: "en_proceso",
     eje: "economia",
-    decisionesRelacionadas: ["megareforma-reconstruccion"],
+    decisionesRelacionadas: ["megareforma-reconstruccion", "megarreforma-tramitacion-acelerada-78-votos"],
     cuerpo:
       "Incluido en la megareforma para la Reconstruccion Nacional ingresada al Congreso el 22-abr-2026. Estudio de Fundacion Nodo XXI: el ministro Daniel Mas ahorraria CLP$498,5 millones anuales por esta sola medida. La oposicion presento requerimiento ante Contraloria.",
   },
@@ -185,8 +185,9 @@ export const PROMESAS: Promesa[] = [
       "Suspender el IVA en la venta de viviendas primera entrega para reactivar el sector construccion.",
     estado: "en_proceso",
     eje: "vivienda",
+    decisionesRelacionadas: ["megareforma-reconstruccion", "megarreforma-tramitacion-acelerada-78-votos"],
     cuerpo:
-      "Incluido en la megareforma. Costo fiscal proyectado por Hacienda no publicado al detalle. Pendiente discusion de glosas y vigencia.",
+      "Incluido en la megareforma. Costo fiscal proyectado por Hacienda no publicado al detalle. Pendiente discusion de glosas y vigencia. El 5 de mayo el proyecto entró a tramitación acelerada: el Gobierno busca votar pronto la idea de legislar y necesita 78 votos en la Cámara, mientras el debate exige separar reconstrucción de viviendas de beneficios tributarios generales.",
   },
   {
     slug: "agilizar-permisos-medioambientales",
@@ -268,7 +269,7 @@ export const PROMESAS: Promesa[] = [
     citaFuente: "Jorge Quiroz, BioBioChile, 13-abr-2026",
     estado: "contradictoria",
     eje: "economia",
-    decisionesRelacionadas: ["megareforma-reconstruccion"],
+    decisionesRelacionadas: ["megareforma-reconstruccion", "megarreforma-tramitacion-acelerada-78-votos"],
     fuenteUrls: [
       {
         url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/04/13/no-es-una-rebaja-a-los-ricos-quiroz-defiende-reforma-tributaria-y-pide-dejar-la-tipica-caricatura.shtml",
