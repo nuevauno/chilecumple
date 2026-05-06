@@ -41,6 +41,48 @@ export interface MentiraContraBoric {
 
 export const CASOS_DOBLE_ESTANDAR: CasoDobleEstandar[] = [
   {
+    slug: "alivio-contribuciones-vs-financiamiento-municipal",
+    categoria: "social",
+    fecha: "2026-05-05",
+    actor: "José Antonio Kast, Jorge Quiroz y alcaldes",
+    ataque:
+      "El Gobierno presenta la exención de contribuciones a mayores de 65 años como alivio directo a familias y parte del Plan de Reconstrucción.",
+    hechoBoric:
+      "La derecha exigía que las políticas sociales fueran focalizadas, financiadas y que no desordenaran servicios locales ni aumentaran presión sobre familias.",
+    contraste:
+      "La ACHM reunió a más de 220 alcaldes y advirtió que el Fondo Común Municipal es el principal ingreso para cerca del 65% de municipios. Matthei, desde la derecha tradicional, dijo que bajar contribuciones al 20% de casas más grandes en medio de desempleo y alzas es un contrasentido.",
+    fuenteAtaque: {
+      medio: "La Tercera",
+      url: "https://www.latercera.com/pulso/noticia/eliminar-contribuciones-para-adultos-mayores-cuesta-us200-millones-y-ejecutivo-repondra-us130-millones-a-fondo-municipal/",
+    },
+    fuenteContraste: {
+      medio: "BioBioChile",
+      url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/05/matthei-cuestiona-idea-del-gobierno-de-eliminar-contribuciones-a-adultos-mayores-un-contrasentido.shtml",
+    },
+    severidad: 4,
+  },
+  {
+    slug: "alivio-educativo-vs-cobranza-cae",
+    categoria: "educacion",
+    fecha: "2026-05-05",
+    actor: "Jorge Quiroz, Tesorería y Gobierno de Kast",
+    ataque:
+      "El Gobierno dice que su agenda busca empleo, alivio económico y ordenar beneficios sin tocar derechos sociales.",
+    hechoBoric:
+      "La derecha criticó la condonación del CAE como gasto irresponsable y acusó que priorizar ese alivio desviaba recursos de necesidades sociales más urgentes.",
+    contraste:
+      "La TGR recaudó $34.320 millones por CAE entre enero y abril, 295% más que en 2025, con 11.109 convenios en abril y gestiones de embargo. Mientras tanto, la megarreforma baja impuestos y mantiene moratoria a la expansión de gratuidad.",
+    fuenteAtaque: {
+      medio: "El País Chile",
+      url: "https://elpais.com/chile/2026-04-22/kast-presenta-su-megarreforma-y-la-envia-al-congreso-la-tarea-numero-uno-es-generar-empleo-el-resto-es-musica.html",
+    },
+    fuenteContraste: {
+      medio: "Emol",
+      url: "https://www.emol.com/noticias/Economia/2026/05/05/1199126/chile-cae-tgr-kast.html",
+    },
+    severidad: 3,
+  },
+  {
     slug: "responsabilidad-fiscal-vs-deficit-reconstruccion-2031",
     categoria: "institucional",
     fecha: "2026-05-05",

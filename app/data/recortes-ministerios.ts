@@ -15,8 +15,8 @@ export interface AlertaRecorteMinisterio {
 export const PANORAMA_RECORTES = {
   fecha: "2026-05-05",
   titulo: "Panorama nacional de recomendaciones de Hacienda",
-  resumen:
-    "La Tercera publicó el mapa nacional: 402 programas bajo lupa, con 260 recomendaciones de rebaja y 142 cierres o reformulaciones. Educación, Desarrollo Social y Salud concentran 150 programas, el 37,3% del total. BioBioChile precisó montos proyectados: PGU lidera con $906 mil millones, seguida por pensiones de reparto, Transporte Público Metropolitano, CAE y SUF. El 5 de mayo apareció además un decreto con $150.379 millones de rebajas y $17.581 millones menos para el Fondo de Emergencia de reconstrucción de Viña del Mar. La recomendación escrita sigue existiendo aunque el Gobierno hable de eficiencia y malgasto; Cadem luego registró 59% de rechazo a revisar o eliminar 142 programas.",
+    resumen:
+      "La Tercera publicó el mapa nacional: 402 programas bajo lupa, con 260 recomendaciones de rebaja y 142 cierres o reformulaciones. Educación, Desarrollo Social y Salud concentran 150 programas, el 37,3% del total. BioBioChile precisó montos proyectados: PGU lidera con $906 mil millones, seguida por pensiones de reparto, Transporte Público Metropolitano, CAE y SUF. El 5 de mayo apareció además un decreto con $150.379 millones de rebajas y $17.581 millones menos para el Fondo de Emergencia de reconstrucción de Viña del Mar; ese mismo día, diputados pidieron una Comisión Investigadora por las decisiones de Hacienda y Dipres. La recomendación escrita sigue existiendo aunque el Gobierno hable de eficiencia y malgasto; Cadem luego registró 59% de rechazo a revisar o eliminar 142 programas.",
   programasDescontinuar: 142,
   programasAjuste: 260,
   montoDescontinuarTexto: "$5,47 billones",
@@ -54,6 +54,7 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
       "DIPRES cambia descontinuar por reformular",
       "Cadem: 59% rechaza revisar o eliminar 142 programas",
       "Cadem: 54% rechaza recorte ministerial de 3%",
+      "Solicitud de Comisión Investigadora por recortes 11-mar a 5-may",
     ],
     cautela:
       "No equivale a decreto final, pero sí es una instrucción presupuestaria formal enviada desde Hacienda a las carteras. La aclaración posterior de DIPRES no cambia la palabra usada: descontinuar no es lo mismo que reformular.",
@@ -62,8 +63,8 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
     ministerioSlug: "educacion",
     titulo: "Educación: PAE, lectura, reinserción y apoyo a educación pública bajo recomendación de cierre",
     resumen:
-      "La Tercera actualizó el mapa: Educación tiene 57 programas bajo lupa, con 42 recomendaciones de ajuste y 15 cierres o reformulaciones. Incluye PAE, Fondo de Apoyo a la Educación Pública, lectura, reinserción, PACE, Liceos Bicentenario, becas y CAE.",
-    fecha: "2026-04-30",
+      "La Tercera actualizó el mapa: Educación tiene 57 programas bajo lupa, con 42 recomendaciones de ajuste y 15 cierres o reformulaciones. Incluye PAE, Fondo de Apoyo a la Educación Pública, lectura, reinserción, PACE, Liceos Bicentenario, becas y CAE. Centros de estudiantes de liceos públicos de Santiago sumaron rechazo a Escuelas Protegidas y pidieron transparencia por el impacto del 3% de recorte y la Circular N°16.",
+    fecha: "2026-05-05",
     fuenteUrl:
       "https://www.latercera.com/nacional/noticia/de-liceos-bicentenario-al-mim-quiroz-tambien-sugirio-recortar-al-menos-un-15-del-presupuesto-de-otros-260-programas/",
     fuenteMedio: "La Tercera",
@@ -82,9 +83,12 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
       "Liceos Bicentenario",
       "Retención escolar",
       "Beca Juan Gómez Millas",
+      "Centros de estudiantes rechazan Escuelas Protegidas",
+      "Preocupación por infraestructura, becas y condiciones laborales",
+      "TGR recauda $34.320 millones por CAE enero-abril",
     ],
     cautela:
-      "Quiroz dijo que el oficio no es una decisión final ni decreto de gasto; Cataldo respondió que el PAE alimenta diariamente a más de 2,5 millones de estudiantes.",
+      "Quiroz dijo que el oficio no es una decisión final ni decreto de gasto; Cataldo respondió que el PAE alimenta diariamente a más de 2,5 millones de estudiantes. El comunicado estudiantil no es un decreto, pero muestra la traducción social del ajuste: comunidades educativas piden saber qué se corta, cómo se financia convivencia y qué pasa con programas/becas.",
   },
   {
     ministerioSlug: "trabajo",

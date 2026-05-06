@@ -9,6 +9,106 @@ const montoDescontinuado = PROGRAMAS_MDSYF
 
 export const DECISIONES: Decision[] = [
   {
+    slug: "comision-investigadora-recortes-hacienda-11mar-5may",
+    titulo: "Oposición pide Comisión Investigadora por recortes de Hacienda entre el 11 de marzo y el 5 de mayo",
+    resumen:
+      "Diputados de oposición ingresaron una solicitud de CEI para reunir antecedentes de Hacienda y Dipres sobre recortes 2026 y preparación presupuestaria 2027. Apuntan a salud, educación, reconstrucción de Viña y programas sociales para niños, mayores y clase media.",
+    fecha: "2026-05-05",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "hacienda",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.latercera.com/politica/noticia/diputados-de-oposicion-ingresan-solicitud-para-desarrollar-comision-investigadora-por-recortes-anunciados-desde-hacienda/",
+        medio: "La Tercera",
+        titulo: "Diputados de oposición ingresan solicitud para desarrollar Comisión Investigadora por recortes anunciados desde Hacienda",
+      },
+    ],
+    cuerpo:
+      "El flanco de recortes entró a fase de control político formal. La Tercera reportó que diputados de oposición ingresaron una solicitud para crear una Comisión Especial Investigadora que reúna antecedentes sobre las determinaciones de Hacienda y Dipres entre el 11 de marzo y el 5 de mayo de 2026.\n\nLa solicitud apunta a dos capas del ajuste: recortes ya concretados durante 2026 y la preparación del Presupuesto 2027 bajo el Oficio Circular N°16. Los parlamentarios mencionaron salud, educación, reconstrucción de Viña del Mar y programas sociales vinculados a niños, personas mayores y segmentos medios.\n\nEl punto institucional es relevante porque el Gobierno ha insistido en que las planillas son recomendaciones y que no se tocarán beneficios sociales. Pero la CEI nace justamente de la falta de respuestas completas: los diputados sostienen que se han enterado por la prensa de medidas como el recorte al Fondo de Emergencia para la reconstrucción en Valparaíso.\n\nSi la comisión prospera, Hacienda tendrá que explicar criterios, documentos, responsables, montos, decretos y trazabilidad de cada decisión. Ya no bastará con contrastar 'decreto final' versus 'insumo interno': el Congreso buscará reconstruir la cadena completa de decisiones que llevó desde la promesa de no tocar beneficios hasta una matriz de 402 programas bajo revisión.",
+  },
+  {
+    slug: "contribuciones-fondo-comun-municipal-alcaldes-matthei",
+    titulo: "Alcaldes y Matthei cuestionan exención de contribuciones por impacto en el Fondo Común Municipal",
+    resumen:
+      "La ACHM reunió a más de 220 alcaldes y advirtió riesgo para servicios básicos y ayudas sociales si se reduce el Fondo Común Municipal. BioBioChile agregó que Matthei calificó como contrasentido bajar contribuciones al 20% de casas más grandes en medio de desempleo y alzas.",
+    fecha: "2026-05-05",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "hacienda",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/04/30/alcaldes-agrupados-en-la-achm-se-movilizan-ante-recorte-del-fondo-comun-municipal.shtml",
+        medio: "BioBioChile",
+        titulo: "Alcaldes agrupados en la ACHM se movilizan ante recorte del Fondo Común Municipal",
+      },
+      {
+        url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/02/criticas-transversales-de-alcaldes-al-plan-de-gobierno-de-eliminar-contribuciones-a-mayores-de-65-anos.shtml",
+        medio: "BioBioChile",
+        titulo: "Críticas transversales de alcaldes al plan de Gobierno de eliminar contribuciones",
+      },
+      {
+        url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/05/matthei-cuestiona-idea-del-gobierno-de-eliminar-contribuciones-a-adultos-mayores-un-contrasentido.shtml",
+        medio: "BioBioChile",
+        titulo: "Matthei cuestiona idea del gobierno de eliminar contribuciones a adultos mayores",
+      },
+    ],
+    cuerpo:
+      "La exención de contribuciones a la primera vivienda de mayores de 65 años dejó de ser solo una medida tributaria popular. BioBioChile reportó que la Asociación Chilena de Municipalidades reunió telemáticamente a más de 220 alcaldes para analizar el impacto de la reducción del Fondo Común Municipal. El presidente de la ACHM, Gustavo Alessandri, advirtió que el FCM es el principal ingreso de cerca del 65% de las municipalidades.\n\nLa alerta municipal es territorial: servicios básicos, ayudas sociales, programas locales y funcionamiento de municipios de menores ingresos dependen de ese fondo. La propuesta del Ejecutivo ha sido explicada como alivio para adultos mayores, pero los alcaldes piden conocer con claridad cómo, cuándo y con qué monto se compensará la menor recaudación.\n\nEl flanco también entró por la derecha tradicional. BioBioChile consignó que Evelyn Matthei calificó la medida como un contrasentido absoluto en un contexto de desempleo, alzas de precios y desesperación económica. Su crítica apuntó a que la baja favorece al 20% de viviendas más grandes y que las compensaciones municipales suelen aparecer por un ítem y desaparecer por otro.\n\nEl contraste fiscal es doble: la megarreforma reduce ingresos locales al mismo tiempo que Hacienda exige recortes a carteras sociales. Si el Gobierno quiere sostener que no afectará beneficios ni servicios, debe mostrar la compensación completa del Fondo Común Municipal, su distribución por comuna y el efecto neto en servicios de aseo, seguridad, ayudas sociales y programas territoriales.",
+  },
+  {
+    slug: "cae-tgr-recaudacion-295-convenios-abril",
+    titulo: "Cobro CAE salta 295%: TGR recauda $34.320 millones y abre convenios más flexibles",
+    resumen:
+      "Emol y La Tercera reportaron que la recaudación CAE enero-abril llegó a $34.320 millones, 295% más que en 2025. Solo en abril hubo 11.109 convenios, $11.991 millones de pie, $5.712 millones por Operación Renta y $1.500 millones por embargos y retenciones.",
+    fecha: "2026-05-05",
+    etiqueta: "malo",
+    severidad: 3,
+    ministerioSlug: "educacion",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.emol.com/noticias/Economia/2026/05/05/1199126/chile-cae-tgr-kast.html",
+        medio: "Emol",
+        titulo: "Medidas del Gobierno impulsan pago del CAE: Recaudación ha saltado casi 300%",
+      },
+      {
+        url: "https://www.latercera.com/nacional/noticia/tgr-anuncia-nuevas-opciones-de-pago-y-flexibiliza-convenios-para-deudores-del-cae/",
+        medio: "La Tercera",
+        titulo: "Tesorería anuncia nuevas opciones de pago y flexibiliza convenios para deudores del CAE",
+      },
+    ],
+    cuerpo:
+      "El giro del Gobierno sobre el CAE ya tiene efecto de caja. Emol reportó que la Tesorería General de la República informó una recaudación de $34.320 millones entre enero y abril de 2026, frente a $8.681 millones en el mismo período de 2025. El salto es de 295%, casi cuatro veces el año anterior, en medio de las acciones de cobranza impulsadas por la administración de Kast.\n\nLa mayor parte del aumento viene de convenios. Solo en abril se suscribieron 11.109 convenios, contra 1.324 en abril de 2025, con $11.991 millones recaudados por pies de acuerdos. También se suman $5.712 millones por compensación en Operación Renta y $1.500 millones por embargos y retenciones a deudores con ingresos sobre $5 millones sin convenio o pago.\n\nEl dato social sigue siendo enorme: más de 554 mil personas mantienen deudas CAE por cerca de $4 billones. Por eso la TGR anunció flexibilización: personas con ingresos hasta $1 millón podrán entrar con pie de 1 UTM, $70.588 en mayo, y cuotas entre 12 y 24 meses; para tramos superiores, las cuotas se vinculan al 10% del ingreso.\n\nLa lectura fiscalizadora no es que regularizar deuda sea ilegítimo. Es que la megarreforma combina mayor presión de cobro sobre deudores educativos con rebajas tributarias, moratoria de expansión de gratuidad y recomendaciones de ajuste al propio CAE. El Gobierno debe transparentar si el objetivo principal es alivio sostenible para familias, recaudación fiscal rápida o señal política contra la condonación.",
+  },
+  {
+    slug: "estudiantes-rechazan-escuelas-protegidas-recorte-mineduc",
+    titulo: "Centros de estudiantes rechazan Escuelas Protegidas y acusan riesgo por recortes en Educación",
+    resumen:
+      "Centros de estudiantes de liceos públicos de Santiago rechazaron el proyecto Escuelas Protegidas por su enfoque punitivo y advirtieron que el recorte de 3% y la Circular N°16 pueden afectar infraestructura, programas educativos, becas y condiciones laborales.",
+    fecha: "2026-04-29",
+    etiqueta: "malo",
+    severidad: 3,
+    ministerioSlug: "educacion",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.canal9.cl/episodios/2026/04/29/el-duro-comunicado-de-los-estudiantes-de-los-colegios-de-santiago-contra-el-gobierno-de-kast",
+        medio: "BioBioChile / Canal 9",
+        titulo: "El duro comunicado de los estudiantes de los colegios de Santiago contra el gobierno de Kast",
+      },
+      {
+        url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/04/21/escuelas-protegidas-avanza-al-senado-tras-aprobacion-en-la-camara-oposicion-recurrira-al-tc.shtml",
+        medio: "BioBioChile",
+        titulo: "Aprueban Escuelas Protegidas: proyecto avanza al Senado y oposición anuncia ofensiva en el TC",
+      },
+    ],
+    cuerpo:
+      "El flanco educativo no quedó solo en planillas de Hacienda. Centros de estudiantes de liceos públicos de Santiago emitieron una declaración contra el proyecto Escuelas Protegidas y contra el ajuste presupuestario del Mineduc. Reconocen problemas de violencia escolar, pero cuestionan que la respuesta se concentre en control, vigilancia y sanción.\n\nLa crítica apunta a medidas como revisión de mochilas, protocolos poco definidos, posible arbitrariedad y sanciones que podrían afectar acceso a beneficios educativos. Para los centros, la iniciativa desplaza el rol formativo de la escuela hacia una lógica de desconfianza sobre el estudiantado.\n\nEl comunicado conecta esa agenda con el recorte del 3% al Ministerio de Educación y la Circular N°16 de Hacienda para el Presupuesto 2027. Advierten incertidumbre en infraestructura, financiamiento de establecimientos, programas educativos, condiciones laborales y becas, incluyendo posibles ajustes o descontinuaciones.\n\nLa señal política es que la agenda de convivencia se está mezclando con austeridad. Si el Gobierno quiere seguridad escolar, debe demostrar financiamiento, personal especializado, salud mental, infraestructura y apoyo docente. Sin eso, Escuelas Protegidas corre el riesgo de aparecer como control sin recursos y sanción sobre comunidades que ya enfrentan recortes.",
+  },
+  {
     slug: "cfa-plan-reconstruccion-deficitario-2031",
     titulo: "CFA advierte que el Plan de Reconstrucción sería deficitario al menos hasta 2031",
     resumen:
@@ -25,13 +125,18 @@ export const DECISIONES: Decision[] = [
         titulo: "CFA advierte que el Plan de Reconstrucción sería deficitario al menos hasta 2031",
       },
       {
+        url: "https://elpais.com/chile/2026-05-06/la-megarreforma-de-kast-recibe-una-dura-critica-del-consejo-fiscal-autonomo-por-diversos-riesgos-para-las-finanzas-publicas.html",
+        medio: "El País Chile",
+        titulo: "La megarreforma de Kast recibe una dura crítica del Consejo Fiscal Autónomo",
+      },
+      {
         url: "https://www.latercera.com/politica/noticia/presidente-de-la-comision-de-hacienda-asegura-que-megarreforma-se-vota-si-o-si-esta-semana/",
         medio: "La Tercera",
         titulo: "Presidente de la comisión de Hacienda asegura que megarreforma se vota sí o sí esta semana",
       },
     ],
     cuerpo:
-      "La alerta fiscal dejó de ser una disputa opositora. BioBioChile reportó que el Consejo Fiscal Autónomo expuso ante la Comisión de Hacienda y advirtió que el Plan de Reconstrucción Nacional sería deficitario al menos hasta 2031. El punto más sensible es que esa trayectoria negativa aparece en el propio informe financiero del proyecto, incluso considerando el efecto crecimiento que el Gobierno usa para defender la neutralidad de la reforma.\n\nEl CFA sostuvo que el balance final depende críticamente de que el crecimiento proyectado ocurra. Sin ese efecto, la iniciativa generaría un deterioro fiscal permanente de 0,43% del PIB en régimen al 2050. Con crecimiento, el balance mejora en el largo plazo, pero el impacto neto seguiría siendo negativo entre 2026 y 2031 y en 2030 todavía habría déficit de 0,3% del PIB.\n\nLa advertencia golpea el corazón del relato oficial: costos ciertos desde el primer año y beneficios graduales, inciertos y dependientes de mayor crecimiento. El Consejo señaló que la neutralidad fiscal exige fuentes adicionales y relevantes de financiamiento que no están contenidas en el proyecto ingresado, porque las fuentes actuales no compensan los menores ingresos fiscales.\n\nLos riesgos listados por el CFA aterrizan en medidas concretas: rebaja de impuesto a empresas, crédito tributario al empleo, exención transitoria de IVA a viviendas nuevas, compensación al Fondo Común Municipal por contribuciones, ahorros menores a los previstos en licencias médicas, incentivos al retiro, menor recaudación por tabaco, gasto sin techo por anulación de RCA y debilitamiento del cumplimiento tributario por nuevas regularizaciones o repatriaciones.\n\nEl seguimiento queda claro: si Hacienda pide tramitar rápido una ley de alto costo, debe responder con financiamiento verificable, no solo con una promesa de crecimiento futuro. La Tercera ya había consignado que el presidente de Hacienda de la Cámara insiste en votar sí o sí esta semana; la advertencia del CFA hace más difícil justificar esa velocidad sin corregir números.",
+      "La alerta fiscal dejó de ser una disputa opositora. BioBioChile reportó que el Consejo Fiscal Autónomo expuso ante la Comisión de Hacienda y advirtió que el Plan de Reconstrucción Nacional sería deficitario al menos hasta 2031. El punto más sensible es que esa trayectoria negativa aparece en el propio informe financiero del proyecto, incluso considerando el efecto crecimiento que el Gobierno usa para defender la neutralidad de la reforma.\n\nEl CFA sostuvo que el balance final depende críticamente de que el crecimiento proyectado ocurra. Sin ese efecto, la iniciativa generaría un deterioro fiscal permanente de 0,43% del PIB en régimen al 2050. Con crecimiento, el balance mejora en el largo plazo, pero el impacto neto seguiría siendo negativo entre 2026 y 2031 y en 2030 todavía habría déficit de 0,3% del PIB.\n\nEl País agregó el dato de deuda: el proyecto aumenta el riesgo de superar el nivel prudente cuando la deuda pública ya alcanza 42,6% del PIB, cerca del umbral de 45% recomendado por el propio CFA. La recomendación del Consejo fue revisar proyecciones fiscales, metas nuevas y acciones correctivas por el desvío de la meta 2025.\n\nLa advertencia golpea el corazón del relato oficial: costos ciertos desde el primer año y beneficios graduales, inciertos y dependientes de mayor crecimiento. El Consejo señaló que la neutralidad fiscal exige fuentes adicionales y relevantes de financiamiento que no están contenidas en el proyecto ingresado, porque las fuentes actuales no compensan los menores ingresos fiscales.\n\nLos riesgos listados por el CFA aterrizan en medidas concretas: rebaja de impuesto a empresas, crédito tributario al empleo, exención transitoria de IVA a viviendas nuevas, compensación al Fondo Común Municipal por contribuciones, ahorros menores a los previstos en licencias médicas, incentivos al retiro, menor recaudación por tabaco, gasto sin techo por anulación de RCA y debilitamiento del cumplimiento tributario por nuevas regularizaciones o repatriaciones.\n\nEl seguimiento queda claro: si Hacienda pide tramitar rápido una ley de alto costo, debe responder con financiamiento verificable, no solo con una promesa de crecimiento futuro. La Tercera ya había consignado que el presidente de Hacienda de la Cámara insiste en votar sí o sí esta semana; la advertencia del CFA hace más difícil justificar esa velocidad sin corregir números.",
   },
   {
     slug: "oposicion-23-dudas-megarreforma-cifras",
@@ -144,9 +249,14 @@ export const DECISIONES: Decision[] = [
         medio: "BioBioChile",
         titulo: "Alistan liquidación de contrato con empresa Tapusa que abandonó tres obras en Gran Concepción",
       },
+      {
+        url: "https://www.latercera.com/politica/noticia/poduje-se-reune-con-kast-en-medio-de-criticas-por-su-gestion/",
+        medio: "La Tercera",
+        titulo: "Poduje llega a La Moneda y se reúne con Kast en medio de críticas a su gestión",
+      },
     ],
     cuerpo:
-      "El problema de reconstrucción y obras públicas también bajó a contratos regionales. BioBioChile reportó que el Minvu alista la liquidación de contrato con Tapusa, empresa española que abandonó tres obras Serviu en Concepción y Talcahuano. Poduje anticipó que, si la empresa no responde, buscarán iniciar una nueva licitación y adjudicar continuidad por trato directo.\n\nEl caso tiene impacto territorial inmediato: tres obras paralizadas, 400 trabajadores afectados, vecinos esperando por el eje Colón y el puente Perales, además de recursos del Gobierno Regional del Biobío involucrados. El alcalde de Talcahuano pidió mejorar los procesos para no concentrar demasiados contratos en una sola empresa, porque cuando falla se afecta la calidad de vida de barrios completos.\n\nLa alerta es nacional porque Tapusa no solo opera en Biobío. La nota consigna obras de la empresa en Ñuble y O'Higgins; en esta última región, el Serviu ya tuvo que liquidar un contrato por incumplimientos y retrasos. Ese patrón exige revisar adjudicaciones, garantías, fiscalización de avance físico y capacidad real de contratistas.\n\nPara el Gobierno, el caso tensiona dos relatos a la vez: eficiencia del gasto y aceleración de obras. Si la respuesta será trato directo, debe venir con controles fuertes para no reemplazar lentitud por opacidad. El seguimiento debe mirar plazos de relicitación, pago a trabajadores, recuperación de avance y responsabilidades de inspección técnica.",
+      "El problema de reconstrucción y obras públicas también bajó a contratos regionales. BioBioChile reportó que el Minvu alista la liquidación de contrato con Tapusa, empresa española que abandonó tres obras Serviu en Concepción y Talcahuano. Poduje anticipó que, si la empresa no responde, buscarán iniciar una nueva licitación y adjudicar continuidad por trato directo.\n\nEl caso tiene impacto territorial inmediato: tres obras paralizadas, 400 trabajadores afectados, vecinos esperando por el eje Colón y el puente Perales, además de recursos del Gobierno Regional del Biobío involucrados. La Tercera agregó que la inversión asociada a obras en Concepción y Talcahuano supera los $50 mil millones y que, horas después de anunciar la liquidación, Poduje fue a La Moneda a reunirse con Kast en medio de cuestionamientos a su gestión.\n\nLa alerta es nacional porque Tapusa no solo opera en Biobío. La nota consigna obras de la empresa en Ñuble y O'Higgins; en esta última región, el Serviu ya tuvo que liquidar un contrato por incumplimientos y retrasos. Ese patrón exige revisar adjudicaciones, garantías, fiscalización de avance físico y capacidad real de contratistas.\n\nPara el Gobierno, el caso tensiona dos relatos a la vez: eficiencia del gasto y aceleración de obras. Si la respuesta será trato directo, debe venir con controles fuertes para no reemplazar lentitud por opacidad. El seguimiento debe mirar plazos de relicitación, pago a trabajadores, recuperación de avance y responsabilidades de inspección técnica.",
   },
   {
     slug: "segundo-piso-irarrazaval-contrato-95-millones",

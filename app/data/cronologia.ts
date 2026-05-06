@@ -7,6 +7,82 @@ import type { EventoCronologia } from "./types";
  */
 export const CRONOLOGIA: EventoCronologia[] = [
   {
+    slug: "2026-05-05-comision-investigadora-recortes-hacienda",
+    fecha: "2026-05-05",
+    titulo: "Diputados piden Comisión Investigadora por recortes de Hacienda",
+    resumen:
+      "La solicitud busca revisar decisiones de Hacienda y Dipres entre el 11 de marzo y el 5 de mayo, incluyendo salud, educación, reconstrucción de Viña y programas sociales.",
+    tipo: "escandalo",
+    etiqueta: "feo",
+    decisionSlug: "comision-investigadora-recortes-hacienda-11mar-5may",
+    fuenteUrl:
+      "https://www.latercera.com/politica/noticia/diputados-de-oposicion-ingresan-solicitud-para-desarrollar-comision-investigadora-por-recortes-anunciados-desde-hacienda/",
+    fuenteMedio: "La Tercera",
+  },
+  {
+    slug: "2026-05-05-cae-tgr-recaudacion-295",
+    fecha: "2026-05-05",
+    titulo: "TGR recauda $34.320 millones por CAE: 295% más que en 2025",
+    resumen:
+      "La cobranza CAE acumuló 11.109 convenios en abril, $11.991 millones por pies de pago, $5.712 millones vía Operación Renta y $1.500 millones por embargos y retenciones.",
+    tipo: "decision",
+    etiqueta: "malo",
+    decisionSlug: "cae-tgr-recaudacion-295-convenios-abril",
+    fuenteUrl: "https://www.emol.com/noticias/Economia/2026/05/05/1199126/chile-cae-tgr-kast.html",
+    fuenteMedio: "Emol",
+  },
+  {
+    slug: "2026-05-05-matthei-alcaldes-contribuciones-fcm",
+    fecha: "2026-05-05",
+    titulo: "Alcaldes y Matthei presionan por contribuciones y Fondo Común Municipal",
+    resumen:
+      "La ACHM reunió a más de 220 alcaldes y advirtió que el FCM financia servicios y ayudas sociales. Matthei calificó la exención como contrasentido por beneficiar al 20% de viviendas más grandes.",
+    tipo: "escandalo",
+    etiqueta: "feo",
+    decisionSlug: "contribuciones-fondo-comun-municipal-alcaldes-matthei",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/05/matthei-cuestiona-idea-del-gobierno-de-eliminar-contribuciones-a-adultos-mayores-un-contrasentido.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
+    slug: "2026-05-05-fppe-bachelet-onu-credibilidad",
+    fecha: "2026-05-05",
+    titulo: "Foro de Política Exterior acusa daño a credibilidad de Chile por Bachelet ONU",
+    resumen:
+      "El FPPE exigió restituir el patrocinio estatal a la candidatura de Bachelet y sostuvo que retirar el apoyo no es trámite técnico, sino una señal que afecta la palabra internacional de Chile.",
+    tipo: "escandalo",
+    etiqueta: "malo",
+    decisionSlug: "bachelet-onu-retiro-apoyo-chile",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/05/foro-de-politica-exterior-exige-a-kast-honrar-compromiso-con-bachelet-por-su-candidatura-a-la-onu.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
+    slug: "2026-05-05-kast-puerto-montt-manifestaciones",
+    fecha: "2026-05-05",
+    titulo: "Kast llega a Puerto Montt con manifestaciones de vecinos y portuarios",
+    resumen:
+      "En Presidente Presente, el mandatario abordó dudas ciudadanas por recortes en educación mientras más de 50 vecinos y trabajadores portuarios se manifestaron fuera del recinto por más de tres horas.",
+    tipo: "escandalo",
+    etiqueta: "malo",
+    fuenteUrl:
+      "https://www.canal9.cl/episodios/2026/05/05/presidente-kast-arriba-a-puerto-montt-en-medio-de-manifestaciones-de-vecinos-y-trabajadores-portuarios",
+    fuenteMedio: "BioBioChile / Canal 9",
+  },
+  {
+    slug: "2026-04-29-estudiantes-escuelas-protegidas-recortes",
+    fecha: "2026-04-29",
+    titulo: "Centros de estudiantes rechazan Escuelas Protegidas y alertan por recortes Mineduc",
+    resumen:
+      "Liceos públicos de Santiago cuestionaron el enfoque punitivo del proyecto y pidieron transparencia por el impacto del 3% de ajuste y la Circular N°16 en programas, becas e infraestructura.",
+    tipo: "escandalo",
+    etiqueta: "malo",
+    decisionSlug: "estudiantes-rechazan-escuelas-protegidas-recorte-mineduc",
+    fuenteUrl:
+      "https://www.canal9.cl/episodios/2026/04/29/el-duro-comunicado-de-los-estudiantes-de-los-colegios-de-santiago-contra-el-gobierno-de-kast",
+    fuenteMedio: "BioBioChile / Canal 9",
+  },
+  {
     slug: "2026-05-05-cfa-deficit-plan-reconstruccion-2031",
     fecha: "2026-05-05",
     titulo: "CFA advierte déficit del Plan de Reconstrucción al menos hasta 2031",

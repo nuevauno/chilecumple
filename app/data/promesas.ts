@@ -452,7 +452,7 @@ export const PROMESAS: Promesa[] = [
       },
     ],
     cuerpo:
-      "En campaña, Kast defendió su recorte de US$6.000 millones afirmando que no se cortarían beneficios sociales. El Oficio Circular N°16 de Hacienda (21-abr-2026) dejó una contradicción escrita: recomienda descontinuar el PAE de JUNAEB ($1,06 billones), las Ayudas Tecnicas de SENADIS, el Bono de Graduacion de 4° Medio, Transporte Publico Regional, Becas de Postgrado, programas de salud mental y prevención del suicidio, y rebajar al menos 15% el Bono Invierno ($318.660 millones), el SUF, el Subsidio Previsional a Trabajadores Jovenes, las pensiones del sistema de reparto, el Subsidio de Discapacidad y Chile Te Cuida. El 28-abr, CIPER agregó que las 260 rebajas suman $2,8 billones e incluyen PGU, gratuidad, CAE, jardines infantiles, transporte metropolitano y subsidios habitacionales. El 29-abr, La Tercera detalló que esas rebajas alcanzan 22 ministerios y suman Liceos Bicentenario, retención escolar, Mejor Niñez, Chile Te Cuida, MIM, GAM, listas de espera, especialistas, VIH e inmunizaciones. Esa misma línea ya tiene recortes vigentes: BioBioChile reportó una circular firmada por Quiroz que recorta $32.721 millones del presupuesto 2026 de Desarrollo Social, y La Tercera agregó que el INJUV pierde 47% de sus recursos disponibles mientras el Gobierno estudia reemplazarlo. Hacienda puede decir que no es decreto final; no puede borrar que la recomendación de cierre/ajuste existe ni que parte de la tijera 2026 ya fue firmada.",
+      "En campaña, Kast defendió su recorte de US$6.000 millones afirmando que no se cortarían beneficios sociales. El Oficio Circular N°16 de Hacienda (21-abr-2026) dejó una contradicción escrita: recomienda descontinuar el PAE de JUNAEB ($1,06 billones), las Ayudas Tecnicas de SENADIS, el Bono de Graduacion de 4° Medio, Transporte Publico Regional, Becas de Postgrado, programas de salud mental y prevención del suicidio, y rebajar al menos 15% el Bono Invierno ($318.660 millones), el SUF, el Subsidio Previsional a Trabajadores Jovenes, las pensiones del sistema de reparto, el Subsidio de Discapacidad y Chile Te Cuida. El 28-abr, CIPER agregó que las 260 rebajas suman $2,8 billones e incluyen PGU, gratuidad, CAE, jardines infantiles, transporte metropolitano y subsidios habitacionales. El 29-abr, La Tercera detalló que esas rebajas alcanzan 22 ministerios y suman Liceos Bicentenario, retención escolar, Mejor Niñez, Chile Te Cuida, MIM, GAM, listas de espera, especialistas, VIH e inmunizaciones. Esa misma línea ya tiene recortes vigentes: BioBioChile reportó una circular firmada por Quiroz que recorta $32.721 millones del presupuesto 2026 de Desarrollo Social, y La Tercera agregó que el INJUV pierde 47% de sus recursos disponibles mientras el Gobierno estudia reemplazarlo. El 5 de mayo, diputados de oposición pidieron una Comisión Investigadora para que Hacienda y Dipres transparenten decisiones entre el 11 de marzo y el 5 de mayo. Hacienda puede decir que no es decreto final; no puede borrar que la recomendación de cierre/ajuste existe ni que parte de la tijera 2026 ya fue firmada.",
   },
   {
     slug: "pae-junaeb-mantener",
@@ -461,9 +461,9 @@ export const PROMESAS: Promesa[] = [
       "Compromiso de no afectar la alimentacion entregada a estudiantes vulnerables en colegios publicos.",
     estado: "incumplida",
     eje: "educacion",
-    decisionesRelacionadas: ["educacion-pae-descontinuado"],
+    decisionesRelacionadas: ["educacion-pae-descontinuado", "estudiantes-rechazan-escuelas-protegidas-recorte-mineduc"],
     cuerpo:
-      "El anexo de Educacion del Oficio Circular N°16 marca al PAE como “descontinuar”. Es el programa con mayor monto ejecutado entre todos los marcados para eliminacion: $1,06 billones de pesos en 2025.",
+      "El anexo de Educacion del Oficio Circular N°16 marca al PAE como “descontinuar”. Es el programa con mayor monto ejecutado entre todos los marcados para eliminacion: $1,06 billones de pesos en 2025. Centros de estudiantes de liceos publicos de Santiago tambien conectaron la preocupacion por recortes Mineduc con Escuelas Protegidas, pidiendo transparencia sobre impactos en infraestructura, programas, becas y condiciones laborales.",
   },
   {
     slug: "no-retroceder-gratuidad-universitaria",
@@ -472,7 +472,10 @@ export const PROMESAS: Promesa[] = [
       "El Gobierno evaluó limitar la gratuidad por edad, fortalecer cobros del CAE y frenar la extensión del beneficio. Tras resistencia oficialista y opositora, mantuvo una moratoria de dos años al ingreso de nuevas instituciones a la gratuidad.",
     estado: "contradictoria",
     eje: "educacion",
-    decisionesRelacionadas: ["gratuidad-universitaria-limites-y-moratoria"],
+    decisionesRelacionadas: [
+      "gratuidad-universitaria-limites-y-moratoria",
+      "cae-tgr-recaudacion-295-convenios-abril",
+    ],
     fuenteUrls: [
       {
         url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/03/16/cambios-en-la-gratuidad-enfrentan-al-gobierno-de-kast-con-la-oposicion-acusan-promesa-incumplida.shtml",
@@ -486,7 +489,7 @@ export const PROMESAS: Promesa[] = [
       },
     ],
     cuerpo:
-      "La promesa general de no tocar beneficios sociales choca con la secuencia de gratuidad. Primero se estudió limitar el acceso a menores de 30 años y reforzar cobros del CAE. Luego, tras resistencia, el texto final redujo el golpe pero mantuvo una moratoria de dos años para nuevas instituciones. No se eliminó la gratuidad vigente, pero sí se le puso freno de expansión.",
+      "La promesa general de no tocar beneficios sociales choca con la secuencia de gratuidad. Primero se estudió limitar el acceso a menores de 30 años y reforzar cobros del CAE. Luego, tras resistencia, el texto final redujo el golpe pero mantuvo una moratoria de dos años para nuevas instituciones. No se eliminó la gratuidad vigente, pero sí se le puso freno de expansión.\n\nEl 5 de mayo, TGR informó que la recaudación CAE enero-abril llegó a $34.320 millones, 295% más que en 2025, con 11.109 convenios solo en abril y gestiones de embargo/retención para deudores de mayores ingresos. El seguimiento de esta promesa debe mirar juntos tres elementos: gratuidad frenada, CAE bajo cobranza intensa y ajuste presupuestario al programa CAE en los anexos de Hacienda.",
   },
   {
     slug: "estado-eficiente",
@@ -497,9 +500,10 @@ export const PROMESAS: Promesa[] = [
     eje: "institucional",
     decisionesRelacionadas: [
       "hacienda-recorta-mas-de-6-mil-millones-usd",
+      "comision-investigadora-recortes-hacienda-11mar-5may",
     ],
     cuerpo:
-      "El recorte de 142 programas y rebaja de 260 mas instruido por Hacienda es la materializacion mas concreta de esta promesa. Falta clarificar el efecto neto en eficiencia. Tambien si se cumple la promesa de eliminar ministerios completos (no solo programas) — al 24-abr-2026 ningun ministerio fue eliminado.",
+      "El recorte de 142 programas y rebaja de 260 mas instruido por Hacienda es la materializacion mas concreta de esta promesa. Falta clarificar el efecto neto en eficiencia. Tambien si se cumple la promesa de eliminar ministerios completos (no solo programas) — al 24-abr-2026 ningun ministerio fue eliminado. El 5 de mayo, la oposicion pidio una Comision Investigadora para revisar las decisiones de Hacienda y Dipres desde el 11 de marzo, lo que transforma la promesa de eficiencia en un asunto de trazabilidad institucional.",
   },
   {
     slug: "auditoria-externa-total-estado",
