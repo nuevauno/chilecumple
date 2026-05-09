@@ -7,6 +7,42 @@ import type { EventoCronologia } from "./types";
  */
 export const CRONOLOGIA: EventoCronologia[] = [
   {
+    slug: "2026-05-07-kast-decretos-megarreforma",
+    fecha: "2026-05-07",
+    titulo: "Kast abre la puerta a decretos si la megarreforma no avanza",
+    resumen:
+      "Tras la aprobación en Hacienda, el Presidente defendió un debate rápido y dijo que el Gobierno puede gobernar con herramientas administrativas y decretos en materias que no requieren ley.",
+    tipo: "anuncio",
+    etiqueta: "feo",
+    fuenteUrl:
+      "https://www.24horas.cl/actualidad/politica/kast-valora-avance-de-la-megareforma-y-explica-uso-de-decretos",
+    fuenteMedio: "24 Horas",
+  },
+  {
+    slug: "2026-05-07-megarreforma-hacienda-8-4-1",
+    fecha: "2026-05-07",
+    titulo: "Megarreforma pasa en Hacienda por 8 votos a favor, 4 en contra y 1 abstención",
+    resumen:
+      "La Comisión de Hacienda aprobó la idea de legislar. T13 identificó los votos a favor de REP, UDI, RN y PNL, los votos en contra opositores y la abstención de Zandra Parisi del PDG.",
+    tipo: "decision",
+    etiqueta: "malo",
+    fuenteUrl:
+      "https://www.t13.cl/noticia/politica/comision-hacienda-aprueba-idea-legislar-proyecto-reconstruccion-gobierno",
+    fuenteMedio: "T13",
+  },
+  {
+    slug: "2026-05-07-pdg-quiebre-megarreforma",
+    fecha: "2026-05-07",
+    titulo: "PDG se descuelga y deja al Gobierno negociando voto a voto",
+    resumen:
+      "Canal 9/BioBio reportó que el PDG anunció rechazo por diferencias en medicamentos, pañales y focalización, justo antes de la votación clave de la megarreforma.",
+    tipo: "escandalo",
+    etiqueta: "feo",
+    fuenteUrl:
+      "https://www.canal9.cl/episodios/2026/05/07/al-gobierno-le-llueve-sobre-mojado-tras-quiebre-con-el-pdg-en-antesala-a-votacion-de-proyecto-clave",
+    fuenteMedio: "BioBioChile / Canal 9",
+  },
+  {
     slug: "2026-05-05-comision-investigadora-recortes-hacienda",
     fecha: "2026-05-05",
     titulo: "Diputados piden Comisión Investigadora por recortes de Hacienda",

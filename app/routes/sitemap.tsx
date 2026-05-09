@@ -12,6 +12,7 @@ import { CASOS_DOBLE_ESTANDAR, MENTIRAS_CONTRA_BORIC } from "~/data/doble-estand
 import { SEREMIS } from "~/data/seremis";
 import { CASOS_VALENZUELA } from "~/data/valenzuela";
 import { PROMESAS } from "~/data/promesas";
+import { CONTRASTES_VOTO, HISTORIAL_VOTOS_BORIC, VOTACIONES_CLAVE } from "~/data/votaciones";
 
 /**
  * /sitemap.xml — protocolo sitemap 0.9 con todas las rutas estaticas
@@ -35,6 +36,7 @@ export async function loader({ request }: { request: Request }) {
     { loc: `${origin}/retractaciones`, lastmod: today, changefreq: "weekly", priority: "0.9" },
     { loc: `${origin}/mentiras`, lastmod: today, changefreq: "weekly", priority: "0.9" },
     { loc: `${origin}/doble-estandar`, lastmod: today, changefreq: "weekly", priority: "0.9" },
+    { loc: `${origin}/como-votan`, lastmod: today, changefreq: "daily", priority: "0.95" },
     { loc: `${origin}/valenzuela`, lastmod: today, changefreq: "weekly", priority: "0.9" },
     { loc: `${origin}/seremis`, lastmod: today, changefreq: "weekly", priority: "0.8" },
     { loc: `${origin}/promesas`, lastmod: today, changefreq: "weekly", priority: "0.9" },
@@ -103,6 +105,30 @@ export async function loader({ request }: { request: Request }) {
       lastmod: ds.fecha,
       changefreq: "monthly",
       priority: "0.6",
+    });
+  }
+  for (const v of VOTACIONES_CLAVE) {
+    urls.push({
+      loc: `${origin}/como-votan#${v.slug}`,
+      lastmod: v.fecha,
+      changefreq: "monthly",
+      priority: "0.7",
+    });
+  }
+  for (const c of CONTRASTES_VOTO) {
+    urls.push({
+      loc: `${origin}/como-votan#${c.slug}`,
+      lastmod: c.fecha,
+      changefreq: "monthly",
+      priority: "0.7",
+    });
+  }
+  for (const h of HISTORIAL_VOTOS_BORIC) {
+    urls.push({
+      loc: `${origin}/como-votan#${h.slug}`,
+      lastmod: h.fecha,
+      changefreq: "monthly",
+      priority: "0.7",
     });
   }
   for (const m of MENTIRAS_CONTRA_BORIC) {

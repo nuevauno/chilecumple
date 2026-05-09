@@ -32,6 +32,7 @@ import { ZANJA_CONTRADICCIONES, ZANJA_TRACKER } from "~/data/zanja";
 import { ESPEJO_BORIC } from "~/data/espejo-boric";
 import { CASOS_DOBLE_ESTANDAR, MENTIRAS_CONTRA_BORIC } from "~/data/doble-estandar";
 import { CASOS_VALENZUELA, VALENZUELA_STATS } from "~/data/valenzuela";
+import { CONTRASTES_VOTO, VOTACIONES_STATS, votacionesOrdenadas, votosPorTipo } from "~/data/votaciones";
 import { createMeta } from "~/lib/meta";
 import { PageShare, ShareButton } from "~/components/ShareButton";
 import { SugerenciaGithub } from "~/components/SugerenciaGithub";
@@ -68,6 +69,7 @@ export async function loader({}: Route.LoaderArgs) {
   const cunasTop = cunasOrdenadas().slice(0, 3);
   const seremiStats = SEREMIS_STATS();
   const diasGobierno = diasDesdeInvestidura();
+  const ultimaVotacion = votacionesOrdenadas()[0];
 
   // Zanja del Plan Escudo Fronterizo
   const zanjaInicio = new Date(`${ZANJA_TRACKER.inicio}T12:00:00Z`).getTime();
@@ -96,6 +98,7 @@ export async function loader({}: Route.LoaderArgs) {
     zanjaContradicciones: ZANJA_CONTRADICCIONES,
     espejoBoric: ESPEJO_BORIC,
     pguAlerta: PGU_ALERTA,
+    ultimaVotacion,
   };
 }
 
@@ -107,6 +110,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
     cunasTop, seremiStats, zanja, diasGobierno,
     zanjaContradicciones, espejoBoric,
     pguAlerta,
+    ultimaVotacion,
   } = loaderData;
 
   const today = new Date().toLocaleDateString("es-CL", { day: "numeric", month: "long", year: "numeric" , timeZone: "America/Santiago" });
@@ -121,6 +125,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
     { label: "Rectificaciones", valor: String(RETRACTACIONES.length), tono: "malo" },
     { label: "Mentiras chequeadas", valor: String(MENTIRAS.length), tono: "malo" },
     { label: "Dobles estándares", valor: String(CASOS_DOBLE_ESTANDAR.length), tono: "malo" },
+    { label: "Votos nominales", valor: String(VOTACIONES_STATS.parlamentariosRegistrados), tono: "feo" },
     { label: "Archivo Valenzuela", valor: String(CASOS_VALENZUELA.length), tono: "malo" },
     { label: "Seremis caídos", valor: String(seremiStats.total), tono: "malo" },
     { label: "Promesas incumplidas", valor: String(promesaStats.incumplidas), tono: "malo" },
@@ -138,6 +143,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
   const promesaIncumplida = PROMESAS.find((p) => p.slug === "pgu-no-se-toca");
   const promesaContradictoria = PROMESAS.find((p) => p.slug === "no-conflictos-interes");
+  const conteoUltimaVotacion = ultimaVotacion ? votosPorTipo(ultimaVotacion.votos) : null;
 
   return (
     <div className="home-landing">
@@ -179,6 +185,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               <Link to="/retractaciones" className="btn btn-primary justify-center">Rectificaciones →</Link>
               <Link to="/mentiras" className="btn btn-secondary justify-center">Mentiras</Link>
               <Link to="/doble-estandar" className="btn btn-secondary justify-center">Doble estándar</Link>
+              <Link to="/como-votan" className="btn btn-secondary justify-center">Cómo votan</Link>
               <Link to="/valenzuela" className="btn btn-secondary justify-center">Valenzuela</Link>
               <Link to="/cronologia" className="btn btn-secondary justify-center">Cronología</Link>
               <Link to="/promesas" className="btn btn-secondary justify-center">Promesas</Link>
@@ -195,6 +202,72 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           </div>
         </div>
       </section>
+
+      {/* COMO VOTAN ─────────────────────────────────────────────────────── */}
+      {ultimaVotacion && conteoUltimaVotacion && (
+        <section id="como-votan" className="border-y border-[--color-fg] bg-[--color-surface]">
+          <div className="max-w-[1400px] mx-auto px-5 sm:px-8 py-12 sm:py-16">
+            <div className="grid lg:grid-cols-12 gap-8 items-start">
+              <header className="lg:col-span-5">
+                <p className="label text-[--color-malo]">Nueva sección principal</p>
+                <h2 className="mt-3 headline-display text-[clamp(3rem,8vw,7rem)]">
+                  Cómo votan.
+                </h2>
+                <p className="mt-5 text-base sm:text-lg text-[--color-fg-2] leading-relaxed">
+                  El tablero diario cruza votos nominales de diputados y senadores con el archivo
+                  político: quién vota a favor, quién vota en contra, quién se abstiene y qué hicieron
+                  cuando estaban al otro lado del gobierno.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-2">
+                  <Link to="/como-votan" className="btn btn-primary">Abrir tablero →</Link>
+                  <ShareButton
+                    title="Cómo votan diputados y senadores"
+                    text="Registro diario de votaciones nominales y contradicciones legislativas."
+                    path="/como-votan"
+                    variant="full"
+                    label="Compartir"
+                  />
+                </div>
+              </header>
+
+              <div className="lg:col-span-7">
+                <article className="card p-6 sm:p-7">
+                  <div className="flex flex-wrap items-center gap-2 text-xs">
+                    <span className="pill pill-info">Votación cargada</span>
+                    <span className="text-[--color-fg-4]">·</span>
+                    <span className="num text-[10px] uppercase tracking-wider text-[--color-fg-3]">
+                      {new Date(`${ultimaVotacion.fecha}T12:00:00`).toLocaleDateString("es-CL", { day: "numeric", month: "short", year: "numeric", timeZone: "America/Santiago" })}
+                    </span>
+                  </div>
+                  <h3 className="mt-4 text-2xl sm:text-3xl font-black tracking-tight leading-tight">
+                    {ultimaVotacion.titulo}
+                  </h3>
+                  <p className="mt-3 text-sm text-[--color-fg-2] leading-relaxed">{ultimaVotacion.lectura}</p>
+                  <div className="mt-6 grid grid-cols-3 gap-2">
+                    <VoteMetric label="A favor" value={conteoUltimaVotacion.a_favor} tone="bueno" />
+                    <VoteMetric label="En contra" value={conteoUltimaVotacion.en_contra} tone="malo" />
+                    <VoteMetric label="Abst." value={conteoUltimaVotacion.abstencion} tone="feo" />
+                  </div>
+                  <div className="mt-5 pt-5 border-t border-[--color-border] grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <p className="label text-[10px]">Contraste clave</p>
+                      <p className="mt-2 text-sm text-[--color-fg-2] leading-relaxed">
+                        {CONTRASTES_VOTO[0]?.lectura}
+                      </p>
+                    </div>
+                    <div>
+                      <p className="label text-[10px]">Senado</p>
+                      <p className="mt-2 text-sm text-[--color-fg-2] leading-relaxed">
+                        {ultimaVotacion.estadoSenado}
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* PGU ─────────────────────────────────────────────────────────────── */}
       <section id={pguAlerta.slug} className="border-y border-[--color-fg] bg-[--color-fg] text-[--color-bg]">
@@ -1139,6 +1212,21 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           </div>
         </div>
       </section>
+    </div>
+  );
+}
+
+function VoteMetric({ label, value, tone }: { label: string; value: number; tone: "bueno" | "malo" | "feo" }) {
+  const color =
+    tone === "bueno"
+      ? "text-[--color-bueno]"
+      : tone === "malo"
+      ? "text-[--color-malo]"
+      : "text-[--color-feo]";
+  return (
+    <div className="rounded-lg border border-[--color-border] bg-[--color-bg] p-4">
+      <p className="label text-[10px]">{label}</p>
+      <p className={`mt-2 num text-4xl font-black ${color}`}>{value}</p>
     </div>
   );
 }

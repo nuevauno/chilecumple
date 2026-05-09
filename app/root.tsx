@@ -109,6 +109,7 @@ const navLinks = [
   { to: "/cronologia", label: "Cronología", color: "#2563eb", soft: "rgba(37, 99, 235, 0.11)" },
   { to: "/mentiras", label: "Mentiras", color: "#b91c1c", soft: "rgba(185, 28, 28, 0.10)" },
   { to: "/doble-estandar", label: "Doble estándar", color: "#be185d", soft: "rgba(190, 24, 93, 0.10)" },
+  { to: "/como-votan", label: "Cómo votan", color: "#7c2d12", soft: "rgba(124, 45, 18, 0.11)" },
   { to: "/valenzuela", label: "Valenzuela", color: "#a16207", soft: "rgba(161, 98, 7, 0.12)" },
   { to: "/retractaciones", label: "Retractaciones", color: "#dc2626", soft: "rgba(220, 38, 38, 0.10)" },
   { to: "/seremis", label: "Seremis", color: "#0891b2", soft: "rgba(8, 145, 178, 0.11)" },
