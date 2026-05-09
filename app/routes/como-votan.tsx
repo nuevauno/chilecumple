@@ -1,15 +1,19 @@
 import { Link } from "react-router";
 import {
   CONTRASTES_VOTO,
+  FUENTES_OFICIALES_VOTACION,
   FUENTES_DATOS_LEGISLATIVOS,
   PROXIMOS_HITOS_VOTACION,
   VOTACIONES_STATS,
   contrastesVotoOrdenados,
   historialVotosBoricOrdenado,
+  ultimasVotacionesCamaraOrdenadas,
+  ultimosTratadosSenadoOrdenados,
   votacionesOrdenadas,
   votosPorTipo,
   type CamaraLegislativa,
   type FuenteVotacion,
+  type RegistroOficialVotacion,
   type VotoParlamentario,
 } from "~/data/votaciones";
 import { createMeta } from "~/lib/meta";
@@ -29,6 +33,9 @@ export async function loader() {
     votaciones: votacionesOrdenadas(),
     contrastes: contrastesVotoOrdenados(),
     historial: historialVotosBoricOrdenado(),
+    camaraOficial: ultimasVotacionesCamaraOrdenadas(),
+    senadoOficial: ultimosTratadosSenadoOrdenados(),
+    fuentesOficiales: FUENTES_OFICIALES_VOTACION,
     fuentes: FUENTES_DATOS_LEGISLATIVOS,
     hitos: PROXIMOS_HITOS_VOTACION,
   };
@@ -63,7 +70,7 @@ const fecha = (iso: string) =>
 
 export default function ComoVotan({ loaderData }: { loaderData: Awaited<ReturnType<typeof loader>> }) {
   const { votaciones, contrastes, fuentes, hitos } = loaderData;
-  const { historial } = loaderData;
+  const { historial, camaraOficial, senadoOficial, fuentesOficiales } = loaderData;
   const ultima = votaciones[0];
   const conteo = ultima ? votosPorTipo(ultima.votos) : { a_favor: 0, en_contra: 0, abstencion: 0, pendiente: 0 };
 
@@ -83,7 +90,9 @@ export default function ComoVotan({ loaderData }: { loaderData: Awaited<ReturnTy
           </p>
           <div className="mt-7 flex flex-wrap gap-2">
             <PageShare title="Como votan diputados y senadores — Chile Cumple" path="/como-votan" />
+            <a href="#monitor-oficial" className="btn btn-secondary">Fuentes oficiales</a>
             <a href="#votacion-dia" className="btn btn-primary">Ver votacion del dia</a>
+            <a href="#ultimas-camara-senado" className="btn btn-secondary">Ultimas votaciones</a>
             <a href="#contrastes" className="btn btn-secondary">Ver contradicciones</a>
           </div>
 
@@ -91,8 +100,76 @@ export default function ComoVotan({ loaderData }: { loaderData: Awaited<ReturnTy
             <StatCard label="Votaciones cargadas" value={String(VOTACIONES_STATS.votaciones)} />
             <StatCard label="Votos nominales" value={String(VOTACIONES_STATS.parlamentariosRegistrados)} tone="malo" />
             <StatCard label="Contrastes" value={String(CONTRASTES_VOTO.length)} tone="feo" />
+            <StatCard label="Cámara oficial" value={String(VOTACIONES_STATS.oficialesCamara)} tone="info" />
+            <StatCard label="Senado oficial" value={String(VOTACIONES_STATS.oficialesSenado)} tone="info" />
             <StatCard label="Archivo Boric" value={String(VOTACIONES_STATS.antecedentes)} tone="info" />
-            <StatCard label="Fuentes base" value={String(VOTACIONES_STATS.fuentes)} tone="info" />
+            <StatCard label="Fuentes oficiales" value={String(VOTACIONES_STATS.fuentesOficiales)} tone="info" />
+          </div>
+        </div>
+      </section>
+
+      <section id="monitor-oficial" className="border-b border-[--color-fg]" style={{ background: "linear-gradient(180deg, rgba(29,78,216,0.06), transparent)" }}>
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 py-14 sm:py-20">
+          <div className="grid lg:grid-cols-12 gap-8">
+            <header className="lg:col-span-4">
+              <p className="label text-[--color-info]">Monitor oficial</p>
+              <h2 className="mt-3 text-4xl sm:text-6xl font-black tracking-tighter leading-none">
+                Cámara y Senado primero.
+              </h2>
+              <p className="mt-5 text-sm text-[--color-fg-2] leading-relaxed">
+                La capa diaria debe salir de las páginas oficiales: Cámara para últimas votaciones y detalle nominal;
+                Senado para votaciones de Sala, sesiones y proyectos tratados. La prensa queda como apoyo, no como fuente principal.
+              </p>
+            </header>
+            <div className="lg:col-span-8 grid md:grid-cols-2 gap-3">
+              {fuentesOficiales.map((fuente) => (
+                <article key={fuente.slug} className="card p-5">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className={`pill ${fuente.camara === "senado" ? "pill-info" : fuente.camara === "diputados" ? "pill-bueno" : "pill-neutral"}`}>
+                      {fuente.camara === "diputados" ? "Cámara" : fuente.camara === "senado" ? "Senado" : "Congreso"}
+                    </span>
+                    <span className="text-[10px] uppercase tracking-wider text-[--color-fg-3] font-bold">{fuente.frecuencia}</span>
+                  </div>
+                  <h3 className="mt-3 text-lg font-black tracking-tight leading-tight">{fuente.nombre}</h3>
+                  <p className="mt-3 text-sm text-[--color-fg-2] leading-relaxed">{fuente.queEntrega}</p>
+                  <p className="mt-3 text-sm text-[--color-fg] leading-relaxed">
+                    <span className="font-black">Uso:</span> {fuente.usoEditorial}
+                  </p>
+                  <a href={fuente.url} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex text-xs font-bold text-[--color-accent] hover:text-[--color-accent-hover]">
+                    Abrir fuente oficial ↗
+                  </a>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ultimas-camara-senado" className="border-b border-[--color-border]">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 py-14 sm:py-20">
+          <div className="grid lg:grid-cols-12 gap-8">
+            <header className="lg:col-span-4">
+              <p className="label text-[--color-malo]">Lo último oficial</p>
+              <h2 className="mt-3 text-4xl sm:text-6xl font-black tracking-tighter leading-none">
+                No solo la megarreforma.
+              </h2>
+              <p className="mt-5 text-sm text-[--color-fg-2] leading-relaxed">
+                Esta muestra viene de las páginas oficiales al 9 de mayo de 2026. En Cámara ya hay conteos de sala;
+                en Senado algunos registros son proyectos tratados y quedan como pendientes hasta que exista votación nominal.
+              </p>
+            </header>
+            <div className="lg:col-span-8 grid gap-6">
+              <OfficialFeed
+                title="Últimas votaciones de la Cámara"
+                description="Resultados publicados por la Cámara de Diputadas y Diputados en su página de votaciones de Sala."
+                items={camaraOficial}
+              />
+              <OfficialFeed
+                title="Últimos proyectos tratados en Senado"
+                description="Registros recientes del Senado: sala o comisión, etapa y estado. Cuando no hay voto nominal, se marca como pendiente."
+                items={senadoOficial}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -371,6 +448,65 @@ function MiniCount({ label, value, cls }: { label: string; value: number; cls: s
       <p className="label text-[10px]">{label}</p>
       <p className={`mt-2 num text-4xl font-black ${cls}`}>{value}</p>
     </div>
+  );
+}
+
+function OfficialFeed({
+  title,
+  description,
+  items,
+}: {
+  title: string;
+  description: string;
+  items: RegistroOficialVotacion[];
+}) {
+  return (
+    <article className="card p-5 sm:p-7">
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <h3 className="text-2xl font-black tracking-tight leading-tight">{title}</h3>
+          <p className="mt-2 text-sm text-[--color-fg-2] leading-relaxed">{description}</p>
+        </div>
+        <span className="pill pill-info">{items.length} registros</span>
+      </div>
+
+      <div className="mt-6 grid gap-3">
+        {items.map((item) => (
+          <div key={item.slug} id={item.slug} className="rounded-xl border border-[--color-border] bg-[--color-bg] p-4 scroll-mt-24">
+            <div className="flex flex-wrap items-center gap-2 text-xs">
+              <span className={`pill ${item.camara === "senado" ? "pill-info" : "pill-bueno"}`}>
+                {camaraLabel[item.camara]}
+              </span>
+              <span className="pill pill-neutral">{item.tipo === "sala" ? "Sala" : "Comisión"}</span>
+              {item.boletin && <span className="num text-[10px] font-black text-[--color-fg-3]">{item.boletin}</span>}
+              <span className="text-[--color-fg-4]">·</span>
+              <span className="num text-[10px] uppercase tracking-wider text-[--color-fg-3]">{fecha(item.fecha)}</span>
+            </div>
+            <h4 className="mt-3 text-lg font-black tracking-tight leading-tight">{item.titulo}</h4>
+            <p className="mt-2 text-sm font-bold text-[--color-fg]">{item.resultado}</p>
+            {item.cifras && (
+              <div className="mt-4 grid grid-cols-3 gap-2 max-w-md">
+                <MiniCount label="A favor" value={item.cifras.favor} cls="text-[--color-bueno]" />
+                <MiniCount label="En contra" value={item.cifras.contra} cls="text-[--color-malo]" />
+                <MiniCount label="Abst." value={item.cifras.abstencion} cls="text-[--color-feo]" />
+              </div>
+            )}
+            <p className="mt-3 text-sm text-[--color-fg-2] leading-relaxed">{item.lectura}</p>
+            <div className="mt-4 flex flex-wrap gap-3 text-xs">
+              <FuenteLink fuente={item.fuente} />
+              <ShareButton
+                title={item.titulo}
+                text={item.lectura}
+                path="/como-votan"
+                hash={item.slug}
+                variant="quiet"
+                className="sm:ml-auto"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </article>
   );
 }
 

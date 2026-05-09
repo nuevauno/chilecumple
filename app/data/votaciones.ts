@@ -63,6 +63,33 @@ export interface AntecedenteVoto {
   fuente: FuenteVotacion;
 }
 
+export interface FuenteOficialVotacion {
+  slug: string;
+  camara: CamaraLegislativa | "congreso";
+  nombre: string;
+  frecuencia: string;
+  queEntrega: string;
+  usoEditorial: string;
+  url: string;
+}
+
+export interface RegistroOficialVotacion {
+  slug: string;
+  fecha: string;
+  camara: CamaraLegislativa;
+  tipo: "sala" | "comision";
+  boletin?: string;
+  titulo: string;
+  resultado: string;
+  cifras?: {
+    favor: number;
+    contra: number;
+    abstencion: number;
+  };
+  lectura: string;
+  fuente: FuenteVotacion;
+}
+
 export interface FuenteDatosLegislativos {
   nombre: string;
   uso: string;
@@ -89,6 +116,227 @@ export const FUENTES_DATOS_LEGISLATIVOS: FuenteDatosLegislativos[] = [
     nombre: "Cochid Congreso",
     uso: "API consolidada de parlamentarios y votaciones en tiempo real, atribuida a fuentes publicas del Congreso.",
     url: "https://congreso.cochid.cl/",
+  },
+];
+
+export const FUENTES_OFICIALES_VOTACION: FuenteOficialVotacion[] = [
+  {
+    slug: "camara-ultimas-votaciones",
+    camara: "diputados",
+    nombre: "Camara: ultimas votaciones de Sala",
+    frecuencia: "Se actualiza cada vez que la Camara publica resultados de sala.",
+    queEntrega:
+      "Listado de las ultimas 20 votaciones, con fecha, boletin o documento, materia, tipo, resultado y conteo afirmativo/negativo/abstencion.",
+    usoEditorial:
+      "Sirve para detectar todo lo votado, no solo la megarreforma: resoluciones, acuerdos, reclamaciones, cierres de debate, articulos y proyectos.",
+    url: "https://www.camara.cl/legislacion/sala_sesiones/votaciones.aspx",
+  },
+  {
+    slug: "camara-detalle-votacion",
+    camara: "diputados",
+    nombre: "Camara: detalle nominal por votacion",
+    frecuencia: "Disponible por ID de votacion una vez publicado el detalle.",
+    queEntrega:
+      "Lista nominal de diputadas y diputados a favor, en contra, abstencion y dispensados, mas quorum, sesion y tramite cuando corresponde.",
+    usoEditorial:
+      "Es la fuente base para decir exactamente como voto cada diputado en una votacion especifica.",
+    url: "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx",
+  },
+  {
+    slug: "senado-votaciones-sala",
+    camara: "senado",
+    nombre: "Senado: votaciones de Sala",
+    frecuencia: "Se consulta por legislatura y sesion de sala.",
+    queEntrega:
+      "Votaciones de senadoras y senadores por proyecto tratado en sala, con conteos de Si, No, abstenciones y pareos cuando hay sesion seleccionada.",
+    usoEditorial:
+      "Activa el tablero de senadores apenas la megarreforma u otro proyecto relevante llegue a Sala del Senado.",
+    url: "https://tramitacion.senado.cl/appsenado/index.php?ac=votacionSala&legiini=462&mo=sesionessala",
+  },
+  {
+    slug: "senado-ultimos-tratados",
+    camara: "senado",
+    nombre: "Senado: ultimos proyectos tratados",
+    frecuencia: "Ventana de los ultimos 15 dias en sala y comisiones.",
+    queEntrega:
+      "Fecha, boletin, comision o sala, materia, etapa, acuerdo y estado de proyectos tratados recientemente.",
+    usoEditorial:
+      "Permite monitorear proyectos antes de que tengan votacion nominal de sala, marcando lo pendiente sin inventar votos.",
+    url: "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&etc=&mo=tramitacion",
+  },
+  {
+    slug: "senado-sala-sesiones",
+    camara: "senado",
+    nombre: "Senado: sala de sesiones",
+    frecuencia: "Actualizacion institucional de tabla, resumen, cuenta, asistencia y votaciones.",
+    queEntrega:
+      "Entrada oficial del Senado para tabla semanal, sesiones, asistencia, votaciones y plazos de indicaciones.",
+    usoEditorial:
+      "Sirve para revisar agenda legislativa y cruzarla con votaciones nominales cuando se publique el detalle.",
+    url: "https://www.senado.cl/actividad-legislativa/sala-de-sesiones",
+  },
+];
+
+export const ULTIMAS_VOTACIONES_CAMARA: RegistroOficialVotacion[] = [
+  {
+    slug: "camara-2026-05-06-quorum-inadmisibilidad-18107-07",
+    fecha: "2026-05-06",
+    camara: "diputados",
+    tipo: "sala",
+    boletin: "18107-07",
+    titulo:
+      "Modifica la ley organica del Congreso en materia de quorum para revertir inadmisibilidades",
+    resultado: "Rechazado",
+    cifras: { favor: 73, contra: 73, abstencion: 1 },
+    lectura:
+      "Empate politico en una regla interna sensible: 73 contra 73. Es el tipo de votacion que debe entrar al monitor aunque no tenga relacion directa con la megarreforma.",
+    fuente: {
+      medio: "Camara de Diputadas y Diputados",
+      titulo: "Ultimas votaciones realizadas",
+      url: "https://www.camara.cl/legislacion/sala_sesiones/votaciones.aspx",
+    },
+  },
+  {
+    slug: "camara-2026-05-06-prorroga-control-migratorio-fronteras",
+    fecha: "2026-05-06",
+    camara: "diputados",
+    tipo: "sala",
+    titulo:
+      "Prorroga por 90 dias presencia de Fuerzas Armadas para control migratorio en Arica, Tarapaca y Antofagasta",
+    resultado: "Aprobado",
+    cifras: { favor: 141, contra: 2, abstencion: 5 },
+    lectura:
+      "Votacion amplia en seguridad fronteriza. Permite comparar discurso migratorio con votos concretos por bancada y parlamentario.",
+    fuente: {
+      medio: "Camara de Diputadas y Diputados",
+      titulo: "Ultimas votaciones realizadas",
+      url: "https://www.camara.cl/legislacion/sala_sesiones/votaciones.aspx",
+    },
+  },
+  {
+    slug: "camara-2026-05-06-recorte-salud-acuerdo-9",
+    fecha: "2026-05-06",
+    camara: "diputados",
+    tipo: "sala",
+    boletin: "P. Acuerdo N° 9",
+    titulo:
+      "Preocupacion por recorte de 3% al presupuesto de Salud y su impacto en usuarios y sistema publico",
+    resultado: "Aprobado",
+    cifras: { favor: 79, contra: 47, abstencion: 19 },
+    lectura:
+      "Este acuerdo conecta directamente con el barrido de recortes: muestra quien voto respaldar una alerta por Salud y quien voto contra ella.",
+    fuente: {
+      medio: "Camara de Diputadas y Diputados",
+      titulo: "Ultimas votaciones realizadas",
+      url: "https://www.camara.cl/legislacion/sala_sesiones/votaciones.aspx",
+    },
+  },
+  {
+    slug: "camara-2026-05-05-mepco-restablecer-criterio",
+    fecha: "2026-05-05",
+    camara: "diputados",
+    tipo: "sala",
+    boletin: "P. Resolucion N° 94",
+    titulo:
+      "Solicita restablecer el antiguo criterio del MEPCO para contener alzas de combustibles",
+    resultado: "Aprobado",
+    cifras: { favor: 66, contra: 63, abstencion: 0 },
+    lectura:
+      "Votacion estrecha sobre bolsillo y combustibles. Es una pista para cruzar discurso de alivio economico con comportamiento legislativo.",
+    fuente: {
+      medio: "Camara de Diputadas y Diputados",
+      titulo: "Ultimas votaciones realizadas",
+      url: "https://www.camara.cl/legislacion/sala_sesiones/votaciones.aspx",
+    },
+  },
+  {
+    slug: "camara-2026-05-05-servicios-sanitarios-17872-33",
+    fecha: "2026-05-05",
+    camara: "diputados",
+    tipo: "sala",
+    boletin: "17872-33",
+    titulo:
+      "Estandar minimo de reduccion de aguas no facturadas en servicios sanitarios",
+    resultado: "General aprobado y votacion particular rechazada",
+    cifras: { favor: 78, contra: 65, abstencion: 3 },
+    lectura:
+      "La Camara aprobo la idea general pero rechazo el articulo particular por falta de votos suficientes. El monitor debe distinguir resultado general y votaciones particulares.",
+    fuente: {
+      medio: "Camara de Diputadas y Diputados",
+      titulo: "Ultimas votaciones realizadas",
+      url: "https://www.camara.cl/legislacion/sala_sesiones/votaciones.aspx",
+    },
+  },
+];
+
+export const ULTIMOS_TRATADOS_SENADO: RegistroOficialVotacion[] = [
+  {
+    slug: "senado-2026-05-06-transportista-escolar-16433-18",
+    fecha: "2026-05-06",
+    camara: "senado",
+    tipo: "sala",
+    boletin: "16433-18",
+    titulo:
+      "Responsabilidad del transportista escolar durante traslado de niños, niñas y adolescentes",
+    resultado: "Aprobado en general; indicaciones hasta el 4 de junio de 2026 a las 12:00.",
+    lectura:
+      "El Senado lo registra como proyecto tratado en sala. Aun no se incorpora voto nominal en el tablero hasta contar con detalle de votacion.",
+    fuente: {
+      medio: "Senado de Chile",
+      titulo: "Proyectos tratados en los ultimos 15 dias",
+      url: "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&etc=&mo=tramitacion",
+    },
+  },
+  {
+    slug: "senado-2026-05-05-ingreso-clandestino-15261-25",
+    fecha: "2026-05-05",
+    camara: "senado",
+    tipo: "sala",
+    boletin: "15261-25",
+    titulo:
+      "Tipifica el delito de ingreso clandestino al territorio nacional",
+    resultado: "Aprobado en general; indicaciones hasta el 28 de mayo de 2026 a las 12:00.",
+    lectura:
+      "Materia central para el eje migratorio. Debe seguirse hasta que exista detalle nominal de Sala.",
+    fuente: {
+      medio: "Senado de Chile",
+      titulo: "Proyectos tratados en los ultimos 15 dias",
+      url: "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&etc=&mo=tramitacion",
+    },
+  },
+  {
+    slug: "senado-2026-05-05-permisos-urbanizacion-17287-14",
+    fecha: "2026-05-05",
+    camara: "senado",
+    tipo: "sala",
+    boletin: "17287-14",
+    titulo:
+      "Agiliza la obtencion de permisos de urbanizacion y edificacion",
+    resultado: "Aprobado con modificaciones en discusion particular.",
+    lectura:
+      "Proyecto de vivienda y permisos. Es relevante para comparar el relato de acelerar inversion con votos y modificaciones concretas.",
+    fuente: {
+      medio: "Senado de Chile",
+      titulo: "Proyectos tratados en los ultimos 15 dias",
+      url: "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&etc=&mo=tramitacion",
+    },
+  },
+  {
+    slug: "senado-2026-05-06-electrodependientes-voto-obligatorio-18003-35",
+    fecha: "2026-05-06",
+    camara: "senado",
+    tipo: "comision",
+    boletin: "18003-35",
+    titulo:
+      "Exime al Servel de denunciar a personas postradas y electrodependientes por incumplir obligacion de sufragar",
+    resultado: "Se inicio la discusion; continuar en una proxima sesion.",
+    lectura:
+      "Aun no es voto de Sala, pero el Senado lo informa como tratado recientemente. Se marca pendiente para no confundir discusion con aprobacion.",
+    fuente: {
+      medio: "Senado de Chile",
+      titulo: "Proyectos tratados en los ultimos 15 dias",
+      url: "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&etc=&mo=tramitacion",
+    },
   },
 ];
 
@@ -317,6 +565,14 @@ export function historialVotosBoricOrdenado() {
   return [...HISTORIAL_VOTOS_BORIC].sort((a, b) => b.fecha.localeCompare(a.fecha));
 }
 
+export function ultimasVotacionesCamaraOrdenadas() {
+  return [...ULTIMAS_VOTACIONES_CAMARA].sort((a, b) => b.fecha.localeCompare(a.fecha));
+}
+
+export function ultimosTratadosSenadoOrdenados() {
+  return [...ULTIMOS_TRATADOS_SENADO].sort((a, b) => b.fecha.localeCompare(a.fecha));
+}
+
 export function votosPorTipo(votos: ParlamentarioVoto[]) {
   return votos.reduce(
     (acc, voto) => {
@@ -332,5 +588,8 @@ export const VOTACIONES_STATS = {
   parlamentariosRegistrados: VOTACIONES_CLAVE.reduce((sum, v) => sum + v.votos.length, 0),
   contrastes: CONTRASTES_VOTO.length,
   antecedentes: HISTORIAL_VOTOS_BORIC.length,
+  oficialesCamara: ULTIMAS_VOTACIONES_CAMARA.length,
+  oficialesSenado: ULTIMOS_TRATADOS_SENADO.length,
   fuentes: FUENTES_DATOS_LEGISLATIVOS.length,
+  fuentesOficiales: FUENTES_OFICIALES_VOTACION.length,
 };

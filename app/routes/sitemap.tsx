@@ -12,7 +12,13 @@ import { CASOS_DOBLE_ESTANDAR, MENTIRAS_CONTRA_BORIC } from "~/data/doble-estand
 import { SEREMIS } from "~/data/seremis";
 import { CASOS_VALENZUELA } from "~/data/valenzuela";
 import { PROMESAS } from "~/data/promesas";
-import { CONTRASTES_VOTO, HISTORIAL_VOTOS_BORIC, VOTACIONES_CLAVE } from "~/data/votaciones";
+import {
+  CONTRASTES_VOTO,
+  HISTORIAL_VOTOS_BORIC,
+  ULTIMAS_VOTACIONES_CAMARA,
+  ULTIMOS_TRATADOS_SENADO,
+  VOTACIONES_CLAVE,
+} from "~/data/votaciones";
 
 /**
  * /sitemap.xml — protocolo sitemap 0.9 con todas las rutas estaticas
@@ -127,6 +133,22 @@ export async function loader({ request }: { request: Request }) {
     urls.push({
       loc: `${origin}/como-votan#${h.slug}`,
       lastmod: h.fecha,
+      changefreq: "monthly",
+      priority: "0.7",
+    });
+  }
+  for (const v of ULTIMAS_VOTACIONES_CAMARA) {
+    urls.push({
+      loc: `${origin}/como-votan#${v.slug}`,
+      lastmod: v.fecha,
+      changefreq: "monthly",
+      priority: "0.7",
+    });
+  }
+  for (const v of ULTIMOS_TRATADOS_SENADO) {
+    urls.push({
+      loc: `${origin}/como-votan#${v.slug}`,
+      lastmod: v.fecha,
       changefreq: "monthly",
       priority: "0.7",
     });
