@@ -52,7 +52,7 @@ export default function ProgramasPage() {
           Programas
         </h1>
         <p className="mt-6 text-lg text-[--color-fg-2] leading-relaxed">
-          {programas.length} programas publicos catalogados en los anexos cargados programa por programa. A nivel nacional, el panorama publicado registra {panoramaRecortes.programasDescontinuar} a descontinuar y {panoramaRecortes.programasAjuste} con rebaja; aca puedes auditar el detalle ya cargado por nombre, estado o ministerio.
+          {programas.length} programas publicos revisados uno por uno en los anexos de Hacienda. A nivel nacional, el panorama publicado registra {panoramaRecortes.programasDescontinuar} a descontinuar y {panoramaRecortes.programasAjuste} con rebaja; aca puedes revisar el detalle por nombre, estado o ministerio.
         </p>
         <PageShare title="Programas — Chile Cumple" path="/programas" />
       </header>

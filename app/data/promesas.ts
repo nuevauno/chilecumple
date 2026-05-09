@@ -77,7 +77,7 @@ export const PROMESAS: Promesa[] = [
     estado: "estancada",
     eje: "seguridad",
     cuerpo:
-      "Sin proyecto de ley ingresado al Congreso al 24-abr-2026. Sin minuta tecnica publica. La ministra Steinert no asistio a la Comision de Seguridad de la Camara y la sesion fue cancelada.",
+      "Sin proyecto de ley ingresado al Congreso al 24-abr-2026. El Gobierno no ha publicado un documento detallado. La ministra Steinert no asistio a la Comision de Seguridad de la Camara y la sesion fue cancelada.",
   },
   {
     slug: "aislamiento-cabecillas",

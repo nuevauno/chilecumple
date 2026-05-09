@@ -99,22 +99,22 @@ export interface FuenteDatosLegislativos {
 export const FUENTES_DATOS_LEGISLATIVOS: FuenteDatosLegislativos[] = [
   {
     nombre: "Datos Abiertos del Congreso Nacional",
-    uso: "Base oficial para proyectos, votaciones por boletin, detalle de votacion de la Camara y antecedentes del Senado.",
+    uso: "Permite revisar proyectos y votaciones por boletin para contrastar discursos con registros del Congreso.",
     url: "https://opendata.congreso.cl/",
   },
   {
     nombre: "Camara de Diputadas y Diputados",
-    uso: "Detalle nominal de votaciones, sesiones y actas de sala o comision cuando estan publicadas.",
+    uso: "Muestra que se voto en Sala y como voto cada diputada o diputado cuando el detalle esta publicado.",
     url: "https://www.camara.cl/",
   },
   {
     nombre: "Senado de Chile",
-    uso: "Votaciones y tramitacion cuando un proyecto llega al Senado.",
+    uso: "Muestra los proyectos que pasan por la Sala y las votaciones de senadoras y senadores.",
     url: "https://www.senado.cl/",
   },
   {
     nombre: "Cochid Congreso",
-    uso: "API consolidada de parlamentarios y votaciones en tiempo real, atribuida a fuentes publicas del Congreso.",
+    uso: "Ayuda a ordenar informacion publica del Congreso para revisar rapidamente proyectos, parlamentarios y votos.",
     url: "https://congreso.cochid.cl/",
   },
 ];
@@ -124,55 +124,55 @@ export const FUENTES_OFICIALES_VOTACION: FuenteOficialVotacion[] = [
     slug: "camara-ultimas-votaciones",
     camara: "diputados",
     nombre: "Camara: ultimas votaciones de Sala",
-    frecuencia: "Se actualiza cada vez que la Camara publica resultados de sala.",
+    frecuencia: "Se revisa cada vez que la Camara publica resultados.",
     queEntrega:
-      "Listado de las ultimas 20 votaciones, con fecha, boletin o documento, materia, tipo, resultado y conteo afirmativo/negativo/abstencion.",
+      "Muestra las votaciones mas recientes: fecha, tema, resultado y cuantos estuvieron a favor, en contra o se abstuvieron.",
     usoEditorial:
-      "Sirve para detectar todo lo votado, no solo la megarreforma: resoluciones, acuerdos, reclamaciones, cierres de debate, articulos y proyectos.",
+      "Permite ver que hacen los diputados en temas cotidianos: salud, migracion, combustibles, seguridad, acuerdos politicos y proyectos de ley.",
     url: "https://www.camara.cl/legislacion/sala_sesiones/votaciones.aspx",
   },
   {
     slug: "camara-detalle-votacion",
     camara: "diputados",
-    nombre: "Camara: detalle nominal por votacion",
-    frecuencia: "Disponible por ID de votacion una vez publicado el detalle.",
+    nombre: "Camara: voto por diputado",
+    frecuencia: "Disponible cuando la Camara publica el detalle.",
     queEntrega:
-      "Lista nominal de diputadas y diputados a favor, en contra, abstencion y dispensados, mas quorum, sesion y tramite cuando corresponde.",
+      "Muestra nombre por nombre quienes votaron a favor, en contra o se abstuvieron.",
     usoEditorial:
-      "Es la fuente base para decir exactamente como voto cada diputado en una votacion especifica.",
+      "Permite responder la pregunta central: que hizo cada diputado cuando tuvo que apretar el boton.",
     url: "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx",
   },
   {
     slug: "senado-votaciones-sala",
     camara: "senado",
     nombre: "Senado: votaciones de Sala",
-    frecuencia: "Se consulta por legislatura y sesion de sala.",
+    frecuencia: "Se revisa por sesion del Senado.",
     queEntrega:
-      "Votaciones de senadoras y senadores por proyecto tratado en sala, con conteos de Si, No, abstenciones y pareos cuando hay sesion seleccionada.",
+      "Muestra como votaron senadoras y senadores en los proyectos vistos por la Sala.",
     usoEditorial:
-      "Activa el tablero de senadores apenas la megarreforma u otro proyecto relevante llegue a Sala del Senado.",
+      "Sirve para seguir a los senadores cuando un proyecto importante llega a la Camara Alta.",
     url: "https://tramitacion.senado.cl/appsenado/index.php?ac=votacionSala&legiini=462&mo=sesionessala",
   },
   {
     slug: "senado-ultimos-tratados",
     camara: "senado",
     nombre: "Senado: ultimos proyectos tratados",
-    frecuencia: "Ventana de los ultimos 15 dias en sala y comisiones.",
+    frecuencia: "Ultimos proyectos vistos en sala y comisiones.",
     queEntrega:
-      "Fecha, boletin, comision o sala, materia, etapa, acuerdo y estado de proyectos tratados recientemente.",
+      "Muestra que proyectos esta viendo el Senado, en que etapa van y si quedaron aprobados, pendientes o con indicaciones.",
     usoEditorial:
-      "Permite monitorear proyectos antes de que tengan votacion nominal de sala, marcando lo pendiente sin inventar votos.",
+      "Ayuda a explicar que viene antes de la votacion: audiencias, indicaciones, acuerdos y proyectos que todavia siguen abiertos.",
     url: "https://tramitacion.senado.cl/appsenado/index.php?ac=ultimos_vistos&etc=&mo=tramitacion",
   },
   {
     slug: "senado-sala-sesiones",
     camara: "senado",
     nombre: "Senado: sala de sesiones",
-    frecuencia: "Actualizacion institucional de tabla, resumen, cuenta, asistencia y votaciones.",
+    frecuencia: "Agenda y resumen de la Sala del Senado.",
     queEntrega:
-      "Entrada oficial del Senado para tabla semanal, sesiones, asistencia, votaciones y plazos de indicaciones.",
+      "Reune tabla semanal, sesiones, asistencia, votaciones y plazos para presentar cambios a los proyectos.",
     usoEditorial:
-      "Sirve para revisar agenda legislativa y cruzarla con votaciones nominales cuando se publique el detalle.",
+      "Permite anticipar que proyectos vienen y que parlamentarios despues tendran que votar.",
     url: "https://www.senado.cl/actividad-legislativa/sala-de-sesiones",
   },
 ];
@@ -189,7 +189,7 @@ export const ULTIMAS_VOTACIONES_CAMARA: RegistroOficialVotacion[] = [
     resultado: "Rechazado",
     cifras: { favor: 73, contra: 73, abstencion: 1 },
     lectura:
-      "Empate politico en una regla interna sensible: 73 contra 73. Es el tipo de votacion que debe entrar al monitor aunque no tenga relacion directa con la megarreforma.",
+      "Que se jugaba: cambiar la regla para insistir cuando una iniciativa o indicacion es declarada inadmisible. El empate 73 a 73 la hundio. Importa porque define cuanto poder tiene la Sala para empujar temas que la mesa o el Ejecutivo consideran fuera de regla.",
     fuente: {
       medio: "Camara de Diputadas y Diputados",
       titulo: "Ultimas votaciones realizadas",
@@ -206,7 +206,7 @@ export const ULTIMAS_VOTACIONES_CAMARA: RegistroOficialVotacion[] = [
     resultado: "Aprobado",
     cifras: { favor: 141, contra: 2, abstencion: 5 },
     lectura:
-      "Votacion amplia en seguridad fronteriza. Permite comparar discurso migratorio con votos concretos por bancada y parlamentario.",
+      "Que se jugaba: mantener por 90 dias mas apoyo militar y policial en zonas del norte para control migratorio y deteccion de delitos. La votacion fue casi unanime, por eso sirve para separar discurso duro de votos reales: aqui casi todos respaldaron la prorroga.",
     fuente: {
       medio: "Camara de Diputadas y Diputados",
       titulo: "Ultimas votaciones realizadas",
@@ -224,7 +224,7 @@ export const ULTIMAS_VOTACIONES_CAMARA: RegistroOficialVotacion[] = [
     resultado: "Aprobado",
     cifras: { favor: 79, contra: 47, abstencion: 19 },
     lectura:
-      "Este acuerdo conecta directamente con el barrido de recortes: muestra quien voto respaldar una alerta por Salud y quien voto contra ella.",
+      "Que se jugaba: pedir al Presidente medidas frente al recorte de Salud y su posible impacto en pacientes, listas de espera y funcionamiento del sistema publico. Aqui queda claro quien quiso dejar una advertencia politica por escrito y quien no.",
     fuente: {
       medio: "Camara de Diputadas y Diputados",
       titulo: "Ultimas votaciones realizadas",
@@ -242,7 +242,7 @@ export const ULTIMAS_VOTACIONES_CAMARA: RegistroOficialVotacion[] = [
     resultado: "Aprobado",
     cifras: { favor: 66, contra: 63, abstencion: 0 },
     lectura:
-      "Votacion estrecha sobre bolsillo y combustibles. Es una pista para cruzar discurso de alivio economico con comportamiento legislativo.",
+      "Que se jugaba: pedir que se reviertan cambios al MEPCO para evitar alzas en combustibles. Fue estrecha: 66 contra 63. Afecta directamente el bolsillo, transporte, alimentos y costo de vida.",
     fuente: {
       medio: "Camara de Diputadas y Diputados",
       titulo: "Ultimas votaciones realizadas",
@@ -260,7 +260,7 @@ export const ULTIMAS_VOTACIONES_CAMARA: RegistroOficialVotacion[] = [
     resultado: "General aprobado y votacion particular rechazada",
     cifras: { favor: 78, contra: 65, abstencion: 3 },
     lectura:
-      "La Camara aprobo la idea general pero rechazo el articulo particular por falta de votos suficientes. El monitor debe distinguir resultado general y votaciones particulares.",
+      "Que se jugaba: exigir a empresas sanitarias reducir el agua que se pierde antes de llegar a los hogares. La Camara apoyo la idea general, pero una parte clave no reunio los votos necesarios. No basta mirar el titulo del proyecto: hay que ver que articulo sobrevivio.",
     fuente: {
       medio: "Camara de Diputadas y Diputados",
       titulo: "Ultimas votaciones realizadas",
@@ -280,7 +280,7 @@ export const ULTIMOS_TRATADOS_SENADO: RegistroOficialVotacion[] = [
       "Responsabilidad del transportista escolar durante traslado de niños, niñas y adolescentes",
     resultado: "Aprobado en general; indicaciones hasta el 4 de junio de 2026 a las 12:00.",
     lectura:
-      "El Senado lo registra como proyecto tratado en sala. Aun no se incorpora voto nominal en el tablero hasta contar con detalle de votacion.",
+      "De que trata: responsabilidades del transporte escolar cuando traslada a niños, niñas y adolescentes. Quedo aprobado en general, pero todavia pueden presentarse cambios. La votacion fina vendra cuando se discutan esas indicaciones.",
     fuente: {
       medio: "Senado de Chile",
       titulo: "Proyectos tratados en los ultimos 15 dias",
@@ -297,7 +297,7 @@ export const ULTIMOS_TRATADOS_SENADO: RegistroOficialVotacion[] = [
       "Tipifica el delito de ingreso clandestino al territorio nacional",
     resultado: "Aprobado en general; indicaciones hasta el 28 de mayo de 2026 a las 12:00.",
     lectura:
-      "Materia central para el eje migratorio. Debe seguirse hasta que exista detalle nominal de Sala.",
+      "De que trata: convertir el ingreso clandestino a Chile en delito. Es una votacion clave para medir si el discurso migratorio se transforma en ley y que limites se le ponen.",
     fuente: {
       medio: "Senado de Chile",
       titulo: "Proyectos tratados en los ultimos 15 dias",
@@ -314,7 +314,7 @@ export const ULTIMOS_TRATADOS_SENADO: RegistroOficialVotacion[] = [
       "Agiliza la obtencion de permisos de urbanizacion y edificacion",
     resultado: "Aprobado con modificaciones en discusion particular.",
     lectura:
-      "Proyecto de vivienda y permisos. Es relevante para comparar el relato de acelerar inversion con votos y modificaciones concretas.",
+      "De que trata: acelerar permisos de urbanizacion y edificacion. Afecta vivienda, municipios, constructoras y vecinos. La pregunta politica es si la rapidez viene con controles suficientes o si abre espacio para construir mal.",
     fuente: {
       medio: "Senado de Chile",
       titulo: "Proyectos tratados en los ultimos 15 dias",
@@ -331,7 +331,7 @@ export const ULTIMOS_TRATADOS_SENADO: RegistroOficialVotacion[] = [
       "Exime al Servel de denunciar a personas postradas y electrodependientes por incumplir obligacion de sufragar",
     resultado: "Se inicio la discusion; continuar en una proxima sesion.",
     lectura:
-      "Aun no es voto de Sala, pero el Senado lo informa como tratado recientemente. Se marca pendiente para no confundir discusion con aprobacion.",
+      "De que trata: evitar que el Servel denuncie a personas postradas o electrodependientes que no puedan votar. Todavia esta en discusion, por eso no corresponde atribuir votos como si ya estuviera resuelto.",
     fuente: {
       medio: "Senado de Chile",
       titulo: "Proyectos tratados en los ultimos 15 dias",
@@ -355,7 +355,7 @@ export const VOTACIONES_CLAVE: VotacionClave[] = [
       abstencion: 1,
     },
     lectura:
-      "El primer registro nominal muestra que el oficialismo voto cerrado a favor y que la abstencion clave fue del PDG, justo cuando el gobierno acusaba obstruccion y negociaba a contrarreloj.",
+      "Que se jugaba: abrir la puerta a discutir el paquete economico de Kast. El oficialismo voto cerrado a favor, la oposicion voto en contra y la abstencion del PDG mostro que el Gobierno no tiene margen propio: necesita negociar voto a voto.",
     estadoSenado:
       "Al 9 de mayo de 2026 no hay votacion del Senado sobre este proyecto: el propio cronograma oficialista apunta a que la Camara lo vote antes del 18 de mayo y que el Senado empiece despues.",
     votos: [
@@ -435,7 +435,7 @@ export const CONTRASTES_VOTO: ContrasteVoto[] = [
     registroAnterior:
       "El Pais reporto que las derechas suman 76 escanos y las oposiciones 79, por lo que el gobierno negocia con el PDG. T13 consigno que Zandra Parisi se abstuvo en Hacienda tras el quiebre anunciado por su partido.",
     lectura:
-      "La aritmetica explica mas que el relato: sin mayoria propia, cada voto se vuelve trazable. Esta seccion debe mostrar quien sostuvo, quien rechazo y quien dejo la puerta entreabierta.",
+      "La aritmetica explica mas que el relato: sin mayoria propia, cada voto importa. Ahi se ve quien sostuvo al Gobierno, quien rechazo y quien dejo la puerta entreabierta.",
     fuente: {
       medio: "El Pais Chile / T13",
       titulo: "Aritmetica legislativa y abstencion PDG en la megarreforma",
@@ -536,7 +536,7 @@ export const PROXIMOS_HITOS_VOTACION = [
   {
     fecha: "2026-05-11",
     titulo: "Vence plazo para indicaciones en Hacienda",
-    detalle: "La discusion en particular debe mostrar que cambios intenta introducir cada bancada.",
+    detalle: "Ahi se vera que cambios intenta introducir cada bancada.",
     fuente: VOTACIONES_CLAVE[0].fuentes[0],
   },
   {
@@ -548,7 +548,7 @@ export const PROXIMOS_HITOS_VOTACION = [
   {
     fecha: "2026-05-21",
     titulo: "Objetivo politico: iniciar Senado antes del feriado",
-    detalle: "Cuando llegue al Senado se activa el tablero nominal de senadores.",
+    detalle: "Cuando llegue al Senado empieza el seguimiento senador por senador.",
     fuente: VOTACIONES_CLAVE[0].fuentes[1],
   },
 ];

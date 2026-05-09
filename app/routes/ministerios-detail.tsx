@@ -116,7 +116,7 @@ export default function MinisterioDetail({ loaderData }: Route.ComponentProps) {
               </>
             ) : (
               <>
-                Aún no está cargado el anexo programa por programa, pero hay{" "}
+                Aún no está disponible el anexo programa por programa, pero hay{" "}
                 <span className="font-bold text-[--color-malo]">{alertas.length} alerta{alertas.length === 1 ? "" : "s"} con fuente</span>{" "}
                 sobre recomendaciones de recorte asociadas a esta cartera.
               </>
@@ -154,7 +154,7 @@ export default function MinisterioDetail({ loaderData }: Route.ComponentProps) {
             <p className="label text-[--color-malo]">Alertas del recorte</p>
             <h2 className="mt-2 text-3xl font-black tracking-tighter">Lo publicado hasta ahora</h2>
             <p className="mt-2 text-sm text-[--color-fg-2]">
-              Alertas con fuente periodística cuando el anexo completo aún no está cargado o cuando hay información adicional relevante.
+              Alertas con fuente periodística cuando el anexo completo aún no está disponible o cuando hay información adicional relevante.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-4">

@@ -53,7 +53,7 @@ export default function Ministerios({ loaderData }: Route.ComponentProps) {
           Ministerios
         </h1>
         <p className="mt-6 text-lg text-[--color-fg-2] leading-relaxed">
-          Cada ministerio recibe su anexo con recomendaciones de Hacienda. Donde hay anexo cargado mostramos programa por programa; donde aún no está completo, dejamos alertas con fuente y cautela.
+          Cada ministerio recibe su anexo con recomendaciones de Hacienda. Donde ya está disponible, mostramos programa por programa; donde falta el detalle completo, dejamos alertas con fuente y cautela.
         </p>
         <PageShare title="Ministerios — Chile Cumple" path="/ministerios" />
       </header>

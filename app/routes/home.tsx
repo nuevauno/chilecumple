@@ -125,7 +125,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
     { label: "Rectificaciones", valor: String(RETRACTACIONES.length), tono: "malo" },
     { label: "Mentiras chequeadas", valor: String(MENTIRAS.length), tono: "malo" },
     { label: "Dobles estándares", valor: String(CASOS_DOBLE_ESTANDAR.length), tono: "malo" },
-    { label: "Votos nominales", valor: String(VOTACIONES_STATS.parlamentariosRegistrados), tono: "feo" },
+    { label: "Votos revisados", valor: String(VOTACIONES_STATS.parlamentariosRegistrados), tono: "feo" },
     { label: "Archivo Valenzuela", valor: String(CASOS_VALENZUELA.length), tono: "malo" },
     { label: "Seremis caídos", valor: String(seremiStats.total), tono: "malo" },
     { label: "Promesas incumplidas", valor: String(promesaStats.incumplidas), tono: "malo" },
@@ -209,20 +209,20 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           <div className="max-w-[1400px] mx-auto px-5 sm:px-8 py-12 sm:py-16">
             <div className="grid lg:grid-cols-12 gap-8 items-start">
               <header className="lg:col-span-5">
-                <p className="label text-[--color-malo]">Nueva sección principal</p>
+                <p className="label text-[--color-malo]">Votos bajo lupa</p>
                 <h2 className="mt-3 headline-display text-[clamp(3rem,8vw,7rem)]">
                   Cómo votan.
                 </h2>
                 <p className="mt-5 text-base sm:text-lg text-[--color-fg-2] leading-relaxed">
-                  El tablero diario cruza votos nominales de diputados y senadores con el archivo
+                  El seguimiento diario cruza cómo votan diputados y senadores con el archivo
                   político: quién vota a favor, quién vota en contra, quién se abstiene y qué hicieron
                   cuando estaban al otro lado del gobierno.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2">
-                  <Link to="/como-votan" className="btn btn-primary">Abrir tablero →</Link>
+                  <Link to="/como-votan" className="btn btn-primary">Ver votos →</Link>
                   <ShareButton
                     title="Cómo votan diputados y senadores"
-                    text="Registro diario de votaciones nominales y contradicciones legislativas."
+                    text="Seguimiento diario de votos y contradicciones legislativas."
                     path="/como-votan"
                     variant="full"
                     label="Compartir"
@@ -233,7 +233,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               <div className="lg:col-span-7">
                 <article className="card p-6 sm:p-7">
                   <div className="flex flex-wrap items-center gap-2 text-xs">
-                    <span className="pill pill-info">Votación cargada</span>
+                    <span className="pill pill-info">Votación revisada</span>
                     <span className="text-[--color-fg-4]">·</span>
                     <span className="num text-[10px] uppercase tracking-wider text-[--color-fg-3]">
                       {new Date(`${ultimaVotacion.fecha}T12:00:00`).toLocaleDateString("es-CL", { day: "numeric", month: "short", year: "numeric", timeZone: "America/Santiago" })}
@@ -1049,7 +1049,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               Programas que tocan a quienes más lo necesitan.
             </h2>
             <p className="mt-4 text-base text-[--color-fg-2] leading-relaxed">
-              En los anexos cargados programa por programa hay {totalDescontinuados} programas a descontinuar y {totalAjustes} con rebaja de al menos −15%. El panorama nacional publicado eleva la cuenta a 142 cierres y 260 rebajas.
+              En los anexos revisados programa por programa hay {totalDescontinuados} programas a descontinuar y {totalAjustes} con rebaja de al menos −15%. El panorama nacional publicado eleva la cuenta a 142 cierres y 260 rebajas.
             </p>
           </header>
 

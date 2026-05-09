@@ -140,7 +140,7 @@ export const COMPROMISOS_SEGURIDAD = [
     promesa: "Declarar narcotrafico transfronterizo como delito de seguridad nacional",
     estado: "sin_proyecto" as const,
     cuerpo:
-      "Sin proyecto de ley ingresado. Sin minuta tecnica publica.",
+      "Sin proyecto de ley ingresado. El Gobierno no ha publicado un documento detallado.",
   },
   {
     slug: "aislamiento-cabecillas-narco",

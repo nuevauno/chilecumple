@@ -170,9 +170,9 @@ export default function DobleEstandar({ loaderData }: { loaderData: Awaited<Retu
                 Falsedades que hicieron daño.
               </h2>
               <p className="mt-5 text-sm text-[--color-fg-2] leading-relaxed">
-                Casos chequeados por fact-checkers profesionales. Cuando no consta un
-                actor político directo, se marca como viral o redes sociales; cuando
-                sí consta, se nombra.
+                Casos chequeados por fact-checkers profesionales. Cuando no hay un
+                actor político identificado, queda como viral o redes sociales; cuando
+                sí lo hay, se nombra.
               </p>
             </header>
 

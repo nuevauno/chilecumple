@@ -197,7 +197,7 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
     montoTexto: "$437 mil millones",
     destacados: ["Transporte Público Regional"],
     cautela:
-      "El detalle completo del anexo de Transportes aún no está cargado; el monto proviene del ranking periodístico.",
+      "El detalle completo del anexo de Transportes aún no está disponible; el monto proviene del ranking periodístico.",
   },
   {
     ministerioSlug: "obras-publicas",

@@ -96,7 +96,7 @@ export function SugerenciaGithub() {
             Abrir ticket
           </a>
           <p className="text-xs text-[--color-fg-3] leading-relaxed max-w-md">
-            Se abrirá GitHub con el texto precargado. Si te pide entrar, inicia sesión y confirma el envío.
+            Se abrirá un formulario para enviar el dato. Si te pide entrar, inicia sesión y confirma el envío.
           </p>
         </div>
       </div>
