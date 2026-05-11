@@ -478,6 +478,24 @@ export const VOTACIONES_CLAVE: VotacionClave[] = [
 
 export const CONTRASTES_VOTO: ContrasteVoto[] = [
   {
+    slug: "boicot-indicaciones-vs-debate-legislativo",
+    fecha: "2026-05-08",
+    actor: "José Antonio Kast y Mara Sedini",
+    cargo: "Presidente y vocera de Gobierno",
+    reclamoActual:
+      "El Gobierno acusa boicot, sabotaje legislativo y falta de respeto por la preparación de miles de indicaciones opositoras a la megarreforma.",
+    registroAnterior:
+      "La oposición ha pedido dividir reconstrucción de reforma tributaria, quitar urgencia y responder las observaciones del Consejo Fiscal Autónomo. Además, el propio proyecto concentra más de 40 medidas distintas.",
+    lectura:
+      "Presentar indicaciones puede ser una forma dura de presionar, pero también es parte del Congreso. Si el Ejecutivo junta demasiadas materias en un solo paquete y no tiene mayoría propia, no puede convertir todo desacuerdo en boicot.",
+    fuente: {
+      medio: "BioBioChile",
+      titulo: "Kast acusa boicot de la oposición ante idea de presentar miles de indicaciones a megarreforma",
+      url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/08/kast-acusa-boicot-de-la-oposicion-ante-idea-de-presentar-miles-de-indicaciones-a-megarreforma.shtml",
+    },
+    severidad: 4,
+  },
+  {
     slug: "decretos-si-no-aprueban-vs-boicot",
     fecha: "2026-05-08",
     actor: "José Antonio Kast",

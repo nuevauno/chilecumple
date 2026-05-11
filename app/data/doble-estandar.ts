@@ -41,6 +41,27 @@ export interface MentiraContraBoric {
 
 export const CASOS_DOBLE_ESTANDAR: CasoDobleEstandar[] = [
   {
+    slug: "culpar-izquierda-pc-vs-responder-fondo",
+    categoria: "institucional",
+    fecha: "2026-05-08",
+    actor: "José Antonio Kast, Mara Sedini y oficialismo",
+    ataque:
+      "Kast acusó a la oposición de obstaculizar y boicotear la megarreforma; Sedini habló de sabotaje legislativo y falta de respeto a la institucionalidad.",
+    hechoBoric:
+      "Cuando era oposición, la derecha exigía que Boric respondiera por sus decisiones y no culpara al Congreso, a la oposición o al gobierno anterior por sus problemas de gestión.",
+    contraste:
+      "Ahora el Gobierno enfrenta reparos fiscales, dudas por recortes y falta de votos propios, pero el relato vuelve a la izquierda, el PC y Boric. La oposición puede abusar de indicaciones, pero eso no reemplaza responder el fondo: costos, beneficiarios, urgencia, separación de reconstrucción y financiamiento.",
+    fuenteAtaque: {
+      medio: "BioBioChile / 24 Horas",
+      url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/08/kast-acusa-boicot-de-la-oposicion-ante-idea-de-presentar-miles-de-indicaciones-a-megarreforma.shtml",
+    },
+    fuenteContraste: {
+      medio: "La Tercera / Emol",
+      url: "https://www.latercera.com/politica/noticia/fa-y-pc-salen-en-defensa-de-boric-y-elevan-el-tono-contra-kast-previo-a-cita-con-segpres-por-megarreforma/?outputType=base-amp-type",
+    },
+    severidad: 4,
+  },
+  {
     slug: "alivio-contribuciones-vs-financiamiento-municipal",
     categoria: "social",
     fecha: "2026-05-05",

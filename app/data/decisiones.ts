@@ -9,6 +9,41 @@ const montoDescontinuado = PROGRAMAS_MDSYF
 
 export const DECISIONES: Decision[] = [
   {
+    slug: "kast-culpa-oposicion-boicot-izquierda-pc",
+    titulo: "Kast vuelve al libreto de culpar a la izquierda: ahora acusa boicot y daño contra la megarreforma",
+    resumen:
+      "El Presidente acusó que parte de la oposición busca obstaculizar y boicotear la megarreforma. Sedini habló de sabotaje legislativo por más de 2.000 indicaciones. El problema: la oposición también ha pedido dividir reconstrucción y reforma tributaria, bajar la urgencia y responder alertas del CFA.",
+    fecha: "2026-05-08",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "secretaria-general-gobierno",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/08/kast-acusa-boicot-de-la-oposicion-ante-idea-de-presentar-miles-de-indicaciones-a-megarreforma.shtml",
+        medio: "BioBioChile",
+        titulo: "Kast acusa boicot de la oposición ante idea de presentar miles de indicaciones a megarreforma",
+      },
+      {
+        url: "https://www.24horas.cl/actualidad/politica/sedini-reconstruccion-decretos-sabotaje",
+        medio: "24 Horas",
+        titulo: "Sedini acusa sabotaje legislativo en la oposición por megarreforma",
+      },
+      {
+        url: "https://www.emol.com/noticias/Nacional/2026/05/06/1199282/oposicion-y-rechazo-reconstruccion.html",
+        medio: "Emol",
+        titulo: "Oposición de izquierda reafirma voto en contra y pide quitar urgencia",
+      },
+      {
+        url: "https://www.latercera.com/politica/noticia/fa-y-pc-salen-en-defensa-de-boric-y-elevan-el-tono-contra-kast-previo-a-cita-con-segpres-por-megarreforma/?outputType=base-amp-type",
+        medio: "La Tercera",
+        titulo: "FA y PC salen en defensa de Boric y elevan el tono contra Kast",
+      },
+    ],
+    cuerpo:
+      "El 8 de mayo, Kast volvió a instalar una explicación simple para un problema político complejo: si la megarreforma se frena, sería porque la oposición quiere boicotear, destruir y hacer daño. BioBioChile consignó que el Presidente acusó a la oposición de obstaculizar el proyecto, después de conocerse la preparación de miles de indicaciones.\n\nLa vocería empujó el mismo relato. 24 Horas reportó que Mara Sedini habló de sabotaje legislativo, falta grave y falta de respeto a la gente, al Congreso y a la institucionalidad. El mensaje es claro: la discusión ya no se presenta como desacuerdo sobre impuestos, reconstrucción, empleo o gasto público, sino como una acusación moral contra quienes no acompañan el paquete oficial.\n\nEl punto que hay que mirar es el patrón. Días antes, cuando explotó la crisis por recortes, Kast ya había vuelto contra Boric: dijo que no había ninguna cifra buena del gobierno anterior, que dejaron el país destruido y que se habían quedado con la plata. La Tercera recogió la respuesta del PC y el FA: mientras más errores enfrenta el gobierno, más ataca a Boric. No es un episodio aislado; es una forma de gobernar el conflicto.\n\nLa oposición no solo ha dicho no. Emol registró que pidió quitar urgencia, dividir reconstrucción de reforma tributaria y escuchar las advertencias del Consejo Fiscal Autónomo. BioBioChile también explicó que el rechazo al paquete viene porque el Gobierno mezcló materias que la oposición cree que deben discutirse por separado. Puede haber cálculo político, exceso de indicaciones y dureza opositora; pero reducir todo a sabotaje borra el fondo: el proyecto baja impuestos, concentra muchas materias, tiene alertas fiscales y necesita votos que el Gobierno no tiene.\n\nLa lectura ciudadana es sencilla: cuando todo se explica por la izquierda, el PC o Boric, el Gobierno evita responder lo principal. Qué parte de la reforma beneficia a quién, cuánto cuesta, qué se separa para reconstrucción real, qué pasa con beneficios sociales y por qué un paquete de más de 40 medidas debe tramitarse como si cualquier duda fuera traición.",
+  },
+  {
     slug: "kast-decretos-megarreforma-si-congreso-rechaza",
     titulo: "Kast abre la puerta a decretos si el Congreso rechaza partes de la megarreforma",
     resumen:

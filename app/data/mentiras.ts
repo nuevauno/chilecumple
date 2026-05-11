@@ -30,6 +30,25 @@ export interface Mentira {
 
 export const MENTIRAS: Mentira[] = [
   {
+    slug: "kast-oposicion-boicot-destruir-hacer-dano",
+    titulo: "“Boicot”, “destruir” y “hacer daño”: el relato que tapa las alertas de fondo",
+    fraseLiteral:
+      "Lamento mucho que el objetivo de parte de la oposición sea obstaculizar y boicotear.",
+    fechaDicho: "2026-05-08",
+    donde: "José Antonio Kast en X, citado por BioBioChile, Emol y T13",
+    veredicto: "engañoso",
+    datoReal:
+      "La oposición prepara indicaciones, pero también ha pedido separar reconstrucción de reforma tributaria, quitar urgencia y responder observaciones del Consejo Fiscal Autónomo sobre costos y financiamiento.",
+    diferencia:
+      "Convierte una disputa legislativa con alertas fiscales en una acusación moral de sabotaje",
+    fuenteFactCheck: "BioBioChile / Emol / 24 Horas / La Tercera",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/08/kast-acusa-boicot-de-la-oposicion-ante-idea-de-presentar-miles-de-indicaciones-a-megarreforma.shtml",
+    cuerpo:
+      "La frase es engañosa porque toma un hecho real, la ofensiva de indicaciones, y lo convierte en una explicación total: la oposición querría destruir y hacer daño. Eso omite el resto del cuadro. Emol registró que partidos opositores pidieron quitar urgencia, dividir el proyecto y escuchar al Consejo Fiscal Autónomo. BioBioChile explicó que el rechazo también apunta a que el Gobierno mezcló en un solo paquete materias tributarias, laborales, ambientales, de vivienda y reconstrucción.\n\nHay una discusión legítima sobre si 2.000 o 2.500 indicaciones son una herramienta proporcional. Pero no es lo mismo criticar una forma dura de presionar en el Congreso que borrar las razones políticas y fiscales del rechazo. El Gobierno necesita explicar el contenido de la megarreforma: a quién beneficia la rebaja tributaria, cómo se financia, por qué no separa reconstrucción y qué pasa con los programas sociales bajo ajuste.\n\nEl patrón importa porque no aparece solo aquí. Cuando se conocieron los recortes, Kast respondió atacando a Boric y diciendo que no había ninguna cifra buena del gobierno anterior. Ahora, frente a indicaciones, el foco vuelve a la izquierda, el PC y el boicot. La repetición sirve para desplazar la responsabilidad: menos respuestas sobre números y más pelea de etiquetas.",
+    reconocio: false,
+  },
+  {
     slug: "alvarado-demuestren-beneficio-social",
     titulo: "“Demuéstrenme a quién se le ha quitado un beneficio social”",
     fraseLiteral:

@@ -19,6 +19,20 @@ export const CRONOLOGIA: EventoCronologia[] = [
     fuenteMedio: "Senado",
   },
   {
+    slug: "2026-05-08-kast-boicot-izquierda-megarreforma",
+    fecha: "2026-05-08",
+    titulo: "Kast acusa boicot opositor y Sedini habla de sabotaje legislativo",
+    resumen:
+      "El Presidente dijo que parte de la oposición busca obstaculizar y boicotear la megarreforma. La vocera Sedini habló de sabotaje por más de 2.000 indicaciones; la oposición insiste en separar reconstrucción, revisar costos y quitar urgencia.",
+    tipo: "ataque",
+    etiqueta: "feo",
+    decisionSlug: "kast-culpa-oposicion-boicot-izquierda-pc",
+    mentiraSlug: "kast-oposicion-boicot-destruir-hacer-dano",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/08/kast-acusa-boicot-de-la-oposicion-ante-idea-de-presentar-miles-de-indicaciones-a-megarreforma.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
     slug: "2026-05-08-asimet-sence-capacitacion",
     fecha: "2026-05-08",
     titulo: "Asimet advierte golpe a capacitación si se elimina franquicia Sence",
