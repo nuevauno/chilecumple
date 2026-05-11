@@ -7,6 +7,81 @@ import type { EventoCronologia } from "./types";
  */
 export const CRONOLOGIA: EventoCronologia[] = [
   {
+    slug: "2026-05-11-senado-escuelas-protegidas-comision",
+    fecha: "2026-05-11",
+    titulo: "Senado agenda votación de Escuelas Protegidas en comisión",
+    resumen:
+      "La Comisión de Educación del Senado esperaba votar en general el proyecto el 11 de mayo, seguir audiencias y revisar indicaciones para que la Sala lo vea esa misma semana.",
+    tipo: "decision",
+    etiqueta: "malo",
+    fuenteUrl:
+      "https://www.senado.cl/comunicaciones/noticias/escuelas-protegidas-comision-de-educacion-votaria-idea-de-legislar-el-lunes",
+    fuenteMedio: "Senado",
+  },
+  {
+    slug: "2026-05-08-asimet-sence-capacitacion",
+    fecha: "2026-05-08",
+    titulo: "Asimet advierte golpe a capacitación si se elimina franquicia Sence",
+    resumen:
+      "El gremio metalúrgico cuestionó la eliminación de la franquicia tributaria Sence: dice que en 2024 capacitó a más de 550 mil personas y que la reconstrucción requiere más formación, no menos.",
+    tipo: "escandalo",
+    etiqueta: "malo",
+    decisionSlug: "asimet-sence-franquicia-capacitacion-trabajadores",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/08/asimet-cuestiona-la-eliminacion-de-franquicia-sence-la-reconstruccion-requiere-mas-capacitacion.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
+    slug: "2026-05-08-maza-kast-ciencia",
+    fecha: "2026-05-08",
+    titulo: "José Maza responde a Kast por sus dichos contra la investigación científica",
+    resumen:
+      "Maza cuestionó que el Gobierno mire la investigación como empleo de emergencia y advirtió que Chile ya invierte muy poco en ciencia. También criticó la idea de castigar a académicos por hechos de estudiantes.",
+    tipo: "escandalo",
+    etiqueta: "malo",
+    decisionSlug: "kast-maza-investigacion-cientifica-universidades",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/ciencia/2026/05/08/jose-maza-por-dichos-de-kast-sobre-gasto-en-investigaciones-no-es-dar-trabajo-para-eso-haz-un-pohj.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
+    slug: "2026-05-08-kast-decretos-congreso",
+    fecha: "2026-05-08",
+    titulo: "Kast insiste en decretos si el Congreso no aprueba partes de la megarreforma",
+    resumen:
+      "Emol consignó que el Presidente dijo que el Gobierno puede seguir gobernando con decretos en materias que no requieren ley. El punto abre una pregunta directa: qué se enviará al Congreso y qué intentará mover La Moneda por vía administrativa.",
+    tipo: "anuncio",
+    etiqueta: "feo",
+    decisionSlug: "kast-decretos-megarreforma-si-congreso-rechaza",
+    fuenteUrl:
+      "https://www.emol.com/noticias/Nacional/2026/05/08/1199438/kast-decretos-megarreforma-aprobacion-congreso.html",
+    fuenteMedio: "Emol",
+  },
+  {
+    slug: "2026-05-06-cadem-42-55",
+    fecha: "2026-05-06",
+    titulo: "Cadem deja a Kast en 42% de aprobación y 55% de desaprobación",
+    resumen:
+      "La primera medición de mayo de Cadem marca 42% de aprobación, 55% de desaprobación y seguridad como prioridad ciudadana. El repunte no borra que el saldo sigue negativo.",
+    tipo: "encuesta",
+    etiqueta: "malo",
+    fuenteUrl:
+      "https://www.biobiochile.cl/static/documentos/2026/05/track-pp-651-mayo-s1-m1-vf.pdf",
+    fuenteMedio: "Cadem",
+  },
+  {
+    slug: "2026-05-03-criteria-38-51-beneficios",
+    fecha: "2026-05-03",
+    titulo: "Criteria: desaprobación sube a 51% y cae confianza en recortes sin tocar beneficios",
+    resumen:
+      "Criteria mantuvo la aprobación presidencial en 38%, pero la desaprobación subió a 51%. Solo 39% dijo estar de acuerdo con que se puede reducir gasto sin afectar beneficios sociales.",
+    tipo: "encuesta",
+    etiqueta: "malo",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/03/criteria-aprobacion-a-kast-se-mantiene-mientras-que-evaluacion-de-la-oposicion-cae-3-puntos.shtml",
+    fuenteMedio: "BioBioChile",
+  },
+  {
     slug: "2026-05-07-kast-decretos-megarreforma",
     fecha: "2026-05-07",
     titulo: "Kast abre la puerta a decretos si la megarreforma no avanza",

@@ -55,6 +55,7 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
       "Cadem: 59% rechaza revisar o eliminar 142 programas",
       "Cadem: 54% rechaza recorte ministerial de 3%",
       "Solicitud de Comisión Investigadora por recortes 11-mar a 5-may",
+      "Criteria: solo 39% cree posible reducir gasto sin afectar beneficios sociales",
     ],
     cautela:
       "No equivale a decreto final, pero sí es una instrucción presupuestaria formal enviada desde Hacienda a las carteras. La aclaración posterior de DIPRES no cambia la palabra usada: descontinuar no es lo mismo que reformular.",
@@ -92,13 +93,13 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
   },
   {
     ministerioSlug: "trabajo",
-    titulo: "Trabajo y Previsión: PGU lidera rebajas y Rau no descarta reducciones de personal",
+    titulo: "Trabajo y Previsión: PGU lidera rebajas, Sence entra en disputa y Rau no descarta reducciones de personal",
     resumen:
-      "CIPER reportó que Hacienda recomendó rebajar al menos 15% la PGU. BioBioChile agregó que la PGU concentraría la mayor disminución proyectada: $906 mil millones. El 1 de mayo, Emol reportó que Rau defendió el ajuste fiscal y no descartó eventuales reducciones de personal en el Estado.",
-    fecha: "2026-05-01",
+      "CIPER reportó que Hacienda recomendó rebajar al menos 15% la PGU. BioBioChile agregó que la PGU concentraría la mayor disminución proyectada: $906 mil millones. El 8 de mayo, Asimet cuestionó eliminar la franquicia Sence porque en 2024 capacitó a más de 550 mil personas.",
+    fecha: "2026-05-08",
     fuenteUrl:
-      "https://www.emol.com/noticias/Nacional/2026/05/01/1198824/ajuste-fiscal-ministro-trabajo-ministerios.html",
-    fuenteMedio: "Emol",
+      "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/08/asimet-cuestiona-la-eliminacion-de-franquicia-sence-la-reconstruccion-requiere-mas-capacitacion.shtml",
+    fuenteMedio: "BioBioChile",
     programasDescontinuar: 3,
     programasAjuste: 26,
     montoTexto: "$906 mil millones proyectados para PGU",
@@ -117,12 +118,15 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
       "Bono de Reconocimiento",
       "Subsidio Familiar",
       "Rau no descarta reducciones de personal",
+      "Franquicia tributaria Sence en riesgo",
+      "Asimet: más de 550 mil personas capacitadas en 2024 con la franquicia",
+      "Capacitación técnica para trabajadores industriales",
       "925 mil personas sin trabajo",
       "Desempleo femenino 10%",
       "Desempleo juvenil sobre 23%",
     ],
     cautela:
-      "No equivale a decreto final, pero sí a recomendación presupuestaria formal. Quiroz negó tocar beneficios actuales y habló de fraude social/mal gasto; Rau luego abrió el flanco laboral al no descartar reducciones de personal. Falta saber si el ahorro se buscará por depuración, requisitos, expansión legal de PGU o empleo público.",
+      "No equivale a decreto final, pero sí a recomendación presupuestaria formal. Quiroz negó tocar beneficios actuales y habló de fraude social/mal gasto; Rau abrió el flanco laboral al no descartar reducciones de personal y Asimet sumó el costo en capacitación. Falta saber si el ahorro se buscará por depuración, requisitos, expansión legal de PGU, empleo público o menor formación para trabajadores.",
   },
   {
     ministerioSlug: "desarrollo-social",
@@ -351,13 +355,13 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
   },
   {
     ministerioSlug: "ciencia",
-    titulo: "Ciencia: becas de postgrado, Milenio, Fondequip y PIA en zona de cierre",
+    titulo: "Ciencia: becas, Milenio, Fondequip y fondos de investigación bajo presión",
     resumen:
-      "El Mostrador reportó recomendaciones para descontinuar Becas de Postgrado en Chile ($68.628 millones), Becas de Postgrado en el Extranjero ($32.145 millones), Iniciativa Científica Milenio ($19.723 millones), Fondequip y PIA. El flanco ya venía abierto por la suspensión/matización de Becas Chile para magíster y postdoctorado al extranjero.",
-    fecha: "2026-04-24",
+      "El Mostrador reportó recomendaciones para descontinuar Becas de Postgrado en Chile ($68.628 millones), Becas de Postgrado en el Extranjero ($32.145 millones), Iniciativa Científica Milenio ($19.723 millones), Fondequip y PIA. El 8 de mayo, José Maza respondió a Kast y advirtió que Chile ya invierte muy poco en investigación.",
+    fecha: "2026-05-08",
     fuenteUrl:
-      "https://www.elmostrador.cl/noticias/pais/2026/04/24/eliminacion-de-programas-en-ciencia-apunta-al-corazon-del-sistema-la-formacion-de-capital-humano/",
-    fuenteMedio: "El Mostrador",
+      "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/ciencia/2026/05/08/jose-maza-por-dichos-de-kast-sobre-gasto-en-investigaciones-no-es-dar-trabajo-para-eso-haz-un-pohj.shtml",
+    fuenteMedio: "BioBioChile",
     montoTexto: "más de $168 mil millones identificados",
     destacados: [
       "Becas de Postgrado en Chile",
@@ -365,9 +369,11 @@ export const ALERTAS_RECORTES_MINISTERIOS: AlertaRecorteMinisterio[] = [
       "Iniciativa Científica Milenio",
       "Fondequip",
       "Programa de Investigación Asociativa",
+      "José Maza cuestiona mirar la ciencia como gasto prescindible",
+      "Riesgo de castigar académicos por hechos de estudiantes",
     ],
     cautela:
-      "Fast Check verificó que Lincolao dijo primero que se reducirían becas de magíster y postdoctorado en el extranjero, y luego sostuvo que no era una decisión zanjada.",
+      "Fast Check verificó que Lincolao dijo primero que se reducirían becas de magíster y postdoctorado en el extranjero, y luego sostuvo que no era una decisión zanjada. La respuesta de Maza no reemplaza los documentos de Hacienda: muestra el costo público de recortar ciencia en un país que ya invierte poco.",
   },
   {
     ministerioSlug: "medio-ambiente",

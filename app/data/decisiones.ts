@@ -9,6 +9,71 @@ const montoDescontinuado = PROGRAMAS_MDSYF
 
 export const DECISIONES: Decision[] = [
   {
+    slug: "kast-decretos-megarreforma-si-congreso-rechaza",
+    titulo: "Kast abre la puerta a decretos si el Congreso rechaza partes de la megarreforma",
+    resumen:
+      "Tras el avance de la megarreforma en Hacienda, Kast dijo que si el Congreso no aprueba algunas medidas, el Gobierno seguirá usando herramientas administrativas y decretos en lo que no requiera ley.",
+    fecha: "2026-05-08",
+    etiqueta: "feo",
+    severidad: 4,
+    ministerioSlug: "secretaria-general-presidencia",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.emol.com/noticias/Nacional/2026/05/08/1199438/kast-decretos-megarreforma-aprobacion-congreso.html",
+        medio: "Emol",
+        titulo: "Kast valora avance de megarreforma, pero no descarta decretos en caso de rechazo",
+      },
+      {
+        url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/08/el-filtro-que-logro-pasar-megarreforma-de-kast-y-los-pro-y-contra-que-vio-analisis-economico-de-eeuu.shtml",
+        medio: "BioBioChile",
+        titulo: "El filtro que logró pasar megarreforma de Kast y los pro y contra que vio análisis económico de EEUU",
+      },
+    ],
+    cuerpo:
+      "La discusión de la megarreforma ya no es solo qué vota el Congreso. También es qué intentará mover el Gobierno si pierde una votación. Emol consignó que Kast, desde Costa Rica, dijo que los gobiernos siguen gobernando y que hay materias que no requieren ley, por lo que pueden ser administradas mediante decretos sin pasar por encima del Parlamento.\n\nEl límite es decisivo. En Chile, impuestos, exenciones, beneficios tributarios y cambios legales de fondo no se pueden reemplazar por decreto. Pero el mensaje presidencial instala presión: si la oposición rechaza, La Moneda buscará avanzar por la vía administrativa en todo lo que pueda.\n\nAhí aparece la doble vara política. El oficialismo acusa boicot cuando se amenaza con rechazar la idea de legislar, pero al mismo tiempo prepara un camino paralelo para no depender siempre de los votos. La pregunta para la gente es concreta: qué parte de la reforma podrá cambiar la vida cotidiana por ley, qué parte por decreto y quién responderá si esas medidas afectan beneficios, fiscalización, permisos, empleo o servicios públicos.\n\nPor eso el seguimiento de votaciones importa. Cada diputado y cada senador deberá quedar registrado: si aprobó, rechazó, se abstuvo o si empujó indicaciones. Y cuando el Gobierno use decretos, también debe quedar claro qué no quiso o no pudo pasar por el Congreso.",
+  },
+  {
+    slug: "asimet-sence-franquicia-capacitacion-trabajadores",
+    titulo: "Asimet advierte que eliminar la franquicia Sence golpea la capacitación laboral",
+    resumen:
+      "Asimet cuestionó una medida de la megarreforma que elimina la franquicia tributaria Sence. El gremio sostuvo que en 2024 más de 550 mil personas se capacitaron con ese mecanismo y que la reconstrucción necesita formación técnica.",
+    fecha: "2026-05-08",
+    etiqueta: "malo",
+    severidad: 3,
+    ministerioSlug: "trabajo",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/05/08/asimet-cuestiona-la-eliminacion-de-franquicia-sence-la-reconstruccion-requiere-mas-capacitacion.shtml",
+        medio: "BioBioChile",
+        titulo: "Asimet cuestiona la eliminación de franquicia Sence",
+      },
+    ],
+    cuerpo:
+      "La megarreforma también toca capacitación laboral. BioBioChile reportó que Asimet cuestionó la eliminación de la franquicia tributaria Sence, un mecanismo que permite a empresas descontar de impuestos gastos destinados a capacitar trabajadores.\n\nEl gremio puso un dato central: en 2024 más de 550 mil personas fueron capacitadas mediante la franquicia. Para Asimet, quitar ese incentivo en medio de una agenda que promete crecimiento, productividad y empleo va contra el propio relato de reconstrucción.\n\nLa medida importa porque no golpea solo a empresas. Afecta a trabajadores que necesitan actualizar oficios, reconvertirse, aprender nuevas tecnologías o mejorar productividad para sostener empleo. En un país con desempleo alto y preocupación por capacitación técnica, la pregunta es por qué se recorta una herramienta laboral antes de mostrar una alternativa igual de grande y financiada.\n\nSi el Gobierno dice que la megarreforma crea empleo, debe explicar qué reemplaza a la franquicia Sence, cuántas personas quedarían sin capacitación y cómo se protegerá a trabajadores de sectores industriales, pymes y regiones.",
+  },
+  {
+    slug: "kast-maza-investigacion-cientifica-universidades",
+    titulo: "José Maza cruza a Kast por mirar la investigación científica como gasto prescindible",
+    resumen:
+      "Maza respondió a los dichos de Kast sobre gasto en investigaciones académicas y advirtió que Chile ya invierte muy poco en ciencia. También cuestionó castigar a académicos de la Universidad Austral por hechos de estudiantes.",
+    fecha: "2026-05-08",
+    etiqueta: "malo",
+    severidad: 3,
+    ministerioSlug: "ciencia",
+    documentoSlugs: [],
+    fuenteUrls: [
+      {
+        url: "https://www.biobiochile.cl/noticias/ciencia-y-tecnologia/ciencia/2026/05/08/jose-maza-por-dichos-de-kast-sobre-gasto-en-investigaciones-no-es-dar-trabajo-para-eso-haz-un-pohj.shtml",
+        medio: "BioBioChile",
+        titulo: "José Maza recordó programa de Pinochet tras dichos de Kast sobre ciencia y empleo",
+      },
+    ],
+    cuerpo:
+      "La pelea por los recortes llegó a la ciencia. BioBioChile recogió la respuesta de José Maza a los dichos de Kast sobre investigaciones universitarias. El astrónomo sostuvo que la investigación no existe para dar empleo de emergencia y recordó que Chile ya invierte muy poco comparado con otros países.\n\nEl fondo no es una defensa corporativa de universidades. Es una pregunta de país: si se recorta ciencia, becas, centros y fondos de investigación, Chile pierde capacidad para resolver problemas propios en salud, energía, agua, tecnología, productividad y formación avanzada.\n\nMaza también cuestionó la idea de hacer pagar a profesores por hechos cometidos por estudiantes en la Universidad Austral, tras el ataque a la ministra Ximena Lincolao. Esa mezcla entre sanción política y auditoría académica abre un riesgo: convertir un hecho de orden público en castigo presupuestario contra investigación.\n\nSi el Gobierno quiere revisar mal uso de recursos, debe hacerlo con evidencia y reglas parejas. Si usa el enojo contra universidades para justificar tijeras sobre ciencia, el costo lo pagan investigadores, estudiantes y el desarrollo futuro del país.",
+  },
+  {
     slug: "comision-investigadora-recortes-hacienda-11mar-5may",
     titulo: "Oposición pide Comisión Investigadora por recortes de Hacienda entre el 11 de marzo y el 5 de mayo",
     resumen:

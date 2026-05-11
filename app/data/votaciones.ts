@@ -214,6 +214,41 @@ export const ULTIMAS_VOTACIONES_CAMARA: RegistroOficialVotacion[] = [
     },
   },
   {
+    slug: "camara-2026-05-06-comision-revisora-cuentas",
+    fecha: "2026-05-06",
+    camara: "diputados",
+    tipo: "sala",
+    titulo:
+      "Integración de la Comisión Revisora de Cuentas de la Cámara",
+    resultado: "Aprobado",
+    cifras: { favor: 105, contra: 25, abstencion: 3 },
+    lectura:
+      "Que se jugaba: elegir a quienes revisan las cuentas internas de la propia Cámara. Parece administrativo, pero importa porque el Congreso también debe rendir cuentas sobre su gasto y funcionamiento.",
+    fuente: {
+      medio: "Camara de Diputadas y Diputados",
+      titulo: "Detalle de votación: Comisión Revisora de Cuentas",
+      url: "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88792",
+    },
+  },
+  {
+    slug: "camara-2026-05-06-igualdad-mujeres-resolucion-7",
+    fecha: "2026-05-06",
+    camara: "diputados",
+    tipo: "sala",
+    boletin: "P. Resolucion N° 7",
+    titulo:
+      "Pide al Presidente medidas concretas de apoyo a mujeres e igualdad de derechos",
+    resultado: "Aprobado",
+    cifras: { favor: 84, contra: 46, abstencion: 12 },
+    lectura:
+      "Que se jugaba: pedir al Gobierno acciones concretas para igualdad de derechos y oportunidades para mujeres. Esta votación sirve para mirar quién respalda ese compromiso cuando no es discurso de campaña, sino botón en Sala.",
+    fuente: {
+      medio: "Camara de Diputadas y Diputados",
+      titulo: "Detalle de votación: medidas de apoyo a mujeres",
+      url: "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88791",
+    },
+  },
+  {
     slug: "camara-2026-05-06-recorte-salud-acuerdo-9",
     fecha: "2026-05-06",
     camara: "diputados",
@@ -229,6 +264,42 @@ export const ULTIMAS_VOTACIONES_CAMARA: RegistroOficialVotacion[] = [
       medio: "Camara de Diputadas y Diputados",
       titulo: "Ultimas votaciones realizadas",
       url: "https://www.camara.cl/legislacion/sala_sesiones/votaciones.aspx",
+    },
+  },
+  {
+    slug: "camara-2026-05-06-cierre-debate-inadmisibilidad",
+    fecha: "2026-05-06",
+    camara: "diputados",
+    tipo: "sala",
+    boletin: "18107-07",
+    titulo:
+      "Cierre del debate sobre quórum para revertir inadmisibilidades",
+    resultado: "Aprobado",
+    cifras: { favor: 51, contra: 44, abstencion: 1 },
+    lectura:
+      "Que se jugaba: terminar la discusión y pasar a votar. Las votaciones de procedimiento también importan porque pueden acelerar, frenar o cerrar debates antes de que todos hablen.",
+    fuente: {
+      medio: "Camara de Diputadas y Diputados",
+      titulo: "Últimas votaciones realizadas",
+      url: "https://www.camara.cl/legislacion/sala_sesiones/votaciones.aspx",
+    },
+  },
+  {
+    slug: "camara-2026-05-05-eliminar-impuesto-especifico-mepco",
+    fecha: "2026-05-05",
+    camara: "diputados",
+    tipo: "sala",
+    boletin: "P. Resolucion N° 96",
+    titulo:
+      "Solicita eliminar al mismo tiempo el impuesto específico a combustibles y el MEPCO",
+    resultado: "Aprobado",
+    cifras: { favor: 87, contra: 20, abstencion: 14 },
+    lectura:
+      "Que se jugaba: pedir una salida fuerte al alza de combustibles, eliminando impuesto específico y MEPCO a la vez. Afecta el precio que pagan familias, transporte y comercios, pero también abre la pregunta de cómo se reemplaza esa recaudación.",
+    fuente: {
+      medio: "Camara de Diputadas y Diputados",
+      titulo: "Detalle de votación: impuesto específico y MEPCO",
+      url: "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88777",
     },
   },
   {
@@ -270,6 +341,23 @@ export const ULTIMAS_VOTACIONES_CAMARA: RegistroOficialVotacion[] = [
 ];
 
 export const ULTIMOS_TRATADOS_SENADO: RegistroOficialVotacion[] = [
+  {
+    slug: "senado-2026-05-11-escuelas-protegidas-educacion",
+    fecha: "2026-05-11",
+    camara: "senado",
+    tipo: "comision",
+    boletin: "Escuelas Protegidas",
+    titulo:
+      "Comisión de Educación votaría en general el proyecto Escuelas Protegidas",
+    resultado: "Votación esperada en comisión; indicaciones internas previstas para el 15 de mayo.",
+    lectura:
+      "De que trata: reglas de seguridad, orden y convivencia en establecimientos educacionales. Afecta a estudiantes, docentes y familias porque puede cambiar sanciones, controles y protocolos dentro de colegios.",
+    fuente: {
+      medio: "Senado de Chile",
+      titulo: "Escuelas protegidas: Comisión de Educación votaría idea de legislar el lunes 11 de mayo",
+      url: "https://www.senado.cl/comunicaciones/noticias/escuelas-protegidas-comision-de-educacion-votaria-idea-de-legislar-el-lunes",
+    },
+  },
   {
     slug: "senado-2026-05-06-transportista-escolar-16433-18",
     fecha: "2026-05-06",
@@ -389,6 +477,24 @@ export const VOTACIONES_CLAVE: VotacionClave[] = [
 ];
 
 export const CONTRASTES_VOTO: ContrasteVoto[] = [
+  {
+    slug: "decretos-si-no-aprueban-vs-boicot",
+    fecha: "2026-05-08",
+    actor: "José Antonio Kast",
+    cargo: "Presidente de la República",
+    reclamoActual:
+      "El Gobierno acusa bloqueo o boicot cuando parlamentarios anuncian rechazo a la megarreforma.",
+    registroAnterior:
+      "El propio Kast dijo que si una parte no se aprueba, el Gobierno seguirá gobernando con herramientas administrativas y decretos en materias que no requieren ley.",
+    lectura:
+      "No se puede pedir respeto absoluto al Congreso solo cuando entrega votos favorables. Si se acusa boicot por votar en contra, también debe explicarse por qué se prepara una vía paralela cuando el Congreso no acompaña.",
+    fuente: {
+      medio: "Emol",
+      titulo: "Kast valora avance de megarreforma, pero no descarta decretos en caso de rechazo",
+      url: "https://www.emol.com/noticias/Nacional/2026/05/08/1199438/kast-decretos-megarreforma-aprobacion-congreso.html",
+    },
+    severidad: 4,
+  },
   {
     slug: "republicanos-boicot-vs-idea-legislar-boric",
     fecha: "2026-04-22",
@@ -533,6 +639,12 @@ export const HISTORIAL_VOTOS_BORIC: AntecedenteVoto[] = [
 ];
 
 export const PROXIMOS_HITOS_VOTACION = [
+  {
+    fecha: "2026-05-11",
+    titulo: "Senado mira Escuelas Protegidas",
+    detalle: "La Comisión de Educación esperaba votar en general y recibir nuevas audiencias antes de revisar indicaciones.",
+    fuente: ULTIMOS_TRATADOS_SENADO[0].fuente,
+  },
   {
     fecha: "2026-05-11",
     titulo: "Vence plazo para indicaciones en Hacienda",

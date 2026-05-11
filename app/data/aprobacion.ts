@@ -112,6 +112,28 @@ export const ENCUESTAS: EncuestaPunto[] = [
       "https://www.latercera.com/nacional/noticia/cadem-aprobacion-de-kast-cae-a-su-nivel-mas-bajo-desde-que-asumio-y-67-cree-que-el-estado-esta-siendo-sobrepasado-por-la-delincuencia/?outputType=base-amp-type",
   },
   {
+    slug: "cadem-2026-05-06",
+    encuestadora: "Cadem",
+    fecha: "2026-05-06",
+    aprobacion: 42,
+    desaprobacion: 55,
+    notas:
+      "Plaza Publica N°651, primera semana de mayo: Cadem registra 42% de aprobacion, 55% de desaprobacion y mantiene a seguridad como el foco principal de preocupacion.",
+    fuenteUrl:
+      "https://www.biobiochile.cl/static/documentos/2026/05/track-pp-651-mayo-s1-m1-vf.pdf",
+  },
+  {
+    slug: "criteria-2026-05-03",
+    encuestadora: "Criteria",
+    fecha: "2026-05-03",
+    aprobacion: 38,
+    desaprobacion: 51,
+    notas:
+      "Agenda Criteria mantiene la aprobacion en 38%, pero la desaprobacion sube a 51%. Solo 39% cree posible reducir gasto sin afectar beneficios sociales.",
+    fuenteUrl:
+      "https://www.biobiochile.cl/noticias/nacional/chile/2026/05/03/criteria-aprobacion-a-kast-se-mantiene-mientras-que-evaluacion-de-la-oposicion-cae-3-puntos.shtml",
+  },
+  {
     slug: "pulso-ciudadano-2026-04-q2",
     encuestadora: "Pulso Ciudadano",
     fecha: "2026-04-30",
@@ -134,6 +156,21 @@ export const ULTIMA_APROBACION = (() => {
 
 /** Datos clave para el panel de “percepcion ciudadana”. */
 export const PERCEPCION_CLAVES = [
+  {
+    valor: "42%",
+    afirma: "aprueba la gestion presidencial en Cadem de primera semana de mayo",
+    fuente: "Cadem 6-may-2026",
+  },
+  {
+    valor: "55%",
+    afirma: "desaprueba la gestion presidencial en el mismo corte Cadem",
+    fuente: "Cadem 6-may-2026",
+  },
+  {
+    valor: "39%",
+    afirma: "cree posible reducir gasto sin afectar beneficios sociales",
+    fuente: "Criteria 3-may-2026",
+  },
   {
     valor: "78%",
     afirma: "considera que la economia esta estancada o retrocede",

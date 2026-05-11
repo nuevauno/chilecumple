@@ -88,7 +88,7 @@ export default function ComoVotan({ loaderData }: { loaderData: Awaited<ReturnTy
           </p>
           <div className="mt-7 flex flex-wrap gap-2">
             <PageShare title="Como votan diputados y senadores — Chile Cumple" path="/como-votan" />
-            <a href="#donde-se-revisa" className="btn btn-secondary">Dónde se revisa</a>
+            <a href="#donde-se-revisa" className="btn btn-secondary">Fuentes públicas</a>
             <a href="#votacion-dia" className="btn btn-primary">Votación clave</a>
             <a href="#ultimas-camara-senado" className="btn btn-secondary">Más votaciones</a>
             <a href="#contrastes" className="btn btn-secondary">Ver contradicciones</a>
@@ -101,7 +101,7 @@ export default function ComoVotan({ loaderData }: { loaderData: Awaited<ReturnTy
             <StatCard label="Cámara" value={String(VOTACIONES_STATS.oficialesCamara)} tone="info" />
             <StatCard label="Senado" value={String(VOTACIONES_STATS.oficialesSenado)} tone="info" />
             <StatCard label="Archivo Boric" value={String(VOTACIONES_STATS.antecedentes)} tone="info" />
-            <StatCard label="Sitios revisados" value={String(VOTACIONES_STATS.fuentesOficiales)} tone="info" />
+            <StatCard label="Fuentes públicas" value={String(VOTACIONES_STATS.fuentesOficiales)} tone="info" />
           </div>
         </div>
       </section>
@@ -110,12 +110,12 @@ export default function ComoVotan({ loaderData }: { loaderData: Awaited<ReturnTy
         <div className="max-w-[1400px] mx-auto px-5 sm:px-8 py-14 sm:py-20">
           <div className="grid lg:grid-cols-12 gap-8">
             <header className="lg:col-span-4">
-              <p className="label text-[--color-info]">Dónde se revisa</p>
+              <p className="label text-[--color-info]">Fuentes públicas</p>
               <h2 className="mt-3 text-4xl sm:text-6xl font-black tracking-tighter leading-none">
                 El voto queda escrito.
               </h2>
               <p className="mt-5 text-sm text-[--color-fg-2] leading-relaxed">
-                Cámara y Senado publican votaciones, sesiones y proyectos tratados. Esta sección traduce esos registros:
+                Cámara y Senado publican votaciones, sesiones y proyectos tratados. Esta sección ordena esos registros:
                 explica de qué se trata cada votación, a quién afecta y qué contradicción política deja a la vista.
               </p>
             </header>
@@ -232,7 +232,7 @@ export default function ComoVotan({ loaderData }: { loaderData: Awaited<ReturnTy
                             <td className="py-3 pr-4">
                               <span className={`pill ${votoClass[voto.voto]}`}>{votoLabel[voto.voto]}</span>
                             </td>
-                            <td className="py-3 text-xs text-[--color-fg-3]">{voto.nota ?? "Voto individual revisado"}</td>
+                            <td className="py-3 text-xs text-[--color-fg-3]">{voto.nota ?? "Sin nota adicional"}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -437,7 +437,7 @@ function OfficialFeed({
           <h3 className="text-2xl font-black tracking-tight leading-tight">{title}</h3>
           <p className="mt-2 text-sm text-[--color-fg-2] leading-relaxed">{description}</p>
         </div>
-        <span className="pill pill-info">{items.length} casos revisados</span>
+        <span className="pill pill-info">{items.length} votaciones</span>
       </div>
 
       <div className="mt-6 grid gap-3">
