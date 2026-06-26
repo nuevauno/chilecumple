@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-const REPO_ISSUE_URL = "https://github.com/nuevauno/cumplechile/issues/new";
+const REPO_ISSUE_URL = "https://github.com/nuevauno/chilecumple/issues/new";
 
 function buildIssueUrl(tema: string, detalle: string, fuente: string, pageUrl: string) {
   const titulo = tema.trim() || "Sugerencia para Chile Cumple";

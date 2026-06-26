@@ -27,7 +27,7 @@ haciendo.
 - **Deploy**: GitHub Release con tag `YYYY.MM.DD[.N]` (ver
   `.github/workflows/deploy.yml`). Nunca `wrangler deploy` directo.
 - **Comandos**: `pnpm typecheck`, `pnpm build`, `pnpm dev`.
-- **Repo**: `github.com/nuevauno/cumplechile`. Branch principal: `main`.
+- **Repo**: `github.com/nuevauno/chilecumple`. Branch principal: `main`.
 
 ## Convenciones de marca
 

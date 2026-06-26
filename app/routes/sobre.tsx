@@ -168,7 +168,7 @@ export default function Sobre() {
         <h2 className="text-3xl font-black tracking-tighter">Licencia</h2>
         <p className="mt-3 text-[--color-fg-2] leading-relaxed">
           Contenido editorial bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" className="text-[--color-accent] hover:text-[--color-accent-hover] font-medium">Creative Commons CC BY-SA 4.0</a>. Cítalo libremente atribuyendo y compartiendo bajo la misma licencia. El código es{" "}
-          <a href="https://github.com/nuevauno/cumplechile" target="_blank" rel="noopener noreferrer" className="text-[--color-accent] hover:text-[--color-accent-hover] font-medium">abierto en GitHub</a>. Los documentos originales son de dominio público.
+          <a href="https://github.com/nuevauno/chilecumple" target="_blank" rel="noopener noreferrer" className="text-[--color-accent] hover:text-[--color-accent-hover] font-medium">abierto en GitHub</a>. Los documentos originales son de dominio público.
         </p>
       </section>
 
